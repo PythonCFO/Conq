@@ -7,7 +7,7 @@ A custom Risk game project in Python.
 * The Python apps Server and Client run from the command line
 * From a Terminal, first run the Server app
 * Then from additional Terminals, run one or more instances of the Client app
-* If you hard stop the Server app (e.g. Ctrl-Z) then you will need to use the OS to Stop the Python Processes on the machine before restarting the Server app.  In Mac OSX that can be done from the Activity Monitor.
+* To end the Server, use Ctrl-C.  If you only pause the Server, using Ctrl-Z, then the Server will not release the connection resources and can present problems.
 
 ## Potential Epics and Features
 
