@@ -10,11 +10,11 @@ class Player():
 
 def main():
     p = Player("Jay")  #Create this client-side Player object
-    n = Network()  #Esablish Client's socket and connect it to the Server
+    conn = Network()  #Esablish Client's socket and connect it to the Server
 
     print("Starting Client Loop")  #All Client processing happens within this loop
     while True:
-        Heartbeat_Response = n.send("Heartbeat from " + str(p.name)) #Send heartbeat to Server and save response
+        Heartbeat_Response = conn.send("Heartbeat from " + str(p.name)) #Send heartbeat to Server and save response
         if Heartbeat_Response == "ACK": 
             print("Snd Hearbeat : Server ACK")
         t_end = time.time() + 5 #Pause 5 seconds until next heartbeat / This delay is blocking (bad)
