@@ -4,7 +4,8 @@ from _thread import *
 import socket
 
 '''  ToDo
-    GUI needs to display traffic
+    Use a better GUI widget to display comms traffic
+    Improve the GUI layout
     New connections need to be stored in unique variables, or ** added to a collection
     GUI needs to display list of connected players
         Maybe this ^^ is using a TreeView for navigating to each of them?
@@ -13,12 +14,13 @@ import socket
 '''
 
 global textbox
+all_players = []
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("dark-blue")
 
 root = ctk.CTk()
-root.geometry("800x600")
+root.geometry("1024x768+400+100")
 
 label = ctk.CTkLabel(master=root, text="IP Address: ")
 label.pack(padx=20, pady=20)
@@ -41,6 +43,8 @@ def socket_manager():
     while True:
         print("Inside socket_manager")
         conn, address = s.accept()
+        all_players.append(conn)
+        print("Active Players: " + str(len(all_players)))
         print ("{} connected".format( address ))
         start_new_thread(threaded_client, (conn,))
         
