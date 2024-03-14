@@ -11,10 +11,10 @@ class Network:
     def connect(self):
         try:
             self.client.connect(self.addr)
-            print("Client successfully connected as " + str(self.client))
+            print("Connected to " + str(self.addr))
             return self.client.recv(2048).decode()
         except:
-            print("Client connection unsuccessful")
+            print("Connection failed")
             pass
 
     def send(self, data):

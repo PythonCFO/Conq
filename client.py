@@ -16,9 +16,9 @@ def main():
     while True:
         Heartbeat_Response = conn.send("Heartbeat from " + str(p.name)) #Send heartbeat to Server and save response
         if Heartbeat_Response == "ACK": 
-            print("Snd Hearbeat : Server ACK")
+            print("Sent Hearbeat : Server ACK")
         t_end = time.time() + 5 #Pause 5 seconds until next heartbeat / This delay is blocking (bad)
-        while time.time() < t_end:
+        while time.time() < t_end:   # Blocking loop.  Need to include other Client work
             pass
 
 main()

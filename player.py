@@ -1,0 +1,24 @@
+import uuid
+
+class Player:
+
+    def __init__(self, conn):
+        self.name = "TBD"
+        self.id = uuid.uuid1()
+        self.conn = conn
+        self.territories = []
+        self.cards = []
+
+    def deploy_armies(self, territory, armies):
+        if territory in self.territories:
+            territory.armies += armies
+
+    def attack_territory(self, attacking_territory, defending_territory, armies):
+        if attacking_territory in self.territories: # and (attacking_territory, defending_territory) in board.connections:
+            # Implement attack logic
+            pass
+
+    def fortify_position(self, source_territory, target_territory, armies):
+        if source_territory in self.territories and target_territory in self.territories:
+            # Implement fortify logic
+            pass  

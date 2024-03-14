@@ -2,6 +2,7 @@ import customtkinter as ctk
 import threading
 from _thread import *
 import socket
+from player import Player
 
 '''  ToDo
     Use a better GUI widget to display comms traffic
@@ -37,21 +38,22 @@ def socket_manager():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('localhost', 5555))
     s.listen(5)
-    print("Socket is open for connections")
-    global currentId
-    currentId = "0"  # This holds Server generated Client IDs
+    print("Server is listening for socket connections")
     while True:
-        print("Inside socket_manager")
-        conn, address = s.accept()
-        all_players.append(conn)
-        print("Active Players: " + str(len(all_players)))
-        print ("{} connected".format( address ))
+        conn, address = s.accept()     # Blocks, waiting for connection
+        new_player = Player(conn)
+        all_players.append(new_player)
+        print("New connection from {}".format( address ))
+        #print("Active Players: " + str(len(all_players)))
+        c = 0
+        for p in all_players:
+            print("Player " + str(c) + ": " + str(p.id))
+            c += 1
         start_new_thread(threaded_client, (conn,))
         
 def threaded_client(conn):  # Create a Thread for each new Client Socket Connection
-    print("Inside socket_manager")
-    conn.send(str.encode("socket_manager here"))
-    currentId = "1"
+    print("Inside threaded client")
+    conn.send(str.encode("Client thread here"))
     reply = ''
     while True:
         try:
