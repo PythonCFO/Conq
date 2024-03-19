@@ -4,14 +4,14 @@ A custom Risk game project in Python.
 
 ## Using the Code
 
-* The Python apps Server and Client run from the command line
-* From a Terminal, first run the Server app
+* The adminGUI is built with custom tkinter while the Client is currently only command line (both MVP)
+* From a Terminal, first run the adminGUI app to listen for player connections
 * Then from additional Terminals, run one or more instances of the Client app
-* To end the Server, use Ctrl-C.  If you only pause the Server, using Ctrl-Z, then the Server will not release the connection resources and can present problems.
+* When ending the componentsuse care that the Python processes are all stopped to assure they release network resources.
 
 ## Potential Epics and Features
 
-* Foundational play - Board, Combat, and Turns
+* Foundational play - Server, Board, Players, Combat, and Turns
 * Gameplay metrics
 * Automated turn execution
 * Probabilities and AI driven execution
