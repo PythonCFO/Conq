@@ -1,4 +1,5 @@
 import uuid
+import pygame
 
 class Player:
 
@@ -10,6 +11,14 @@ class Player:
         self.territories = []
         self.reinforcements = 0
         self.cards = []
+        self.x = 100
+        self.y = 100
+        self.vel = 5
+        self.width = 50
+        self.height = 50
+        self.rect = (self.x, self.y, self.width, self.height)
+        self.color = "red"
+
 
     def deploy_armies(self, territory, armies):
         # Weak ChatGPT code...
@@ -26,3 +35,30 @@ class Player:
         if source_territory in self.territories and target_territory in self.territories:
             # Implement fortify logic
             pass  
+
+    def draw(self, win):
+        pygame.draw.rect(win, self.color, self.rect)
+        #pass
+
+    def move(self):
+        keys = pygame.key.get_pressed()
+        if keys == True:
+            print(keys)
+
+        if keys[pygame.K_LEFT]:
+            self.x -= self.vel
+
+        if keys[pygame.K_RIGHT]:
+            self.x += self.vel
+
+        if keys[pygame.K_UP]:
+            self.y -= self.vel
+
+        if keys[pygame.K_DOWN]:
+            self.y += self.vel
+
+        self.update()
+
+    def update(self):
+        self.rect = (self.x, self.y, self.width, self.height)
+

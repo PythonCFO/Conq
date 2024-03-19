@@ -59,9 +59,6 @@ player_values=[]
 list_players = tk.Listbox(frame_1, listvariable=player_values, height=10, background="#2E2E2F")
 list_players.pack(side="top", padx=10, pady=10, expand=True, fill="both")
 
-textbox.insert("end", "X:X:X:X\n")
-
-
 def socket_manager():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('localhost', 5555))
