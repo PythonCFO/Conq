@@ -10,12 +10,31 @@ win = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Client")
 
 p = Player("Jay")  #Create this client-side Player object
-#clientNumber = 0
 
 def client_connection_thread():  # Create a Thread for each new Client Socket Connection
-    #Starting the Socket
-    print("Connecting to Server and entering connection management loop")
     conn = Network()  #Esablish Client's socket and connect it to the Server
+
+    def connect(self, host, port):
+        self.sock.connect((host, port))
+
+    #Socket send data to Server
+    def mysend(self, msg):
+        totalsent = 0
+        sent = self.sock.send(msg[totalsent:])
+        if sent == 0:
+            raise RuntimeError("socket connection broken")
+        totalsent = totalsent + sent
+
+    #Socket receive data from Server
+    def myreceive(self):
+        bytes_recd = 0
+        chunk = self.sock.recv(2048)
+        if chunk == b'':
+            raise RuntimeError("socket connection broken")
+        bytes_recd = bytes_recd + len(chunk)
+        return b''.join(chunk)
+
+    # Heartbeat
     while True:
         Heartbeat_Response = conn.send("Heartbeat from " + str(p.name)) #Send heartbeat to Server and save response
         if Heartbeat_Response == "ACK": 
@@ -34,12 +53,10 @@ def main():
     clock = pygame.time.Clock()
 
     #Spin up a thread to run the client's Socket connection
-    print("Starting client network thread")
-    #start_new_thread(client_connection_thread, (conn,))
     socket_thread = threading.Thread(target=client_connection_thread, daemon=True)     
     socket_thread.start()
 
-    print("Starting main Client Loop")  #All Client processing happens within this loop
+    print("Starting Client process")  #All Client processing happens within this loop
     while True:
         clock.tick(60) #Max 60 ticks per second - possibly not needed
 
