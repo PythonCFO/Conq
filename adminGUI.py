@@ -6,13 +6,10 @@ import socket
 from player import Player
 
 '''  ToDo
-    Use a better GUI widget to display comms traffic
-    Improve the GUI layout
-    New connections need to be stored in unique variables, or ** added to a collection
-    GUI needs to display list of connected players
-        Maybe this ^^ is using a TreeView for navigating to each of them?
-    GUI needs to display status
-    Create a collection of Players in a Game that can take turns
+    GUI needs to display game status
+    Server needs to manage turns
+    Server needs critical data objects
+    Server needs defined command protocol with Clients
 '''
 
 global textbox
@@ -123,4 +120,5 @@ socket_thread.start()
 
 #Start up the GUI thread to run the Risk server
 root.mainloop() 
+
 
