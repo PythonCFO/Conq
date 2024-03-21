@@ -4,10 +4,10 @@ A custom Risk game project in Python.
 
 ## Using the Code
 
-* The adminGUI is built with custom tkinter while the Client is currently only command line (both MVP)
-* From a Terminal, first run the adminGUI app to listen for player connections
-* Then from additional Terminals, run one or more instances of the Client app
-* When ending the componentsuse care that the Python processes are all stopped to assure they release network resources.
+* The adminGUI is built with custom tkinter while the clientPyGame is written on PyGame (both MVP)
+* To run the game, first start the Server using "python adminGUI" which will then begin to listen for player connections
+* Then from additional terminals, run one or more instances of clientPyGame which is the GUI version of the Client app
+* When ending the components use care that the Python processes are all stopped to assure they release network resources.
 
 ## Potential Epics and Features
 
