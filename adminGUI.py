@@ -2,8 +2,9 @@ import tkinter as tk
 import customtkinter as ctk 
 import threading
 from _thread import *
-import socket
+import socket, pickle
 from player import Player
+from gameplay import Gameplay
 
 '''  ToDo
     GUI needs to display game status
@@ -56,6 +57,7 @@ player_values=[]
 list_players = tk.Listbox(frame_1, listvariable=player_values, height=10, background="#2E2E2F")
 list_players.pack(side="top", padx=10, pady=10, expand=True, fill="both")
 
+
 def socket_manager():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('localhost', 5555))
@@ -76,23 +78,24 @@ def socket_manager():
         
 def threaded_client(conn):  # Create a Thread for each new Client Socket Connection
     print("Inside threaded client")
-    conn.send(str.encode("Client thread here"))
+    conn.send(pickle.dumps("Server's Client thread here"))
     reply = ''
     while True:
         try:
-            data = conn.recv(2048)  #So if client does not respond to new connection, this server will disconnect.
-            reply = data.decode('utf-8')
+            data = pickle.loads(conn.recv(2048))  #So if client does not respond to new connection, this server will disconnect.
+            #print("Received socket data and un-pickled")
             if not data:
-                conn.send(str.encode("Goodbye"))
+                print("inside the 'if not data' section")
+                conn.send(pickle.dumps("Goodbye"))
                 print("Snd: Goodbye player " + str(conn))
                 textbox.insert("end", "Snd: Goodbye player " + str(conn) + "\n")
                 remove_player(conn)
                 update_players()
                 break  #Exit this While loop; closes the Socket for this specific Client
             else:
-                print("Rcvd: " + reply + " : Snd: ACK")
+                print("Rcvd: " + data + " : Snd: ACK")
                 textbox.insert("end", "Rcvd: " + reply + " : Snd: ACK\n")
-                conn.sendall(str.encode("ACK"))
+                conn.sendall(pickle.dumps("ACK"))
         except:
             print("Exited at the Except statement")
             break
@@ -113,6 +116,10 @@ def update_players():
     for index, p in enumerate(all_players):
         #print(index, p)
         list_players.insert(index, "Player" + str(index) + " " + str(p.id) + ": " + str(p.name) + "\n")
+
+#Start game to handle gameplay commands
+gp = Gameplay()
+
 
 # Start up a thread dedicated to managing Socket connections
 socket_thread = threading.Thread(target=socket_manager, daemon=True)                               

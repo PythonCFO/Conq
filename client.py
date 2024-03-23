@@ -1,16 +1,14 @@
 from network import Network
 import time 
+import threading
+from player import Player
+from gameplay import Command, Gameplay
 
-clientNumber = 0
-
-class Player():
-    def __init__(self, name):
-        #Basic Client-side Player initialization can be done here during initialization
-        self.name = name
 
 def main():
     p = Player("Jay")  #Create this client-side Player object
     conn = Network()  #Esablish Client's socket and connect it to the Server
+    test_cmd = Command("name", p, ("My Test Name"))
 
     print("Starting Client Loop")  #All Client processing happens within this loop
     while True:

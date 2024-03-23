@@ -4,6 +4,8 @@ import threading
 from network import Network
 from player import Player
 import geo
+from gameplay import Command, Gameplay
+import pickle
 
 pg.init()
 pg.mixer.init()
@@ -16,34 +18,21 @@ pg.display.set_caption("Risk Client")
 clock = pg.time.Clock()
 
 board = geo.World("Proto", proto_r=4, proto_c=5)  # Proto creates a hex grid test board
-p = Player("Jay")  #Create a client-side Player object
+p = Player("TBD")  #Create a client-side Player object
 
-def client_connection_thread():  # Create a Thread for each new Client Socket Connection
+test_cmd = Command("name", p, ("My Test Name"))
+c = Network
+
+def client_connection_thread(c):  # Create a Thread for each new Client Socket Connection
     conn = Network()  #Esablish Client's socket and connect it to the Server
+    c = conn
 
-    def connect(self, host, port):
-        self.sock.connect((host, port))
-
-    #Socket send data to Server
-    def mysend(self, msg):
-        totalsent = 0
-        sent = self.sock.send(msg[totalsent:])
-        if sent == 0:
-            raise RuntimeError("socket connection broken")
-        totalsent = totalsent + sent
-
-    #Socket receive data from Server
-    def myreceive(self):
-        bytes_recd = 0
-        msg = self.sock.recv(2048)
-        if msg == b'':
-            raise RuntimeError("socket connection broken")
-        bytes_recd = bytes_recd + len(msg)
-        return b''.join(msg)
+    #def connect(self, host, port):
+    #    self.sock.connect((host, port))
 
     # Heartbeat
     while True:
-        Heartbeat_Response = conn.send("Heartbeat from " + str(p.name)) #Send heartbeat to Server and save response
+        Heartbeat_Response = conn.send("test") #pickle.dumps(p.name)) #Send heartbeat to Server and save response
         if Heartbeat_Response == "ACK": 
             print("Sent Hearbeat : Server ACK")
         t_end = time.time() + 5 #Pause 5 seconds until next heartbeat / This delay is blocking (bad)
@@ -66,7 +55,7 @@ def main():
     while True:
         clock.tick(60) #Max 60 ticks per second - possibly not needed
         win.fill((0,0,0))
-        game_events()
+        game_events(c)
         game_update()
         game_draw()
         board.draw(win)
@@ -81,6 +70,11 @@ def game_events() -> None:
             if event.key == pg.K_ESCAPE:
                 playing = False
                 pg.quit()
+        if event.type == pg.KEYDOWN:
+            if event.key == pg.K_RETURN:
+                print("Need to implement sending a test Command within clientPyGame")  #Testing sending a Comand to Server
+                test_cmd = c.send("Heartbeat from " + str(p.name))
+                print(test_cmd)
         if event.type == pg.VIDEORESIZE:
             # There's some code to add back window content here.
             surface = pg.display.set_mode((event.w, event.h), pg.RESIZABLE)
