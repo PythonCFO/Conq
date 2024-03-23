@@ -1,4 +1,4 @@
-import socket
+import socket, pickle
 
 class Network:
     def __init__(self):
@@ -12,15 +12,28 @@ class Network:
         try:
             self.client.connect(self.addr)
             print("Connected to " + str(self.addr))
-            return self.client.recv(2048).decode()
+            return pickle.loads(self.client.recv(2048))
         except:
             print("Connection failed")
             pass
 
+    #Socket send data to Server
     def send(self, data):
         try:
-            self.client.send(str.encode(data))
-            return self.client.recv(2048).decode()
+            sent = self.client.send(pickle.dumps(data))
+            if sent == 0:
+                raise RuntimeError("socket connection broken")
+            return pickle.loads(self.client.recv(2048))
         except socket.error as e:
             print(e)
             return str(e)
+
+    #Socket receive data from Server
+    def client_recv(self):
+        bytes_recd = 0
+        msg = self.sock.recv(2048)
+        if msg == b'':
+            raise RuntimeError("socket connection broken")
+        bytes_recd = bytes_recd + len(msg)
+        return b''.join(msg)
+
