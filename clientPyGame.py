@@ -23,7 +23,7 @@ p = Player("TBD")  #Create a client-side Player object
 test_cmd = Command("name", p, ("My Test Name"))
 c = Network
 
-def client_connection_thread(c):  # Create a Thread for each new Client Socket Connection
+def client_connection_thread():  # Create a Thread for each new Client Socket Connection
     conn = Network()  #Esablish Client's socket and connect it to the Server
     c = conn
 
@@ -55,7 +55,7 @@ def main():
     while True:
         clock.tick(60) #Max 60 ticks per second - possibly not needed
         win.fill((0,0,0))
-        game_events(c)
+        game_events()
         game_update()
         game_draw()
         board.draw(win)
