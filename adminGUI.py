@@ -4,7 +4,7 @@ import threading
 from _thread import *
 import socket, pickle
 from player import Player
-from gameplay import Gameplay
+from gameplay import Gameplay, Command
 
 '''  ToDo
     GUI needs to display game status
@@ -67,42 +67,54 @@ def socket_manager():
         conn, address = s.accept()     # Blocks, waiting for connection
         new_player = Player(conn)
         all_players.append(new_player)
-        print("New connection from {}".format( address ))
-        #print("Active Players: " + str(len(all_players)))
+        print(f"New connection from player ID: {new_player.id}")
         update_players()
-        c = 0
+        print("All Players:")
         for p in all_players:
-            print("Player " + str(c) + ": " + str(p.id))
-            c += 1
-        start_new_thread(threaded_client, (conn,))
+            print("   Player" + ": " + p.id + " " + p.name)
+
+
+        #TODO  How is the following actually starting a new thread.  
+        #No Start command??   
+        #Looks like calling function in same process!!??
         
-def threaded_client(conn):  # Create a Thread for each new Client Socket Connection
+        #start_new_thread(threaded_client, (new_player,)).start
+        
+        client_socket_thread = threading.Thread(target=threaded_client, args=(new_player,), daemon=True)                               
+        client_socket_thread.start()
+
+
+#TODO -- For thread to send commands, it needs *Player* not just Conn
+def threaded_client(player):  # Create a Thread for each new Client Socket Connection
     print("Inside threaded client")
-    conn.send(pickle.dumps("Server's Client thread here"))
-    reply = ''
+    connection = player.conn
+    hello_cmd = Command(player.id, "ACK", "Welcomes to Conq!")
+    connection.send(pickle.dumps(hello_cmd))
+    print("A new player has been welcomed to Conq!")
     while True:
         try:
-            data = pickle.loads(conn.recv(2048))  #So if client does not respond to new connection, this server will disconnect.
-            #print("Received socket data and un-pickled")
-            if not data:
-                print("inside the 'if not data' section")
-                conn.send(pickle.dumps("Goodbye"))
-                print("Snd: Goodbye player " + str(conn))
-                textbox.insert("end", "Snd: Goodbye player " + str(conn) + "\n")
-                remove_player(conn)
+            #All I am doing is awaiting receipt of messages, not sending
+            client_cmd = pickle.loads(player.conn.recv(2048)) # Wait to receive Client data
+            if client_cmd == "":  
+                print("inside failure response section: 'if not data'")
+                #Should be a Command.  Should be in a Network module.
+                player.conn.send(pickle.dumps("Goodbye"))
+                print(f"Snd: Goodbye {player.name}")
+                textbox.insert("end", "Snd: Goodbye {player.name}\n")
+                remove_player(player.conn) 
                 update_players()
                 break  #Exit this While loop; closes the Socket for this specific Client
             else:
-                print("Rcvd: " + data + " : Snd: ACK")
-                textbox.insert("end", "Rcvd: " + reply + " : Snd: ACK\n")
-                conn.sendall(pickle.dumps("ACK"))
+                print(f"{client_cmd.command} from {client_cmd.id}: '{client_cmd.cmd_data}'")
+                textbox.insert("end", client_cmd.command + " from " + client_cmd.id + ": " + client_cmd.cmd_data + "\n")
+                player.conn.send(pickle.dumps(Command(player.id, "ACK", "Let's get to it!")))
         except:
             print("Exited at the Except statement")
             break
 
-    print("Connection closed to " + str(conn))
-    textbox.insert("end", "Connection closed to " + str(conn)+ "\n")
-    conn.close()
+    print(f"Connection closed to {player.conn}")
+    textbox.insert("end", ("Connection closed to " + str(player.id) + "\n"))
+    player.conn.close()
 
 def remove_player(conn):
     #remove this player from the list of players
@@ -115,7 +127,7 @@ def update_players():
     list_players.delete(0,"end")
     for index, p in enumerate(all_players):
         #print(index, p)
-        list_players.insert(index, "Player" + str(index) + " " + str(p.id) + ": " + str(p.name) + "\n")
+        list_players.insert(index, "Player " + str(p.id) + ": " + str(p.name) + "\n")
 
 #Start game to handle gameplay commands
 gp = Gameplay()
