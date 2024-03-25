@@ -13,8 +13,8 @@ from dataclasses import dataclass
 
 # Define a universal gameplay command, as a single object of class Command
 class Command:
-    def __init__(self, _player, _command, _cmd_data):
-        self.player= _player  #player = originator of cmd
+    def __init__(self, _id, _command, _cmd_data):
+        self.id = _id  #player = originator of cmd
         self.command = _command  #command = an item from a command dictionary
         self.cmd_data = _cmd_data  #cmd_data = [] a list of key:values required for the command to execute
 

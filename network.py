@@ -12,7 +12,11 @@ class Network:
         try:
             self.client.connect(self.addr)
             print("Connected to " + str(self.addr))
-            return pickle.loads(self.client.recv(2048))
+            data =  pickle.loads(self.client.recv(2048))  #Wait for an ACK
+            if data.command == "ACK":
+                # One-time receipt of "Welcome to Conq!" from Server
+                print(data.cmd_data) 
+            return
         except:
             print("Connection failed")
             pass
@@ -23,17 +27,23 @@ class Network:
             sent = self.client.send(pickle.dumps(data))
             if sent == 0:
                 raise RuntimeError("socket connection broken")
-            return pickle.loads(self.client.recv(2048))
         except socket.error as e:
             print(e)
             return str(e)
 
     #Socket receive data from Server
-    def client_recv(self):
+    def socket_recv(self):
         bytes_recd = 0
-        msg = self.sock.recv(2048)
-        if msg == b'':
-            raise RuntimeError("socket connection broken")
-        bytes_recd = bytes_recd + len(msg)
-        return b''.join(msg)
+        try:
+            data = self.client.recv(2048)
+            #Wait for inbound msg
+            if data == b'':
+                raise RuntimeError("socket connection broken")
+            else:
+                message = pickle.loads(data)
+            return message
+        except:
+            print("E", end='', flush=True)
+
+
 

@@ -6,6 +6,7 @@ from player import Player
 import geo
 from gameplay import Command, Gameplay
 import pickle
+import queue
 
 pg.init()
 pg.mixer.init()
@@ -16,65 +17,129 @@ win_size = pg.Vector2(width, height)
 win = pg.display.set_mode((width, height))
 pg.display.set_caption("Risk Client")
 clock = pg.time.Clock()
+t_end = time.time() + 5
 
+#Proto Board should be built by the SERVER!!!
 board = geo.World("Proto", proto_r=4, proto_c=5)  # Proto creates a hex grid test board
-p = Player("TBD")  #Create a client-side Player object
 
-test_cmd = Command("name", p, ("My Test Name"))
-c = Network
-
-def client_connection_thread():  # Create a Thread for each new Client Socket Connection
-    conn = Network()  #Esablish Client's socket and connect it to the Server
-    c = conn
-
-    #def connect(self, host, port):
-    #    self.sock.connect((host, port))
-
-    # Heartbeat
+'''
+def client_connection_thread(netconn):  # Thread to make the Socket Connection to Server
     while True:
-        Heartbeat_Response = conn.send("test") #pickle.dumps(p.name)) #Send heartbeat to Server and save response
-        if Heartbeat_Response == "ACK": 
-            print("Sent Hearbeat : Server ACK")
+        netconn.send(Command(p.id, "HBT", "Ready to play" )) #pickle.dumps(p.name)) #Send heartbeat to Server and save response
         t_end = time.time() + 5 #Pause 5 seconds until next heartbeat / This delay is blocking (bad)
         while time.time() < t_end:   # Blocking loop.  Need to include other Client work
             pass
+'''
+netconn = Network()  #Esablish Client's socket and connect it to the Server
+p = Player(netconn)  #Create this client-side Player object
 
-def redrawWindow(win):
-    win.fill((255,255,255))
-    p.draw(win)
-    pg.display.update()
+send_queue = queue.Queue()
+recv_queue = queue.Queue()
+ack_queue = queue.Queue()
+lock=threading.Lock()
+
+def send_loop():
+    global netconn
+    print("Client Send Thread Started")  #All Client processing happens within this loop   
+    RTS = True  #Ready To Send - Prior ACKs received & *Socket healthy*
+    while True:
+        lock.acquire()
+        if RTS and send_queue.qsize()>0:
+            print("\nS", end='', flush=True)
+            print(str(send_queue.qsize()), end='', flush=True)
+            message = send_queue.get()
+            if type(message) == Command:  #Validate msg is well formed
+                netconn.send(message)
+                if message.command == "ACK":  #Ack'd a Server's command
+                    print("A", end='', flush=True)
+                elif message.command == "HBT":  #Ack'd a Server's command
+                    print("H", end='', flush=True)
+                elif message.command == "NAME":  #Ack'd a Server's command
+                    print("N", end='', flush=True)
+                else:
+                    print("C", end='', flush=True)  #Sent a Client command
+            else:  #Else abandon the bad outgoing message
+                print("!", end='', flush=True)
+        lock.release()
+
+def recv_loop():
+    global netconn
+    print("Client Receive Thread Started")
+    while True:
+        message = netconn.socket_recv()  #Get any inbound messages
+        print("\nR1", end='', flush=True)
+        lock.acquire()
+        if type(message) == Command:  #Confirm whether msg is properly formed
+            if message.command == "ACK": #send_queue will be waiting for  this
+                ack_queue.put(message)
+                print("A", end='', flush=True)
+            else:
+                recv_queue.put(message) #Then push onto the incoming queue
+                print("C", end='', flush=True)
+        else:  #Else abandon the bad incoming message
+            print("!", end='', flush=True)
+        print(str(ack_queue.qsize()), end='', flush=True)
+        print(str(recv_queue.qsize()), end='', flush=True)
+        message = ""
+        lock.release()
+
+        #Now process recv_queue here
+        lock.acquire()
+        if ack_queue.qsize()>0:
+            pop_ack = ack_queue.get()
+            if type(pop_ack) != Command:  #Validate msg is well formed
+                print("!", end='', flush=True)
+            pop_ack = ""
+        if recv_queue.qsize()>0:
+            pop_cmd = recv_queue.get()
+            if type(pop_cmd) != Command:  #Validate msg is well formed
+                print("!", end='', flush=True)
+            pop_cmd = ""
+        
+        #wrap it up
+        print("r", end='', flush=True)
+        print(str(ack_queue.qsize()), end='', flush=True)
+        print(str(recv_queue.qsize()), end='', flush=True)
+        lock.release()
 
 def main():
-    run = True
+    #Start thread to send and receive Socket messages
+    recv_thread = threading.Thread(target=recv_loop, daemon=True).start() #args=(netconn,), 
+    recv_thread = threading.Thread(target=send_loop, daemon=True).start() #args=(netconn,), 
 
-    #Spin up a thread to run the client's Socket connection
-    socket_thread = threading.Thread(target=client_connection_thread, daemon=True)     
-    socket_thread.start()
+    #Test updating player name - Not meant to keep this
+    #name_cmd = Command(p.id, "NAME", ("Test Name"))
+    #netconn.send(name_cmd) #Send heartbeat to Server
+    #network_check(netconn, p, HBT_time) #start the heartbeat timer
 
     print("Starting Client process")  #All Client processing happens within this loop
     while True:
         clock.tick(60) #Max 60 ticks per second - possibly not needed
         win.fill((0,0,0))
-        game_events()
+        game_events(netconn, p)
         game_update()
         game_draw()
         board.draw(win)
         pg.display.update()
+        network_check(netconn, p)
 
-def game_events() -> None:
+def game_events(netconn, p) -> None:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             playing = False
             pg.quit()
         if event.type == pg.KEYDOWN:
             if event.key == pg.K_ESCAPE:
+                print("BYE!", end='', flush=True)
                 playing = False
                 pg.quit()
         if event.type == pg.KEYDOWN:
             if event.key == pg.K_RETURN:
-                print("Need to implement sending a test Command within clientPyGame")  #Testing sending a Comand to Server
-                test_cmd = c.send("Heartbeat from " + str(p.name))
-                print(test_cmd)
+                #Just a test - press enter to update Player's name
+                name_cmd = Command(p.id, "NAME", ("Test Name"))
+                lock.acquire()
+                send_queue.put(name_cmd) 
+                lock.release()
         if event.type == pg.VIDEORESIZE:
             # There's some code to add back window content here.
             surface = pg.display.set_mode((event.w, event.h), pg.RESIZABLE)
@@ -84,7 +149,25 @@ def game_update() -> None:
     board.update()
     #p.update("place_units")  #temp used 'place_unit'
 
+#Should this def be inside Main()?  Not sure of the source of this code...
+#def redrawWindow(win):
+#    win.fill((255,255,255))
+#    p.draw(win)  #Why is this "p"???
+#    pg.display.update()
+
 def game_draw() -> None:
     board.draw(win)
 
-main()
+def network_check(netconn, p) -> None:
+    global t_end
+    print(".", end='', flush=True)
+    if time.time() >= t_end:
+        hbt_cmd = Command(p.id, "HBT", "Ready to play")
+        lock.acquire()
+        send_queue.put(hbt_cmd)  #Or use the Send Queue to send the command...
+        lock.release()
+        t_end = time.time() + 5 #Pause 5 seconds until next heartbeat / This delay is blocking (bad)
+
+main() 
+
+
