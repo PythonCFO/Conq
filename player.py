@@ -2,6 +2,7 @@ import uuid
 import pygame
 
 class Player:
+    #CAREFUL! Client is setting attributes below for which Server OWNS setting!
     def __init__(self, conn):
         self.name = "TBD"
         self.id = str(uuid.uuid1())[:8]  # ID = 1st 8 digits of the UUID

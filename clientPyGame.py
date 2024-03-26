@@ -37,16 +37,19 @@ send_queue = queue.Queue()
 recv_queue = queue.Queue()
 ack_queue = queue.Queue()
 lock=threading.Lock()
+send_lock=threading.Lock()
+recv_lock=threading.Lock()
+proc_lock=threading.Lock()
 
 def send_loop():
     global netconn
     print("Client Send Thread Started")  #All Client processing happens within this loop   
     RTS = True  #Ready To Send - Prior ACKs received & *Socket healthy*
     while True:
-        lock.acquire()
+        send_lock.acquire()
         if RTS and send_queue.qsize()>0:
             print("\nS", end='', flush=True)
-            print(str(send_queue.qsize()), end='', flush=True)
+            #print(str(send_queue.qsize()), end='', flush=True)
             message = send_queue.get()
             if type(message) == Command:  #Validate msg is well formed
                 netconn.send(message)
@@ -60,15 +63,19 @@ def send_loop():
                     print("C", end='', flush=True)  #Sent a Client command
             else:  #Else abandon the bad outgoing message
                 print("!", end='', flush=True)
-        lock.release()
+            print(str(ack_queue.qsize()), end='', flush=True)
+            print(str(recv_queue.qsize()), end='', flush=True)
+            message = ""
+            print("s", end='', flush=True)  #wrap it up
+        send_lock.release()
 
 def recv_loop():
     global netconn
     print("Client Receive Thread Started")
     while True:
         message = netconn.socket_recv()  #Get any inbound messages
-        print("\nR1", end='', flush=True)
-        lock.acquire()
+        print("\nR", end='', flush=True)
+        recv_lock.acquire()
         if type(message) == Command:  #Confirm whether msg is properly formed
             if message.command == "ACK": #send_queue will be waiting for  this
                 ack_queue.put(message)
@@ -81,18 +88,25 @@ def recv_loop():
         print(str(ack_queue.qsize()), end='', flush=True)
         print(str(recv_queue.qsize()), end='', flush=True)
         message = ""
-        lock.release()
+        recv_lock.release()
 
         #Now process recv_queue here
-        lock.acquire()
+        proc_lock.acquire()
         if ack_queue.qsize()>0:
             pop_ack = ack_queue.get()
-            if type(pop_ack) != Command:  #Validate msg is well formed
+            if type(pop_ack) == Command:  #Validate msg is well formed
+                #*** Insert code to process ACK messages ***
+                pass
+            else:
                 print("!", end='', flush=True)
             pop_ack = ""
         if recv_queue.qsize()>0:
             pop_cmd = recv_queue.get()
-            if type(pop_cmd) != Command:  #Validate msg is well formed
+            if type(pop_cmd) == Command:  #Validate msg is well formed
+                #*** Insert code to process CMD messages ***
+                #Probably a call to Gameplay passing the command to 
+                pass
+            else:
                 print("!", end='', flush=True)
             pop_cmd = ""
         
@@ -100,17 +114,12 @@ def recv_loop():
         print("r", end='', flush=True)
         print(str(ack_queue.qsize()), end='', flush=True)
         print(str(recv_queue.qsize()), end='', flush=True)
-        lock.release()
+        proc_lock.release()
 
 def main():
     #Start thread to send and receive Socket messages
     recv_thread = threading.Thread(target=recv_loop, daemon=True).start() #args=(netconn,), 
-    recv_thread = threading.Thread(target=send_loop, daemon=True).start() #args=(netconn,), 
-
-    #Test updating player name - Not meant to keep this
-    #name_cmd = Command(p.id, "NAME", ("Test Name"))
-    #netconn.send(name_cmd) #Send heartbeat to Server
-    #network_check(netconn, p, HBT_time) #start the heartbeat timer
+    send_thread = threading.Thread(target=send_loop, daemon=True).start() #args=(netconn,), 
 
     print("Starting Client process")  #All Client processing happens within this loop
     while True:
@@ -163,9 +172,9 @@ def network_check(netconn, p) -> None:
     print(".", end='', flush=True)
     if time.time() >= t_end:
         hbt_cmd = Command(p.id, "HBT", "Ready to play")
-        lock.acquire()
+        send_lock.acquire()
         send_queue.put(hbt_cmd)  #Or use the Send Queue to send the command...
-        lock.release()
+        send_lock.release()
         t_end = time.time() + 5 #Pause 5 seconds until next heartbeat / This delay is blocking (bad)
 
 main() 
