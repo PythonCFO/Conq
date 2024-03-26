@@ -2,16 +2,11 @@ import tkinter as tk
 import customtkinter as ctk 
 import threading
 from _thread import *
-import socket, pickle
+import socket
 from player import Player
 from gameplay import Gameplay, Command
-
-'''  ToDo
-    GUI needs to display game status
-    Server needs to manage turns
-    Server needs critical data objects
-    Server needs defined command protocol with Clients
-'''
+import queue
+from network_server import Server_Socket, New_Client_Connection
 
 global textbox
 all_players = []
@@ -57,64 +52,146 @@ player_values=[]
 list_players = tk.Listbox(frame_1, listvariable=player_values, height=10, background="#2E2E2F")
 list_players.pack(side="top", padx=10, pady=10, expand=True, fill="both")
 
+send_queue = queue.Queue()
+recv_queue = queue.Queue()
+ack_queue = queue.Queue()
+admin_queue = queue.Queue()
+lock=threading.Lock()
+send_lock=threading.Lock()
+recv_lock=threading.Lock()
+proc_lock=threading.Lock()
 
 def socket_manager():
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.bind(('localhost', 5555))
-    s.listen(5)
-    print("Server is listening for socket connections")
+    def send_loop(new_client_conn, player):
+        print("Client Send Thread Started: " + player.id)  #All Client processing happens within this loop   
+        RTS = True  #Ready To Send - Prior ACKs received & *Socket healthy*
+        while True:
+            send_lock.acquire()
+            if RTS and send_queue.qsize()>0:
+                print("\nS", end='', flush=True)
+                #print(str(send_queue.qsize()), end='', flush=True)
+                message = send_queue.get()
+                if type(message) == Command:  #Validate msg is well formed
+
+                    new_client_conn.client_send(message)
+
+                    if message.command == "ACK":  #Ack'd a Server's command
+                        print("A", end='', flush=True)
+                    elif message.command == "HBT":  #Ack'd a Server's command
+                        print("H", end='', flush=True)
+                    elif message.command == "NAME":  #Ack'd a Server's command
+                        print("N", end='', flush=True)
+                    else:
+                        print("C", end='', flush=True)  #Sent a Client command
+                else:  #Else abandon the bad outgoing message
+                    print("!", end='', flush=True)
+                print(str(ack_queue.qsize()), end='', flush=True)
+                print(str(recv_queue.qsize()), end='', flush=True)
+                message = ""
+                print("s", end='', flush=True)  #wrap it up
+            send_lock.release()
+
+    def recv_loop(new_client_conn, player):
+        print("Client Receive Thread Started: " + player.id)
+        while True:
+            message = new_client_conn.client_recv()  #Get any inbound messages
+            print("\nR", end='', flush=True)
+            recv_lock.acquire()
+            if type(message) == Command:
+                textbox.insert("end", message.command + " from " + message.id + ": " + message.cmd_data + "\n")
+                if message.command == "HBT": #send_queue will be waiting for  this
+                    recv_queue.put(message)
+                    print("H", end='', flush=True)
+                elif message.command == "ACK": #send_queue will be waiting for  this
+                    ack_queue.put(message)
+                    print("A", end='', flush=True)
+                else:
+                    recv_queue.put(message) #Then push onto the incoming queue
+                    print("C", end='', flush=True)
+            else: 
+                print("!", end='', flush=True)
+                print(f"Goodbye to {player.name}")
+                textbox.insert("end", "Goodbye to player " + player.name + "\n")
+                remove_player(player.conn) 
+                update_players()  #Needs to broadcast the change to all Players
+                #TODO Need to close the SOCKET and Turn off the client THREADs!
+                break  #Exit this While True loop; 
+                        #closes the Socket for this specific Client - where??                
+            #Wrap it up
+            print(str(ack_queue.qsize()), end='', flush=True)
+            print(str(recv_queue.qsize()), end='', flush=True)
+            message = ""
+            recv_lock.release()
+
+            #Process all queues here - random that it is in recv thread
+            #Is this code tied to the incoming message receipt? 
+            #Data in a queue feels 'pre-certified' as okay to process
+            proc_lock.acquire()
+            if ack_queue.qsize()>0:
+                pop_cmd = ack_queue.get()
+                if type(pop_cmd) == Command:  #Validate msg is well formed
+                    #Unlikely anything needs to be sent
+                    #Only confirm previously sent CMDs have been received
+                    #Insert code to process ACK messages
+                    pass
+                else:
+                    print("!", end='', flush=True)  #queues should be all clean data
+                pop_cmd = ""
+            if recv_queue.qsize()>0:
+                pop_cmd = recv_queue.get()
+                if type(pop_cmd) == Command:  #Validate msg is well formed
+                    send_queue.put(Command(new_player.id, "ACK", "Command " + pop_cmd.command + " received"))  #Or use the Send Queue to send the command...
+                    #*** Additional processing of CMD messages & Gameplay ***
+                else:
+                    print("!recv_q", end='', flush=True)
+                pop_cmd = ""
+            #wrap it up
+            print("r", end='', flush=True)
+            print(str(ack_queue.qsize()), end='', flush=True)
+            print(str(recv_queue.qsize()), end='', flush=True)
+            proc_lock.release()
+
+    #Set up Server side Socket and set it to listen
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server = "localhost"
+    port = 5555
+    addr = (server, port)
+    try:
+        sock.bind(addr)
+        sock.listen(5)
+        print("Server is listening on socket")
+    except:
+        print("Failed to establish Server Socket")
+
+    #Allow Players to connect to the Server
     while True:
-        conn, address = s.accept()     # Blocks, waiting for connection
-        new_player = Player(conn)
-        all_players.append(new_player)
+        conn, address = sock.accept()     # Blocks, waiting for connection
+        #There are many conn instances per Server!
+        new_client_connection = New_Client_Connection(conn)
+        new_player = Player(new_client_connection)  #Create a player linked to the Socket conn
+        all_players.append(new_player)   #Do I really want to add Server to this???
         print(f"New connection from player ID: {new_player.id}")
+        
+        #Start threads to send/receive messages to one specific Client
+        recv_thread = threading.Thread(target=recv_loop, args=(new_client_connection, new_player,), daemon=True).start() #args=(netconn,), 
+        send_thread = threading.Thread(target=send_loop, args=(new_client_connection, new_player,), daemon=True).start() #args=(netconn,), 
+
+        #Send and ACK indicating "Welcome to Conq" to the new_player
+        ack_cmd = Command(new_player.id, "ACK", "Welcome to Conq!")
+        print(f"Welcome new player {new_player.id}")
+        textbox.insert("end", ("Welcome new player " + new_player.id + "\n"))
+        send_lock.acquire()
+        send_queue.put(ack_cmd)  #Or use the Send Queue to send the command...
+        send_lock.release()
+
         update_players()
-        print("All Players:")
+        print("\nAll Players:")
         for p in all_players:
             print("   Player" + ": " + p.id + " " + p.name)
 
-
-        #TODO  How is the following actually starting a new thread.  
-        #No Start command??   
-        #Looks like calling function in same process!!??
-        
-        #start_new_thread(threaded_client, (new_player,)).start
-        
-        client_socket_thread = threading.Thread(target=threaded_client, args=(new_player,), daemon=True)                               
-        client_socket_thread.start()
-
-
-#TODO -- For thread to send commands, it needs *Player* not just Conn
-def threaded_client(player):  # Create a Thread for each new Client Socket Connection
-    print("Inside threaded client")
-    connection = player.conn
-    hello_cmd = Command(player.id, "ACK", "Welcomes to Conq!")
-    connection.send(pickle.dumps(hello_cmd))
-    print("A new player has been welcomed to Conq!")
-    while True:
-        try:
-            #All I am doing is awaiting receipt of messages, not sending
-            client_cmd = pickle.loads(player.conn.recv(2048)) # Wait to receive Client data
-            if client_cmd == "":  
-                print("inside failure response section: 'if not data'")
-                #Should be a Command.  Should be in a Network module.
-                player.conn.send(pickle.dumps("Goodbye"))
-                print(f"Snd: Goodbye {player.name}")
-                textbox.insert("end", "Snd: Goodbye {player.name}\n")
-                remove_player(player.conn) 
-                update_players()
-                break  #Exit this While loop; closes the Socket for this specific Client
-            else:
-                print(f"{client_cmd.command} from {client_cmd.id}: '{client_cmd.cmd_data}'")
-                textbox.insert("end", client_cmd.command + " from " + client_cmd.id + ": " + client_cmd.cmd_data + "\n")
-                player.conn.send(pickle.dumps(Command(player.id, "ACK", "Let's get to it!")))
-        except:
-            print("Exited at the Except statement")
-            break
-
-    print(f"Connection closed to {player.conn}")
-    textbox.insert("end", ("Connection closed to " + str(player.id) + "\n"))
-    player.conn.close()
+    #print(f"Connection closed to {player.conn}")
+    #textbox.insert("end", ("Connection closed to " + str(player.id) + "\n"))
+    #player.conn.close()
 
 def remove_player(conn):
     #remove this player from the list of players
@@ -131,13 +208,10 @@ def update_players():
 
 #Start game to handle gameplay commands
 gp = Gameplay()
-
-
 # Start up a thread dedicated to managing Socket connections
-socket_thread = threading.Thread(target=socket_manager, daemon=True)                               
-socket_thread.start()
-
+socket_thread = threading.Thread(target=socket_manager, daemon=True).start()
 #Start up the GUI thread to run the Risk server
 root.mainloop() 
 
 
+ 
