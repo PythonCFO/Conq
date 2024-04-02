@@ -1,0 +1,8 @@
+# directories
+venv/
+
+# python cache
+*.pyc
+
+# spreadsheets 
+*.xlsx
