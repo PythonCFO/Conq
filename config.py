@@ -46,7 +46,7 @@ classic_territories = [
 
 region_bonus = {'North America':5, 'South America':2, 'Europe':5, 'Africa':3, 'Asia':7, 'Australia':2}
 
-deck = [
+cards = [
     ['Alaska', 'Cavalry'],
     ['Alberta', 'Artillery'],
     ['Central America', 'Cavalry'],
@@ -89,7 +89,7 @@ deck = [
     ['Indonesia', 'Artillery'],
     ['New Guinea', 'Infantry'],
     ['Western Australia', 'Cavalry'],
-    ['Wild', 'All'],
-    ['Wild', 'All']
+    ['Wild_1', 'All'],  # Need unique name
+    ['Wild_2', 'All']   # Need unique name
 ]
 
