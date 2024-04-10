@@ -8,6 +8,11 @@ from PySide6.QtSvgWidgets import QGraphicsSvgItem
 
 from ui_clientGUI import Ui_MainWindow
 
+# Test Turns stuff
+import sys
+from collections import Counter
+import random
+from config import classic_territories, region_bonus, cards
 
 class CustomGraphicsView(qtw.QGraphicsView):
     def __init__(self, parent=None):
@@ -29,10 +34,9 @@ class CustomGraphicsView(qtw.QGraphicsView):
 
 
     def mousePressEvent(self, event: qtg.QMouseEvent):
-        #print('Mouse Click')
         # Convert the mouse click position to scene coordinates
         scenePos = self.mapToScene(event.pos())
-        print(f"Mouse click at scene coordinates: ({scenePos.x()}, {scenePos.y()})")
+        #print(f"Mouse click at scene coordinates: ({scenePos.x()}, {scenePos.y()})")
         if window.cbxAddCountries.isChecked():                
             plot_and_log_point(scenePos, window.linCountry.text())
         super().mousePressEvent(event)
@@ -48,12 +52,6 @@ class CountryItem(qtw.QGraphicsItem):
         self.polygon = qtg.QPolygonF(points)
 
     def boundingRect(self):
-        # Calculate the bounding rectangle of the polygon
-        #minX = min(x.x() for x in self.points)
-        #minY = min(x.y() for x in self.points)
-        #maxX = max(x.x() for x in self.points)
-        #maxY = max(x.y() for x in self.points)
-        #return qtc.QRectF(minX, minY, maxX - minX, maxY - minY)
         return self.polygon.boundingRect()
 
     def shape(self):
@@ -61,17 +59,7 @@ class CountryItem(qtw.QGraphicsItem):
         path.addPolygon(self.polygon)
         return path
     
-    def paint(self, painter, option, widget=None):
-        #path = qtg.QPainterPath()
-        #path.moveTo(self.points[0][0], self.points[0][1])  # Move to the first point
-        #for x, y in self.points[1:]:  # Draw lines to the rest of the points
-        #    print(x,y)
-        #    path.lineTo(x, y)
-        #path.closeSubpath()  # Close the path to form a polygon
-
-        #painter.setBrush(qtg.QBrush(qtc.Qt.GlobalColor.red))
-        #painter.drawPath(path)
-        
+    def paint(self, painter, option, widget=None):        
         # Should not need this
         painter.drawPolygon(self.polygon)
         
@@ -88,17 +76,11 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)              
 
-        self.cbxAddCountries.stateChanged.connect(self.cbxAddCountryChanged)
-        #checkbox = self.findChild(qtw.QCheckBox, "yourCheckboxName")
-
-        #self.linCountry.setEnabled(False)
+        # This capability is for making a map with SVG background
+        #self.cbxAddCountries.stateChanged.connect(self.cbxAddCountryChanged)
         if self.cbxAddCountries.isChecked():
             self.linCountry.setEnabled(True)
-        #self.statusBar.showMessage("Ready")
-        
-        #map_coordinates = load_coordinates()
-        country_coordinates = load_country_coordinates()
-        
+
         # Overrides mapview created by Designer
         # TODO: how do this properly
         self.mapView = CustomGraphicsView(self.centralwidget)
@@ -109,60 +91,41 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         self.mapView.setScene(self.mapScene)
         #self.mapView.setFixedSize(800, 600)        # Set in Designer
 
+        #map_coordinates = load_coordinates()
+        country_coordinates = load_country_coordinates()
+        
+
         # load SVG background
-        svgBackground = QGraphicsSvgItem('resources/Risk_board.svg')
-        svgBackground.setZValue(-100)
-        self.mapScene.addItem(svgBackground)
+        #svgBackground = QGraphicsSvgItem('resources/Risk_board.svg')
+        #svgBackground.setZValue(-100)
+        #self.mapScene.addItem(svgBackground)
 
 
         # Adding countries (or other items) to the map
         self.addCountriesToMap(self.mapScene, country_coordinates)
         # Plot the country outlines of known countries (subset of map_coordinates)
-        self.country_names = list(set(x[0] for x in country_coordinates))
-        for name in self.country_names:
-            points = [x[1] for x in country_coordinates if x[0] == name]
-            self.plot_country(name, points[0]) #TODO: Why is points creating a list ?
+        #self.country_names = list(set(x[0] for x in country_coordinates))
+        #for name in self.country_names:
+        #    points = [x[1] for x in country_coordinates if x[0] == name]
+        #    self.plot_territory(name, points[0]) #TODO: Why is points creating a list ?
 
         #self.plot_coordinates(map_coordinates)
 
-
-            
-    def plot_country_old(self, country):    
+    def plot_territory(self, name, coords):    
+        # Use this function to create a map.  It shows the actual coordinates that are used for borders
         pen = qtg.QPen(qtc.Qt.red)
-        radius = 1
-        for point in country[1]:
-            self.mapScene.addEllipse(point.x() - radius, point.y() - radius, radius * 2, radius * 2, pen)
-
-    def plot_country(self, name, coords):    
-        if name == 'Mongolia':
-            pen = qtg.QPen(qtc.Qt.cyan)
-        elif name == 'Siberia':
-            pen = qtg.QPen(qtc.Qt.yellow)
-        elif name == 'India':
-            pen = qtg.QPen(qtc.Qt.magenta)
-        #elif name == 'Eastern United States':
-        #    pen = qtg.QPen(qtc.Qt.magenta)
-        #elif name == 'Western United States': 
-        #    pen = qtg.QPen(qtc.Qt.white)
-        #elif name == 'Eastern United States':
-        #    pen = qtg.QPen(qtc.Qt.magenta)
-        #elif name == 'Ontario':
-        #    pen = qtg.QPen(qtc.Qt.cyan)
-        #elif name == 'Alaska':
-        #    pen = qtg.QPen(qtc.Qt.white)
-        else:
-            pen = qtg.QPen(qtc.Qt.red)
         radius = 2
         for point in coords:
             self.mapScene.addEllipse(point.x() - radius, point.y() - radius, radius * 2, radius * 2, pen)
 
     
     # This function not needed once have svg capability
-    def plot_coordinates(self, coordinates):
-        pen = qtg.QPen(qtc.Qt.black)
-        radius = 1  # Radius of the points
-        for point in coordinates:
-            self.mapScene.addEllipse(point[0] - radius, point[1] - radius, radius * 2, radius * 2, pen)
+    #def plot_coordinates(self, coordinates):
+    #    Unclear what this function
+    #    pen = qtg.QPen(qtc.Qt.black)
+    #    radius = 1  # Radius of the points
+    #    for point in coordinates:
+    #        self.mapScene.addEllipse(point[0] - radius, point[1] - radius, radius * 2, radius * 2, pen)
     
 
     def addCountriesToMap(self, mapScene, countries):
