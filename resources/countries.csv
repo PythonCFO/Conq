@@ -1,2262 +1,4723 @@
-Argentina,232.5,400.9
-Argentina,230,401.7
-Argentina,228.6,403
-Argentina,229.5,404.5
-Argentina,226.5,405.2
-Argentina,223.3,405.8
-Argentina,220.8,406.8
-Argentina,217,407
-Argentina,217.3,408.5
-Argentina,219.9,410.1
-Argentina,220.2,412.6
-Argentina,221.6,413.9
-Argentina,219.7,416.3
-Argentina,217.3,418
-Argentina,214.9,417.6
-Argentina,212.6,419
-Argentina,209.9,419.2
-Argentina,206.6,420
-Argentina,207.6,422.5
-Argentina,205.5,425.6
-Argentina,205.3,426.6
-Argentina,202.1,427.1
-Argentina,201.6,428.9
-Argentina,202.7,429.6
-Argentina,200.8,432.3
-Argentina,201.6,434.6
-Argentina,200.4,436.8
-Argentina,199.5,438.9
-Argentina,197.2,440.7
-Argentina,196.7,442.2
-Argentina,198.2,443.7
-Argentina,197.6,446
-Argentina,198.8,447.3
-Argentina,198.6,450.1
-Argentina,198.1,452.9
-Argentina,197.8,454.8
-Argentina,198.1,456.3
-Argentina,195.9,459
-Argentina,196.1,461.7
-Argentina,196.8,463.9
-Argentina,198,465.1
-Argentina,197.3,467.6
-Argentina,198.8,468.8
-Argentina,200,470.4
-Argentina,200.1,472.4
-Argentina,201.5,473.9
-Argentina,201.2,475.8
-Argentina,200.7,478.6
-Argentina,202.5,477
-Argentina,204.8,476.6
-Argentina,206.6,476.3
-Argentina,208,477.5
-Argentina,209,479
-Argentina,211.4,479.1
-Argentina,213,479.2
-Argentina,214.6,481.1
-Argentina,212.5,482.2
-Argentina,209.9,482.2
-Argentina,207.8,483.4
-Argentina,204.8,484
-Argentina,202.2,482.8
-Argentina,200.7,481
-Argentina,198.1,478.5
-Argentina,194.7,478.5
-Argentina,193.4,477.5
-Argentina,191.7,477.6
-Argentina,191.6,476.6
-Argentina,189.5,475.9
-Argentina,189.5,474.5
-Argentina,187.3,474.1
-Argentina,185.4,472.8
-Argentina,183.6,470.9
-Argentina,181.2,469.8
-Argentina,180,467.8
-Argentina,179.5,466.1
-Argentina,177.8,465
-Argentina,177.6,462.2
-Argentina,176.5,460.4
-Argentina,175.8,458.1
-Argentina,174.6,456.6
-Argentina,174.5,454.1
-Argentina,174.3,451.7
-Argentina,172.8,449.6
-Argentina,171.7,446.5
-Argentina,172.2,444
-Argentina,173,440.7
-Argentina,172.3,440.1
-Argentina,173.8,434.7
-Argentina,174.9,432.5
-Argentina,173.9,430.2
-Argentina,174.6,428.5
-Argentina,174.6,426.7
-Argentina,172.8,425.5
-Argentina,172.9,415.8
-Argentina,174.1,413.4
-Argentina,174.6,410.1
-Argentina,173.6,408.2
-Argentina,174.8,406.7
-Argentina,174.7,403.6
-Argentina,175.9,399
-Argentina,176.1,395.7
-Argentina,174.9,390.2
-Argentina,175.8,387.4
-Argentina,176,385.3
-Argentina,176.1,382.5
-Argentina,177.2,380.2
-Argentina,175.8,375.3
-Argentina,176.7,372.7
-Argentina,176.5,367.5
-Argentina,177.5,362.8
-Argentina,177.3,359.2
-Argentina,176.4,355.6
-Argentina,179.4,354.2
-Argentina,179.5,357.7
-Argentina,181.8,360.3
-Argentina,183.9,363.1
-Argentina,185.7,365.3
-Argentina,188.2,368.6
-Argentina,190.1,367.3
-Argentina,189.8,363.2
-Argentina,191.9,363.1
-Argentina,193.9,366.1
-Argentina,196.5,365.9
-Argentina,198.8,365.2
-Argentina,201.3,366
-Argentina,203.6,366.2
-Argentina,205.4,367.9
-Argentina,206.6,369.9
-Argentina,208.6,370.2
-Argentina,210.5,372.4
-Argentina,213.3,373.1
-Argentina,216.9,373.3
-Argentina,216.9,375.3
-Argentina,216.6,378.7
-Argentina,214.5,382
-Argentina,215.7,383.1
-Argentina,219.4,382.1
-Argentina,222.1,380.6
-Argentina,224.9,378.6
-Argentina,227.9,376.8
-Argentina,227.9,379.9
-Argentina,225.7,382
-Argentina,224.9,384.5
-Argentina,222.2,385.2
-Argentina,220.2,387.7
-Argentina,222.3,388.6
-Argentina,225.2,389.1
-Argentina,224.8,392
-Argentina,224.8,394.1
-Argentina,229.1,394.1
-Argentina,228.7,398.6
-Peru,173.3,354.5
-Peru,171,351.1
-Peru,167.8,349.5
-Peru,165.5,347.6
-Peru,162.7,346.3
-Peru,160.9,344.8
-Peru,158.9,342.4
-Peru,157.8,339.9
-Peru,158.3,336.7
-Peru,155.6,334.7
-Peru,152.9,331.6
-Peru,150.9,329
-Peru,149,326.5
-Peru,149.1,323.5
-Peru,147.2,321.7
-Peru,145.4,318.4
-Peru,145,314.5
-Peru,145.2,312
-Peru,146.2,310.8
-Peru,144.8,308.4
-Peru,144.8,306.2
-Peru,146,303.5
-Peru,146.9,301
-Peru,147.6,298.6
-Peru,149,296.6
-Peru,151.7,297.6
-Peru,153.8,299.7
-Peru,155.6,302.2
-Peru,158.9,302.2
-Peru,161.5,303.5
-Peru,163.8,304.3
-Peru,166,304.5
-Peru,168.1,305.7
-Peru,170.4,306.5
-Peru,171.8,309.2
-Peru,168,309.4
-Peru,167.5,312.4
-Peru,166.7,315.1
-Peru,163.9,315.8
-Peru,161.6,318
-Peru,162.1,320.6
-Peru,164.3,322
-Peru,166.9,322.6
-Peru,168.3,324.1
-Peru,171.6,325
-Peru,175.5,325
-Peru,176.6,326
-Peru,175.8,327.3
-Peru,172.9,329
-Peru,172.2,330.7
-Peru,173.1,333.6
-Peru,174.7,334.2
-Peru,176.7,333.8
-Peru,181,331.9
-Peru,183.6,331.2
-Peru,186.2,331.1
-Peru,186.8,329.7
-Peru,188.3,328.8
-Peru,190.2,329.6
-Peru,191.9,330.7
-Peru,192.9,332.8
-Peru,194.3,333.8
-Peru,196.3,335
-Peru,199.1,335.7
-Peru,200.5,336.8
-Peru,201.4,338.3
-Peru,202.7,338.8
-Peru,205.8,338.3
-Peru,206.9,338.9
-Peru,208.1,341.7
-Peru,209.2,343.2
-Peru,209.1,345.3
-Peru,210.5,345.9
-Peru,212.7,347.2
-Peru,213.4,348.5
-Peru,214,350.6
-Peru,215.4,352.4
-Peru,217.8,358.3
-Peru,217.1,361
-Peru,217.7,362.2
-Peru,219.2,363.1
-Peru,221,364.7
-Peru,221.7,366.1
-Peru,223.5,366.8
-Peru,224.1,369.1
-Peru,224.9,372.4
-Peru,226.1,374.1
-Peru,227.9,376.8
-Peru,224.9,378.6
-Peru,222.1,380.6
-Peru,219.4,382.1
-Peru,215.7,383.1
-Peru,214.5,382
-Peru,216.6,378.7
-Peru,216.9,375.3
-Peru,216.9,373.3
-Peru,213.3,373.1
-Peru,210.5,372.4
-Peru,208.6,370.2
-Peru,206.6,369.9
-Peru,205.4,367.9
-Peru,203.6,366.2
-Peru,201.3,366
-Peru,198.8,365.2
-Peru,196.5,365.9
-Peru,193.9,366.1
-Peru,191.9,363.1
-Peru,189.8,363.2
-Peru,190.1,367.3
-Peru,188.2,368.6
-Peru,185.7,365.3
-Peru,183.9,363.1
-Peru,181.8,360.3
-Peru,179.5,357.7
-Peru,179.4,354.2
-Peru,176.4,355.6
-Venezeula,150.7,293.5
-Venezeula,150.6,290.2
-Venezeula,150.6,287
-Venezeula,152.6,284.6
-Venezeula,154.5,282.3
-Venezeula,154.8,278.8
-Venezeula,155.9,275.2
-Venezeula,155.9,272.1
-Venezeula,159.4,271.3
-Venezeula,161.6,270.9
-Venezeula,166,268.2
-Venezeula,169.6,266
-Venezeula,173.3,265.5
-Venezeula,175.9,263
-Venezeula,179.9,262.6
-Venezeula,181.4,264.3
-Venezeula,181.6,266.3
-Venezeula,184.5,266
-Venezeula,185.2,264.8
-Venezeula,187.2,266.1
-Venezeula,189.5,265.9
-Venezeula,195,267.7
-Venezeula,200.7,266.9
-Venezeula,203.2,268.3
-Venezeula,205.9,270.4
-Venezeula,208,272.7
-Venezeula,209.9,274.3
-Venezeula,211.7,275.8
-Venezeula,214.6,276.8
-Venezeula,215.6,278.3
-Venezeula,217.2,278.2
-Venezeula,217.7,280.5
-Venezeula,220.8,279.5
-Venezeula,222.8,280.7
-Venezeula,224.7,281.1
-Venezeula,225.5,282.1
-Venezeula,230.7,282.9
-Venezeula,232.2,281.6
-Venezeula,235.7,284.9
-Venezeula,231.6,289.1
-Venezeula,229.8,292.7
-Venezeula,220.8,293.8
-Venezeula,220.3,295.6
-Venezeula,208.3,295.5
-Venezeula,206.8,291.5
-Venezeula,205.6,290.7
-Venezeula,205.2,286
-Venezeula,200.6,287.7
-Venezeula,197.5,290.4
-Venezeula,194.6,289.2
-Venezeula,194,294.6
-Venezeula,192.1,295.7
-Venezeula,190.3,296.9
-Venezeula,187.2,297.3
-Venezeula,184.2,295.2
-Venezeula,182,294.8
-Venezeula,180,296.3
-Venezeula,178.1,298.8
-Venezeula,177.1,301.9
-Venezeula,178.8,303.7
-Venezeula,178.6,306.5
-Venezeula,175,308
-Venezeula,171.8,309.2
-Venezeula,170.4,306.5
-Venezeula,168.1,305.7
-Venezeula,166,304.5
-Venezeula,163.8,304.3
-Venezeula,161.5,303.5
-Venezeula,158.9,302.2
-Venezeula,155.6,302.2
-Venezeula,153.8,299.7
-Venezeula,151.7,297.6
-Venezeula,149,296.6
-Brazil,237.3,288.7
-Brazil,238.4,291.4
-Brazil,240.2,293.7
-Brazil,239.3,296.4
-Brazil,236.4,298.2
-Brazil,238.6,299.5
-Brazil,240.6,300.4
-Brazil,243.6,300.1
-Brazil,246.7,300.5
-Brazil,248.9,300.6
-Brazil,251.7,301.5
-Brazil,254.8,302.4
-Brazil,256.5,304.5
-Brazil,259,304
-Brazil,260.9,304.9
-Brazil,263.8,304.2
-Brazil,264.8,305.5
-Brazil,267.1,306.1
-Brazil,270.5,307.5
-Brazil,273.8,309.3
-Brazil,275.5,311.4
-Brazil,278,311.8
-Brazil,280.6,314.3
-Brazil,281.1,317.9
-Brazil,282,321.3
-Brazil,281.6,324.4
-Brazil,279.9,327.3
-Brazil,278.6,329.3
-Brazil,273.7,330.4
-Brazil,274.3,334.1
-Brazil,271.1,336.8
-Brazil,270.7,340.6
-Brazil,270.6,342.3
-Brazil,271.1,344.9
-Brazil,269.9,347
-Brazil,270.2,352.6
-Brazil,269.4,355.1
-Brazil,266.5,356.8
-Brazil,266.4,359.1
-Brazil,265.2,361.2
-Brazil,264.1,362.2
-Brazil,263.6,364.5
-Brazil,260.4,367.3
-Brazil,249.6,369.9
-Brazil,244.8,371.9
-Brazil,242.9,375.5
-Brazil,242,378.9
-Brazil,241.1,380.1
-Brazil,241.1,384.1
-Brazil,241.7,385.8
-Brazil,241.3,387.8
-Brazil,239.7,388.9
-Brazil,237.5,390
-Brazil,237.1,392.9
-Brazil,234.8,396.4
-Brazil,233.9,398.3
-Brazil,232.5,400.9
-Brazil,228.7,398.6
-Brazil,229.1,394.1
-Brazil,224.8,394.1
-Brazil,224.8,392
-Brazil,225.2,389.1
-Brazil,222.3,388.6
-Brazil,220.2,387.7
-Brazil,222.2,385.2
-Brazil,224.9,384.5
-Brazil,225.7,382
-Brazil,227.9,379.9
-Brazil,227.9,376.8
-Brazil,226.1,374.1
-Brazil,224.9,372.4
-Brazil,224.1,369.1
-Brazil,223.5,366.8
-Brazil,221.7,366.1
-Brazil,221,364.7
-Brazil,219.2,363.1
-Brazil,217.7,362.2
-Brazil,217.1,361
-Brazil,217.8,358.3
-Brazil,215.4,352.4
-Brazil,214,350.6
-Brazil,213.4,348.5
-Brazil,212.7,347.2
-Brazil,210.5,345.9
-Brazil,209.1,345.3
-Brazil,209.2,343.2
-Brazil,208.1,341.7
-Brazil,206.9,338.9
-Brazil,205.8,338.3
-Brazil,202.7,338.8
-Brazil,201.4,338.3
-Brazil,200.5,336.8
-Brazil,199.1,335.7
-Brazil,196.3,335
-Brazil,194.3,333.8
-Brazil,192.9,332.8
-Brazil,191.9,330.7
-Brazil,190.2,329.6
-Brazil,188.3,328.8
-Brazil,186.8,329.7
-Brazil,186.2,331.1
-Brazil,183.6,331.2
-Brazil,181,331.9
-Brazil,176.7,333.8
-Brazil,174.7,334.2
-Brazil,173.1,333.6
-Brazil,172.2,330.7
-Brazil,172.9,329
-Brazil,175.8,327.3
-Brazil,176.6,326
-Brazil,175.5,325
-Brazil,171.6,325
-Brazil,168.3,324.1
-Brazil,166.9,322.6
-Brazil,164.3,322
-Brazil,162.1,320.6
-Brazil,161.6,318
-Brazil,163.9,315.8
-Brazil,166.7,315.1
-Brazil,167.5,312.4
-Brazil,168,309.4
-Brazil,171.8,309.2
-Brazil,175,308
-Brazil,178.6,306.5
-Brazil,178.8,303.7
-Brazil,177.1,301.9
-Brazil,178.1,298.8
-Brazil,180,296.3
-Brazil,182,294.8
-Brazil,184.2,295.2
-Brazil,187.2,297.3
-Brazil,190.3,296.9
-Brazil,192.1,295.7
-Brazil,194,294.6
-Brazil,194.6,289.2
-Brazil,197.5,290.4
-Brazil,200.6,287.7
-Brazil,205.2,286
-Brazil,205.6,290.7
-Brazil,206.8,291.5
-Brazil,208.3,295.5
-Brazil,220.3,295.6
-Brazil,220.8,293.8
-Brazil,229.8,292.7
-Brazil,231.6,289.1
-Brazil,235.7,284.9
-Central America,153.4,280.9
-Central America,152,278.5
-Central America,150,277.6
-Central America,148.1,276.3
-Central America,146.5,277.5
-Central America,144.8,276.5
-Central America,143.6,275.1
-Central America,142.8,273.5
-Central America,141.3,272.6
-Central America,141.7,270.6
-Central America,141.4,269.2
-Central America,140.3,267.5
-Central America,140.1,265.1
-Central America,139.8,262.3
-Central America,139,260
-Central America,137.6,258.2
-Central America,136.3,254.7
-Central America,135.6,253.1
-Central America,133.5,251.7
-Central America,125.3,248.3
-Central America,121.6,247.2
-Central America,119,246.2
-Central America,118.2,244.7
-Central America,117.9,242.7
-Central America,116,241.5
-Central America,116,240.2
-Central America,118.1,237.6
-Central America,118.4,235.6
-Central America,116.8,234.5
-Central America,113.8,232.3
-Central America,113.5,231.6
-Central America,110.4,231.9
-Central America,108.3,232.7
-Central America,106.9,233.4
-Central America,106.2,232
-Central America,106.4,228.1
-Central America,106.3,226.9
-Central America,104.8,226.5
-Central America,104.2,225.3
-Central America,103.8,222.4
-Central America,102.8,218.1
-Central America,102.3,215.2
-Central America,102.5,213.1
-Central America,101.2,211
-Central America,99.3,209.6
-Central America,96.7,208.2
-Central America,96,205.8
-Central America,96.2,202.6
-Central America,97.5,204
-Central America,105.3,203.9
-Central America,109.2,206
-Central America,111.4,208.4
-Central America,120.7,208.1
-Central America,124.5,211.5
-Central America,126.4,212.1
-Central America,128.8,214
-Central America,133.7,213.8
-Central America,134.1,217.6
-Central America,133.2,221.3
-Central America,131.9,223.8
-Central America,131.1,225.6
-Central America,133,227.5
-Central America,132.6,230.3
-Central America,132.9,233.3
-Central America,133.5,235.2
-Central America,133.7,236.5
-Central America,135.7,240
-Central America,137.8,241.3
-Central America,139.6,241.5
-Central America,142.2,240.7
-Central America,145,239.6
-Central America,146.3,239.9
-Central America,147.1,237.9
-Central America,148.1,235.6
-Central America,149.6,234.7
-Central America,151.6,235.3
-Central America,153.3,235.7
-Central America,154.6,235.4
-Central America,155.8,234.9
-Central America,155.5,238
-Central America,154.9,239.9
-Central America,153.6,242.4
-Central America,151.7,243.9
-Central America,151.2,245.8
-Central America,151,247.6
-Central America,148.8,248.1
-Central America,148.6,250.9
-Central America,150.7,252.3
-Central America,152.1,254.1
-Central America,152.4,256.2
-Central America,152,258.6
-Central America,150.6,259
-Central America,149.6,260.1
-Central America,150.1,262.9
-Central America,149.8,263.8
-Central America,148,263.8
-Central America,147,265.2
-Central America,146.8,267.1
-Central America,146.1,268.1
-Central America,146,270.6
-Central America,146.3,272.2
-Central America,148.5,272.6
-Central America,149.8,272.1
-Central America,151.4,271.1
-Central America,153.2,270.1
-Central America,154.9,270.4
-Central America,155.9,272.1
-Central America,155.9,275.2
-Central America,154.8,278.8
-Central America,154.5,282.3
-Western United States,133.7,213.8
-Western United States,128.8,214
-Western United States,126.4,212.1
-Western United States,124.5,211.5
-Western United States,120.7,208.1
-Western United States,111.4,208.4
-Western United States,109.2,206
-Western United States,105.3,203.9
-Western United States,97.5,204
-Western United States,96.2,202.6
-Western United States,95.9,200.5
-Western United States,95.2,198.5
-Western United States,95.1,196.5
-Western United States,94.2,194.3
-Western United States,92.7,192.1
-Western United States,91.2,190.1
-Western United States,90,187
-Western United States,89.8,184.4
-Western United States,89.6,181.4
-Western United States,89.9,179.5
-Western United States,89.9,177.3
-Western United States,89.9,174.7
-Western United States,90.4,172.4
-Western United States,91.1,169.8
-Western United States,91.4,167.1
-Western United States,92,164.4
-Western United States,92.4,161.5
-Western United States,93,159.4
-Western United States,93.9,157.1
-Western United States,94.8,155.6
-Western United States,95.1,153.1
-Western United States,96.2,151.5
-Western United States,96.4,148.9
-Western United States,96.4,146.3
-Western United States,100.7,146.4
-Western United States,107.3,146.4
-Western United States,113.4,146.4
-Western United States,121.1,146.4
-Western United States,132.2,146.4
-Western United States,144.4,146.4
-Western United States,157.8,146
-Western United States,157.7,154.7
-Western United States,157.7,166.2
-Western United States,157.9,174.5
-Western United States,157.8,182.6
-Western United States,146.2,183.5
-Western United States,145.1,184.1
-Western United States,144.8,185.7
-Western United States,144.7,190.2
-Western United States,144,191.4
-Western United States,142.5,190.9
-Western United States,138.9,192.5
-Western United States,138.3,194.3
-Western United States,137.7,197.5
-Western United States,136.7,203.7
-Western United States,134.5,204.5
-Western United States,132.1,205
-Western United States,131.5,205.4
-Western United States,131.7,207.8
-Western United States,133.2,208.5
-Western United States,133.1,210.6
-Western United States,133.6,212.6
-Eastern United States,133,227.5
-Eastern United States,131.1,225.6
-Eastern United States,131.9,223.8
-Eastern United States,133.2,221.3
-Eastern United States,134.1,217.6
-Eastern United States,133.7,213.8
-Eastern United States,133.6,212.6
-Eastern United States,133.1,210.6
-Eastern United States,133.2,208.5
-Eastern United States,131.7,207.8
-Eastern United States,131.5,205.4
-Eastern United States,132.1,205
-Eastern United States,134.5,204.5
-Eastern United States,136.7,203.7
-Eastern United States,137.7,197.5
-Eastern United States,138.3,194.3
-Eastern United States,138.9,192.5
-Eastern United States,142.5,190.9
-Eastern United States,144,191.4
-Eastern United States,144.7,190.2
-Eastern United States,144.8,185.7
-Eastern United States,145.1,184.1
-Eastern United States,146.2,183.5
-Eastern United States,157.8,182.6
-Eastern United States,157.9,174.5
-Eastern United States,157.7,166.2
-Eastern United States,157.7,154.7
-Eastern United States,157.8,146
-Eastern United States,159.7,145.9
-Eastern United States,164.3,145.9
-Eastern United States,164.7,151.4
-Eastern United States,168.4,149.9
-Eastern United States,170.1,149.8
-Eastern United States,171.9,150.1
-Eastern United States,174.6,148.5
-Eastern United States,175.8,148.8
-Eastern United States,176.8,151.8
-Eastern United States,178.3,154.5
-Eastern United States,180.1,159.6
-Eastern United States,181.1,163.9
-Eastern United States,180.6,166
-Eastern United States,178.9,168.4
-Eastern United States,180.8,170.3
-Eastern United States,183.7,172.7
-Eastern United States,185.5,172.5
-Eastern United States,188,170.3
-Eastern United States,188.4,168.8
-Eastern United States,188,167.2
-Eastern United States,189.6,166.6
-Eastern United States,191.4,166.4
-Eastern United States,193.7,164
-Eastern United States,195.4,163.8
-Eastern United States,198.8,162.6
-Eastern United States,199.9,161.6
-Eastern United States,203.9,161.4
-Eastern United States,207.9,161
-Eastern United States,211.2,160.6
-Eastern United States,213.3,159.7
-Eastern United States,213,155.6
-Eastern United States,214.8,154.2
-Eastern United States,217,153.4
-Eastern United States,219.2,154.3
-Eastern United States,221.7,156.7
-Eastern United States,221.3,159.5
-Eastern United States,220.6,162.2
-Eastern United States,221,163.3
-Eastern United States,223.6,163.6
-Eastern United States,224.5,164.5
-Eastern United States,225.3,166.2
-Eastern United States,226.8,166.2
-Eastern United States,226.3,168.8
-Eastern United States,224.7,170.2
-Eastern United States,222.7,171.8
-Eastern United States,221.5,172.8
-Eastern United States,220.2,171.1
-Eastern United States,221.5,168.4
-Eastern United States,221.9,166.6
-Eastern United States,221.9,165.1
-Eastern United States,219.3,165.6
-Eastern United States,217.6,165.5
-Eastern United States,215.9,167.7
-Eastern United States,214,169.1
-Eastern United States,212.7,171.1
-Eastern United States,211.2,173.3
-Eastern United States,211.3,175.9
-Eastern United States,212.1,178.1
-Eastern United States,210.8,180.4
-Eastern United States,208.9,180.9
-Eastern United States,207,182.8
-Eastern United States,203.7,186.7
-Eastern United States,202.2,188.1
-Eastern United States,200.4,188.9
-Eastern United States,199.5,190.3
-Eastern United States,199.2,191.7
-Eastern United States,199.8,193.4
-Eastern United States,201.2,194
-Eastern United States,202.6,194.5
-Eastern United States,201.9,196.5
-Eastern United States,200.5,198.3
-Eastern United States,198.8,199.6
-Eastern United States,196.6,201.4
-Eastern United States,193.1,204.6
-Eastern United States,189.5,206
-Eastern United States,188.2,207.2
-Eastern United States,188.1,209.7
-Eastern United States,187,210.6
-Eastern United States,185.9,210.8
-Eastern United States,186.2,213.6
-Eastern United States,186.5,216.9
-Eastern United States,187.5,219.8
-Eastern United States,187.9,222.7
-Eastern United States,188.1,226.4
-Eastern United States,184.8,228.2
-Eastern United States,183.5,228
-Eastern United States,182.7,226.9
-Eastern United States,181.9,225.7
-Eastern United States,180.5,224.5
-Eastern United States,180.4,222.4
-Eastern United States,180.8,219
-Eastern United States,179,217.8
-Eastern United States,177.6,214
-Eastern United States,175.7,212.8
-Eastern United States,172,214.3
-Eastern United States,163.3,212
-Eastern United States,157.5,211.7
-Eastern United States,151.3,213
-Eastern United States,149,213.3
-Eastern United States,142.9,215.1
-Eastern United States,141.3,216.1
-Eastern United States,140.2,218.5
-Eastern United States,139.1,219.3
-Eastern United States,137.2,220.3
-Eastern United States,135.6,222.6
-Eastern United States,134.6,225
-Eastern United States,133.2,226.2
-Alberta,144.4,146.4
-Alberta,132.2,146.4
-Alberta,121.1,146.4
-Alberta,113.4,146.4
-Alberta,107.3,146.4
-Alberta,100.7,146.4
-Alberta,96.4,146.3
-Alberta,96.3,145.6
-Alberta,94.5,144
-Alberta,93.8,142.5
-Alberta,93.7,140.4
-Alberta,93.9,138.3
-Alberta,93.4,136.4
-Alberta,92,134.2
-Alberta,91.5,131.8
-Alberta,89.3,129.3
-Alberta,88.5,126.3
-Alberta,86.4,123.9
-Alberta,88.6,123.6
-Alberta,89.7,119.6
-Alberta,92.1,119.2
-Alberta,92.6,114.1
-Alberta,90.1,113.3
-Alberta,88.1,110.4
-Alberta,88.3,103.4
-Alberta,87,100.6
-Alberta,85.3,96.1
-Alberta,99.9,96.6
-Alberta,114.4,97.1
-Alberta,129.2,97.6
-Alberta,148.4,98.1
-Alberta,147.6,107.9
-Alberta,146.2,122.8
-Alberta,145.5,132.2
-Ontario,199.9,161.6
-Ontario,198.8,162.6
-Ontario,195.4,163.8
-Ontario,193.7,164
-Ontario,191.4,166.4
-Ontario,189.6,166.6
-Ontario,188,167.2
-Ontario,188.4,168.8
-Ontario,188,170.3
-Ontario,185.5,172.5
-Ontario,183.7,172.7
-Ontario,180.8,170.3
-Ontario,178.9,168.4
-Ontario,180.6,166
-Ontario,181.1,163.9
-Ontario,180.1,159.6
-Ontario,178.3,154.5
-Ontario,176.8,151.8
-Ontario,175.8,148.8
-Ontario,174.6,148.5
-Ontario,171.9,150.1
-Ontario,170.1,149.8
-Ontario,168.4,149.9
-Ontario,164.7,151.4
-Ontario,164.3,145.9
-Ontario,159.7,145.9
-Ontario,157.8,146
-Ontario,144.4,146.4
-Ontario,145.5,132.2
-Ontario,146.2,122.8
-Ontario,147.6,107.9
-Ontario,148.4,98.1
-Ontario,157.4,98.2
-Ontario,166.6,98.4
-Ontario,164.9,101.4
-Ontario,164.2,105.7
-Ontario,163.9,110
-Ontario,164.8,110.8
-Ontario,168.1,115.2
-Ontario,171.6,119.7
-Ontario,173.4,120.7
-Ontario,175.8,120.6
-Ontario,177.7,121.9
-Ontario,178.4,123.2
-Ontario,182.2,120.8
-Ontario,185.4,122.4
-Ontario,189.9,121
-Ontario,190.4,121.9
-Ontario,189.3,122.9
-Ontario,185.7,124.6
-Ontario,187,126.9
-Ontario,188.5,128.1
-Ontario,188.4,131.5
-Ontario,187.6,133.3
-Ontario,188.6,135.1
-Ontario,189.3,137.1
-Ontario,190.8,138.3
-Ontario,191.4,140.2
-Ontario,190.8,144.9
-Ontario,190.7,149.2
-Ontario,190.4,159.4
-Ontario,192.2,158
-Ontario,194.6,159.5
-Ontario,196.2,157.2
-Ontario,197.9,158.2
-Ontario,199.5,158.1
-Ontario,199.9,160.6
-Quebec,226.8,166.2
-Quebec,225.3,166.2
-Quebec,224.5,164.5
-Quebec,223.6,163.6
-Quebec,221,163.3
-Quebec,220.6,162.2
-Quebec,221.3,159.5
-Quebec,221.7,156.7
-Quebec,219.2,154.3
-Quebec,217,153.4
-Quebec,214.8,154.2
-Quebec,213,155.6
-Quebec,213.3,159.7
-Quebec,211.2,160.6
-Quebec,207.9,161
-Quebec,203.9,161.4
-Quebec,199.9,161.6
-Quebec,199.5,158.1
-Quebec,197.9,158.2
-Quebec,196.2,157.2
-Quebec,194.6,159.5
-Quebec,192.2,158
-Quebec,190.4,159.4
-Quebec,190.7,149.2
-Quebec,190.8,144.9
-Quebec,191.4,140.2
-Quebec,192.3,137.9
-Quebec,193.5,136.2
-Quebec,194.9,132.7
-Quebec,195,129.8
-Quebec,193.9,127.6
-Quebec,195,123.2
-Quebec,195.7,122.6
-Quebec,198.9,122.8
-Quebec,200.2,121.8
-Quebec,200.2,119.5
-Quebec,201,118.3
-Quebec,202.8,117.8
-Quebec,202.4,114
-Quebec,200.7,109.4
-Quebec,200.7,106.5
-Quebec,202.5,105.7
-Quebec,202.2,103.7
-Quebec,205,102.9
-Quebec,205.7,101.2
-Quebec,203.6,95.9
-Quebec,203.7,95
-Quebec,205.3,94.8
-Quebec,208.6,95.6
-Quebec,214.7,95.9
-Quebec,214.8,97.5
-Quebec,216.7,98.2
-Quebec,218.3,99.8
-Quebec,220.2,101.7
-Quebec,220,103.6
-Quebec,220.4,106
-Quebec,219.5,107.1
-Quebec,219.9,110.8
-Quebec,221.7,111.7
-Quebec,223.2,110.6
-Quebec,224.8,109.5
-Quebec,226.6,109.6
-Quebec,228.1,107.3
-Quebec,229,105.3
-Quebec,230.7,104.5
-Quebec,231.3,105.5
-Quebec,231.3,110.5
-Quebec,232.3,111.8
-Quebec,234.1,111.3
-Quebec,234.7,113.7
-Quebec,234.3,115.3
-Quebec,235.5,117.3
-Quebec,235.7,119.4
-Quebec,237.5,118.7
-Quebec,238.4,121.6
-Quebec,240.2,122.3
-Quebec,241.4,123.7
-Quebec,241.9,126.1
-Quebec,244.8,124.1
-Quebec,247.6,125.1
-Quebec,245.3,126.5
-Quebec,244.3,128.3
-Quebec,245.6,129
-Quebec,248.5,128
-Quebec,249,129.3
-Quebec,248.3,133.1
-Quebec,247.6,134
-Quebec,245.2,135.1
-Quebec,242.7,137.2
-Quebec,241.4,138
-Quebec,240.3,139
-Quebec,236.4,139.3
-Quebec,235.3,141.2
-Quebec,234.9,143.2
-Quebec,229.3,144.6
-Quebec,227.2,145.4
-Quebec,225.6,144.6
-Quebec,223.7,143.9
-Quebec,221.6,144.5
-Quebec,219.8,145.9
-Quebec,217.8,146.6
-Quebec,216.1,147.8
-Quebec,215.2,149.7
-Quebec,216.4,151.5
-Quebec,217.5,151.9
-Quebec,218.9,149.5
-Quebec,220.1,147.7
-Quebec,221.5,146.7
-Quebec,223.4,147.3
-Quebec,225.2,148.4
-Quebec,225.8,150.1
-Quebec,225.3,152.8
-Quebec,225.6,154.7
-Quebec,226.6,157
-Quebec,226.6,158.2
-Quebec,226.2,159.1
-Quebec,229.2,161.7
-Quebec,230.4,160.3
-Quebec,231.3,158.4
-Quebec,233.2,158.8
-Quebec,233.3,159.7
-Quebec,231.8,162.9
-Quebec,230.6,164
-Quebec,229.3,164
-Quebec,227.8,165.6
-Alaska,85.3,96.1
-Alaska,87,100.6
-Alaska,88.3,103.4
-Alaska,88.1,110.4
-Alaska,90.1,113.3
-Alaska,92.6,114.1
-Alaska,92.1,119.2
-Alaska,89.7,119.6
-Alaska,88.6,123.6
-Alaska,86.4,123.9
-Alaska,85.7,122.6
-Alaska,84.9,120.1
-Alaska,82.9,118.6
-Alaska,82.7,117.4
-Alaska,83.1,115.7
-Alaska,82.4,114.3
-Alaska,80.6,112.6
-Alaska,79.9,111.2
-Alaska,80,108.3
-Alaska,76.7,107.7
-Alaska,75.1,105.8
-Alaska,71.6,105.4
-Alaska,70,103
-Alaska,67.2,102.3
-Alaska,66.3,101
-Alaska,64.4,99.5
-Alaska,63.7,99.6
-Alaska,61.8,101
-Alaska,62.8,102.2
-Alaska,61.6,102.7
-Alaska,57.6,103.5
-Alaska,56.4,103.1
-Alaska,54.4,103.3
-Alaska,54.2,102.2
-Alaska,54.7,100.6
-Alaska,57.1,99.6
-Alaska,55.9,98.3
-Alaska,50.4,99.6
-Alaska,49.1,100.6
-Alaska,48.4,102.7
-Alaska,48.2,103.6
-Alaska,45.4,104.8
-Alaska,44.4,104.9
-Alaska,42,106.8
-Alaska,39.7,108.9
-Alaska,36.8,109.8
-Alaska,35.2,111.7
-Alaska,33.3,114.1
-Alaska,31.7,114.3
-Alaska,30.3,116
-Alaska,27.6,113.5
-Alaska,28.9,112.4
-Alaska,31.2,112
-Alaska,33.2,109
-Alaska,34.8,108.3
-Alaska,36.2,109
-Alaska,37.3,105.8
-Alaska,38,104.2
-Alaska,39.9,102.4
-Alaska,40.3,101.7
-Alaska,39.5,101.4
-Alaska,37.3,101.1
-Alaska,33.8,102.5
-Alaska,31.1,101.9
-Alaska,30.2,98.9
-Alaska,29.1,97.6
-Alaska,27.2,97.7
-Alaska,27.2,96.6
-Alaska,27.8,95.5
-Alaska,26,94.1
-Alaska,23.5,95
-Alaska,23.8,93.8
-Alaska,24.8,92.3
-Alaska,26.3,91
-Alaska,27.6,87.7
-Alaska,27.9,86.5
-Alaska,27.6,85.9
-Alaska,29.8,84.1
-Alaska,32.6,84
-Alaska,35.7,85.4
-Alaska,37.7,83.9
-Alaska,39.2,82.2
-Alaska,39.5,80.5
-Alaska,37.5,81.2
-Alaska,35.4,81.6
-Alaska,34.1,82.3
-Alaska,32.9,79.7
-Alaska,32.1,77.9
-Alaska,32.1,73.8
-Alaska,33.1,72.5
-Alaska,35.8,71.6
-Alaska,39.6,72
-Alaska,39.8,73.3
-Alaska,42,73.6
-Alaska,44.2,71.4
-Alaska,41.9,70.2
-Alaska,41.2,68.8
-Alaska,41,67
-Alaska,40.1,64.9
-Alaska,38.3,62.7
-Alaska,38.5,61.7
-Alaska,43.9,60.4
-Alaska,47.9,57.7
-Alaska,51.8,57.5
-Alaska,54.5,56.1
-Alaska,56.3,55.4
-Alaska,59,55.5
-Alaska,64.6,59.2
-Alaska,66.6,58.7
-Alaska,68.9,60.6
-Alaska,71.4,61.3
-Alaska,79,63.5
-Alaska,78.3,77.6
-Alaska,77.6,95.4
-Alaska,80.9,95.7
-Alaska,84.3,96
-Northwest Territory,166.6,98.4
-Northwest Territory,157.4,98.2
-Northwest Territory,148.4,98.1
-Northwest Territory,129.2,97.6
-Northwest Territory,114.4,97.1
-Northwest Territory,99.9,96.6
-Northwest Territory,85.3,96.1
-Northwest Territory,84.3,96
-Northwest Territory,80.9,95.7
-Northwest Territory,77.6,95.4
-Northwest Territory,78.3,77.6
-Northwest Territory,79,63.5
-Northwest Territory,80.9,63.7
-Northwest Territory,85.8,62.5
-Northwest Territory,96.2,66.1
-Northwest Territory,97.9,65.1
-Northwest Territory,99.3,63.7
-Northwest Territory,102.7,63.9
-Northwest Territory,107,63.1
-Northwest Territory,107.5,61.5
-Northwest Territory,110,61.4
-Northwest Territory,113.5,60.5
-Northwest Territory,116.3,59.9
-Northwest Territory,118.9,60
-Northwest Territory,119.4,62.3
-Northwest Territory,122.8,62.2
-Northwest Territory,126.1,63.3
-Northwest Territory,132.8,68.1
-Northwest Territory,134,67.8
-Northwest Territory,134.7,67.2
-Northwest Territory,135,70
-Northwest Territory,136.2,71.5
-Northwest Territory,138.9,72
-Northwest Territory,140.9,70.9
-Northwest Territory,142.5,69.2
-Northwest Territory,147,70.3
-Northwest Territory,148.8,70
-Northwest Territory,154,66.9
-Northwest Territory,155.6,66.7
-Northwest Territory,159.4,68.6
-Northwest Territory,162.9,69.3
-Northwest Territory,165.8,69
-Northwest Territory,165.8,63.6
-Northwest Territory,168.6,63.6
-Northwest Territory,169,67.1
-Northwest Territory,172.3,66.8
-Northwest Territory,174.1,65.1
-Northwest Territory,173.7,63.4
-Northwest Territory,172.2,61.8
-Northwest Territory,172,59
-Northwest Territory,173.1,55.7
-Northwest Territory,175,52.4
-Northwest Territory,176.4,50.1
-Northwest Territory,176.6,47.8
-Northwest Territory,177.7,47
-Northwest Territory,180.6,48.4
-Northwest Territory,181.4,45.6
-Northwest Territory,184.1,45.2
-Northwest Territory,185,46.5
-Northwest Territory,183.7,47.9
-Northwest Territory,183,50.3
-Northwest Territory,182.1,51
-Northwest Territory,180.2,50.7
-Northwest Territory,176.9,57.2
-Northwest Territory,178.2,58.9
-Northwest Territory,179.1,62.3
-Northwest Territory,178.9,64.8
-Northwest Territory,180.3,64.7
-Northwest Territory,181,65.8
-Northwest Territory,185.1,66
-Northwest Territory,185.4,66.7
-Northwest Territory,183.9,69.2
-Northwest Territory,188.4,70.3
-Northwest Territory,190.1,69.1
-Northwest Territory,192.1,66.6
-Northwest Territory,193.4,66.1
-Northwest Territory,194.3,67.6
-Northwest Territory,195.1,69.5
-Northwest Territory,196,70.3
-Northwest Territory,195.1,72.3
-Northwest Territory,195.8,73.4
-Northwest Territory,196.9,73.8
-Northwest Territory,193.6,77
-Northwest Territory,189.7,77.3
-Northwest Territory,187.6,81.2
-Northwest Territory,186.4,81.5
-Northwest Territory,185.2,83.4
-Northwest Territory,183.8,83.8
-Northwest Territory,182.2,83.3
-Northwest Territory,179,80.6
-Northwest Territory,178.4,82.7
-Northwest Territory,180.2,85.5
-Northwest Territory,179.9,87
-Northwest Territory,175.8,88.4
-Northwest Territory,173.3,90.6
-Northwest Territory,171,93.2
-Northwest Territory,168.6,95.8
-Northwest Territory,167.3,97.5
-Greenland,232,61.3
-Greenland,231.3,59.5
-Greenland,230.4,57.8
-Greenland,228.2,57.7
-Greenland,226.9,56.4
-Greenland,225.9,55.3
-Greenland,223.5,55.6
-Greenland,221.8,56.7
-Greenland,221.6,57.6
-Greenland,216.4,58.1
-Greenland,215.1,57.1
-Greenland,212.8,56.9
-Greenland,211.2,57.4
-Greenland,210,56
-Greenland,208.3,54.8
-Greenland,209.5,53.2
-Greenland,210.5,51.8
-Greenland,213,51.9
-Greenland,215.3,50.9
-Greenland,214.5,49.8
-Greenland,211.3,49.8
-Greenland,210.7,47.5
-Greenland,212.6,47.2
-Greenland,214.8,47.2
-Greenland,216.2,46.2
-Greenland,219.6,46.7
-Greenland,220.6,45.7
-Greenland,221.7,44.6
-Greenland,218.8,43.8
-Greenland,219.2,42.9
-Greenland,219.9,41.5
-Greenland,219.2,40.1
-Greenland,221.5,39.7
-Greenland,224,40
-Greenland,224.3,37.3
-Greenland,225.5,36.9
-Greenland,228.7,36.3
-Greenland,230.4,35.2
-Greenland,231,33.9
-Greenland,234.2,34.8
-Greenland,235.7,32.8
-Greenland,239.5,33.6
-Greenland,240.6,32.8
-Greenland,241.2,32.3
-Greenland,243.6,32.9
-Greenland,244,30.8
-Greenland,243.6,29.8
-Greenland,246.9,29.1
-Greenland,248.5,27
-Greenland,251.4,26.5
-Greenland,250.8,24.7
-Greenland,249.8,23.7
-Greenland,250.5,23
-Greenland,252.9,22.8
-Greenland,255,22
-Greenland,256.7,22.4
-Greenland,258,21.6
-Greenland,259.6,19.2
-Greenland,260.9,20.3
-Greenland,263.9,18.7
-Greenland,267.3,19.2
-Greenland,270.2,19.2
-Greenland,271.9,19.5
-Greenland,273.9,20.2
-Greenland,277.4,20.1
-Greenland,279.4,21.4
-Greenland,283.9,21.4
-Greenland,284.6,23.7
-Greenland,289,24.4
-Greenland,287.8,25.6
-Greenland,284.9,26.7
-Greenland,284.9,27.7
-Greenland,279.5,28.9
-Greenland,281,29.5
-Greenland,285,29.4
-Greenland,286,30.3
-Greenland,286.6,31.2
-Greenland,290.7,30.1
-Greenland,292.5,30.2
-Greenland,294.9,30.9
-Greenland,295.7,29.3
-Greenland,295.4,27.8
-Greenland,299.5,28.5
-Greenland,301.9,26.9
-Greenland,303,25.9
-Greenland,304.2,29.3
-Greenland,301.9,31
-Greenland,301.1,30.8
-Greenland,299.9,34.4
-Greenland,297.6,35.9
-Greenland,297.5,38.2
-Greenland,296.7,42.2
-Greenland,297,43.5
-Greenland,298.6,44.3
-Greenland,299.9,46.8
-Greenland,298.8,49.5
-Greenland,298.1,53.9
-Greenland,298.8,54.1
-Greenland,299.5,52.7
-Greenland,300.1,56
-Greenland,298.4,57.1
-Greenland,297.4,57.3
-Greenland,297.4,59.7
-Greenland,296.3,61.1
-Greenland,296,61.8
-Greenland,293.3,59.4
-Greenland,292.1,60
-Greenland,290.6,60.5
-Greenland,291.9,61.9
-Greenland,293.3,62.8
-Greenland,294.1,65.4
-Greenland,295.7,65.6
-Greenland,296,67
-Greenland,295.9,68.4
-Greenland,297.2,69.9
-Greenland,295.3,71.3
-Greenland,294.1,72.6
-Greenland,292.5,72.6
-Greenland,292,69.9
-Greenland,291.2,68.4
-Greenland,289.6,67.3
-Greenland,288.9,70.6
-Greenland,287.7,71
-Greenland,291.5,74
-Greenland,289.9,75.8
-Greenland,289,75.7
-Greenland,287.9,75.2
-Greenland,284.6,78.3
-Greenland,284,79.1
-Greenland,282.2,76.6
-Greenland,281.3,79.7
-Greenland,280.1,82.9
-Greenland,279,83.2
-Greenland,277.1,82.9
-Greenland,275.4,84.9
-Greenland,273.5,85.7
-Greenland,273.1,84.6
-Greenland,271.4,88.1
-Greenland,264.2,89
-Greenland,260.9,90.4
-Greenland,261.1,95.6
-Greenland,259.7,98.1
-Greenland,258.6,103.6
-Greenland,257.5,105.1
-Greenland,256.7,112.2
-Greenland,255.7,112.2
-Greenland,255.6,113.9
-Greenland,252.7,114.4
-Greenland,252.1,111.7
-Greenland,249.8,111.7
-Greenland,248.8,112
-Greenland,248.5,109.4
-Greenland,247.6,108.5
-Greenland,247.2,109.5
-Greenland,243.6,105.6
-Greenland,241.7,101.7
-Greenland,241.4,99
-Greenland,240.1,96.9
-Greenland,240.4,92.7
-Greenland,238.5,87.3
-Greenland,239.1,86.2
-Greenland,241.7,85
-Greenland,242.9,79.5
-Greenland,239.4,78.7
-Greenland,238.5,77.7
-Greenland,237.4,78.1
-Greenland,235,76.9
-Greenland,239.4,75.5
-Greenland,240.9,76.3
-Greenland,240.4,74.3
-Greenland,236.2,71.5
-Greenland,236,67.3
-Greenland,234.2,65.2
-Greenland,233.5,61.9
-Iceland,304.1,96.3
-Iceland,304,94.6
-Iceland,305.2,93.3
-Iceland,307.6,95.2
-Iceland,308.4,93.3
-Iceland,311,95.3
-Iceland,313.5,94.7
-Iceland,312,97.8
-Iceland,314,100.3
-Iceland,315.4,99.8
-Iceland,316.6,96
-Iceland,319.7,96.8
-Iceland,319.3,98.2
-Iceland,321.4,96.9
-Iceland,322,95.4
-Iceland,324.2,97.4
-Iceland,325.1,96.4
-Iceland,324.9,94.9
-Iceland,327.2,95.6
-Iceland,328.2,94.3
-Iceland,328.6,92.7
-Iceland,330.3,93
-Iceland,332.1,91.1
-Iceland,333.7,92.7
-Iceland,336.2,93.3
-Iceland,337.1,96.7
-Iceland,338.6,96.1
-Iceland,338.3,98.9
-Iceland,340.7,98.8
-Iceland,341.6,101.6
-Iceland,341.5,103.9
-Iceland,342,106.2
-Iceland,339.4,107.4
-Iceland,337.8,108.8
-Iceland,336.6,111.8
-Iceland,334.4,112.8
-Iceland,331.1,113.3
-Iceland,329.6,111.2
-Iceland,329,113
-Iceland,327.4,111.6
-Iceland,327.7,114.6
-Iceland,327.5,116.3
-Iceland,326.2,117.3
-Iceland,324.2,117.6
-Iceland,322.6,118.4
-Iceland,320.7,119.6
-Iceland,318.4,118.2
-Iceland,314.8,116.6
-Iceland,312.9,116
-Iceland,311.1,116.5
-Iceland,309.1,116.1
-Iceland,307.1,116.3
-Iceland,306.5,115.7
-Iceland,306.9,113.5
-Iceland,309.1,111.8
-Iceland,308.9,110.2
-Iceland,308,109.7
-Iceland,307,107.8
-Iceland,305.3,108.1
-Iceland,303.8,108.4
-Iceland,302.2,106.8
-Iceland,303.1,105.4
-Iceland,304.8,105.2
-Iceland,305.5,105.4
-Iceland,306.9,102.3
-Iceland,304.5,102.7
-Iceland,303,100
-Iceland,301.6,99.4
-Iceland,302.6,97.7
-Great Britian,304.5,149
-Great Britian,303.6,148.4
-Great Britian,302.4,147.6
-Great Britian,300.7,147.2
-Great Britian,300.3,144.6
-Great Britian,298.6,144.4
-Great Britian,298.3,142.7
-Great Britian,297.4,141
-Great Britian,299.9,139.1
-Great Britian,299.1,137.3
-Great Britian,296.6,137.5
-Great Britian,295.6,136
-Great Britian,297.2,134.8
-Great Britian,298.5,132.9
-Great Britian,300.7,132.3
-Great Britian,301.7,129.5
-Great Britian,303.2,125.8
-Great Britian,306.2,126.3
-Great Britian,310.3,125.6
-Great Britian,311.1,128.4
-Great Britian,308.8,130.2
-Great Britian,308.4,134.1
-Great Britian,309.5,134.4
-Great Britian,311.1,133.7
-Great Britian,312.8,134.1
-Great Britian,314.9,132.6
-Great Britian,315.5,134.9
-Great Britian,316.3,136.7
-Great Britian,315.5,138.3
-Great Britian,314.7,140.1
-Great Britian,313.7,140.7
-Great Britian,314.5,142.3
-Great Britian,312.8,142.8
-Great Britian,311.8,144.7
-Great Britian,309.8,145.6
-Great Britian,310.3,147.2
-Great Britian,312.5,146.4
-Great Britian,315.6,146.4
-Great Britian,316.7,147.7
-Great Britian,318.1,149.3
-Great Britian,318,151.9
-Great Britian,319,154.2
-Great Britian,320.3,155.9
-Great Britian,321.8,157
-Great Britian,322.8,158.7
-Great Britian,323.9,160.9
-Great Britian,324.7,163.3
-Great Britian,324.7,165.5
-Great Britian,323.7,167.5
-Great Britian,324.4,168.8
-Great Britian,326.2,168.3
-Great Britian,329.5,167
-Great Britian,331.5,167.7
-Great Britian,332.9,169.3
-Great Britian,332.8,171.1
-Great Britian,331.2,174.6
-Great Britian,329.1,175.1
-Great Britian,327.7,177
-Great Britian,328.5,179.1
-Great Britian,329.3,181
-Great Britian,327.6,182.1
-Great Britian,324.5,182.1
-Great Britian,321.5,183.4
-Great Britian,317.2,183.1
-Great Britian,314.5,184.3
-Great Britian,312.1,182.3
-Great Britian,309.4,185.1
-Great Britian,305.8,185.4
-Great Britian,303.4,187.8
-Great Britian,301.2,187.7
-Great Britian,300.7,187.1
-Great Britian,303.4,183.2
-Great Britian,306.1,181.7
-Great Britian,306.8,179.5
-Great Britian,308.3,178.7
-Great Britian,308,177.4
-Great Britian,305.9,176.6
-Great Britian,303.2,175.6
-Great Britian,298.1,175.7
-Great Britian,295.2,176.2
-Great Britian,292.6,177.2
-Great Britian,289.4,178.4
-Great Britian,286.6,180
-Great Britian,284.6,179.1
-Great Britian,284.3,178.1
-Great Britian,281.9,178.1
-Great Britian,282.9,176.7
-Great Britian,281.9,176
-Great Britian,283.7,175.2
-Great Britian,285.5,172.8
-Great Britian,286.8,170.2
-Great Britian,283.2,168.4
-Great Britian,283.8,166
-Great Britian,282.7,164.4
-Great Britian,283.7,163
-Great Britian,283.4,161.2
-Great Britian,287.1,158.4
-Great Britian,288.5,159.6
-Great Britian,290.6,156.8
-Great Britian,293.5,154.5
-Great Britian,297.9,154.9
-Great Britian,299.2,153.9
-Great Britian,299.6,156
-Great Britian,303.4,155.5
-Great Britian,304.1,153
-Great Britian,305.1,151
-Scandanavia,354.9,128.8
-Scandanavia,354.8,126.9
-Scandanavia,351.7,123.5
-Scandanavia,352.4,119.6
-Scandanavia,352.4,118.1
-Scandanavia,351.2,115.3
-Scandanavia,349.3,113.4
-Scandanavia,349.6,111.2
-Scandanavia,349.9,109.7
-Scandanavia,351.9,109.6
-Scandanavia,352.1,106
-Scandanavia,354.6,103.3
-Scandanavia,356.2,105.7
-Scandanavia,357.8,103.7
-Scandanavia,359.5,101.5
-Scandanavia,359.4,99.1
-Scandanavia,362.1,99.3
-Scandanavia,363.6,97.9
-Scandanavia,365.4,97.4
-Scandanavia,366.2,95.3
-Scandanavia,367.8,93.2
-Scandanavia,368.3,90.5
-Scandanavia,371.3,85.9
-Scandanavia,372.8,83.2
-Scandanavia,374.4,82
-Scandanavia,375.9,78.9
-Scandanavia,375.1,78
-Scandanavia,380.7,76
-Scandanavia,382,76.7
-Scandanavia,382.3,74.7
-Scandanavia,384.3,73.5
-Scandanavia,387.2,74.3
-Scandanavia,387.4,71.6
-Scandanavia,390.2,70.4
-Scandanavia,391.9,69
-Scandanavia,395,67.9
-Scandanavia,396.6,66.6
-Scandanavia,398.1,67.9
-Scandanavia,404.8,66.6
-Scandanavia,405.8,68.6
-Scandanavia,408.4,68.3
-Scandanavia,410.1,69.7
-Scandanavia,410.4,73.3
-Scandanavia,410.3,77.2
-Scandanavia,409,87.5
-Scandanavia,410,94
-Scandanavia,410.5,100.5
-Scandanavia,411.7,104.8
-Scandanavia,412.5,107.6
-Scandanavia,411.7,110.9
-Scandanavia,410.6,115.6
-Scandanavia,411.1,117.9
-Scandanavia,408.8,117.4
-Scandanavia,407.4,115.9
-Scandanavia,405,116.2
-Scandanavia,403,115.1
-Scandanavia,401.5,116.1
-Scandanavia,396.3,116.7
-Scandanavia,392.7,117.1
-Scandanavia,391.3,115.2
-Scandanavia,391.6,112.7
-Scandanavia,392.2,110.6
-Scandanavia,392.3,107.8
-Scandanavia,394.5,105.6
-Scandanavia,395.5,102.7
-Scandanavia,394.8,100
-Scandanavia,392.1,99.1
-Scandanavia,389.1,101.5
-Scandanavia,389.1,104.1
-Scandanavia,387.7,106.5
-Scandanavia,387.4,108.5
-Scandanavia,384.7,109.8
-Scandanavia,383.9,112.3
-Scandanavia,385.7,116.4
-Scandanavia,386.5,121.6
-Scandanavia,385.4,126
-Scandanavia,383.9,127.7
-Scandanavia,380.7,130.2
-Scandanavia,380.3,135.7
-Scandanavia,377.4,138.4
-Scandanavia,377,140.6
-Scandanavia,375.8,141.6
-Scandanavia,373.1,141.4
-Scandanavia,371,139.2
-Scandanavia,369.3,138.8
-Scandanavia,367.5,138
-Scandanavia,367.3,132.1
-Scandanavia,365.6,129.2
-Scandanavia,366.1,127.6
-Scandanavia,364.6,125.9
-Scandanavia,362.9,126.9
-Scandanavia,360.7,130.2
-Scandanavia,358.4,130.5
-Scandanavia,357.4,131.4
-Scandanavia,356,130.1
-Ukraine,411.1,117.9
-Ukraine,410.6,115.6
-Ukraine,411.7,110.9
-Ukraine,412.5,107.6
-Ukraine,411.7,104.8
-Ukraine,410.5,100.5
-Ukraine,410,94
-Ukraine,409,87.5
-Ukraine,410.3,77.2
-Ukraine,410.4,73.3
-Ukraine,410.1,69.7
-Ukraine,411.7,69.8
-Ukraine,413.5,70.1
-Ukraine,415.5,71
-Ukraine,417.9,71.1
-Ukraine,419.9,72
-Ukraine,426.6,72
-Ukraine,428.5,73
-Ukraine,429.6,72.7
-Ukraine,431.2,72.4
-Ukraine,436.3,75.5
-Ukraine,438.4,77.8
-Ukraine,439,80.5
-Ukraine,436.8,82.6
-Ukraine,433.8,83.2
-Ukraine,430.2,83.6
-Ukraine,420.9,83.1
-Ukraine,418.3,83.5
-Ukraine,417.8,85.1
-Ukraine,420.7,87.3
-Ukraine,421.9,88.2
-Ukraine,424,88.6
-Ukraine,424.9,90.4
-Ukraine,425.7,92.4
-Ukraine,425.6,95
-Ukraine,428.6,95.1
-Ukraine,429.5,95.8
-Ukraine,431.8,93.3
-Ukraine,429.7,89.4
-Ukraine,431,88.1
-Ukraine,433,89.9
-Ukraine,435.2,90.4
-Ukraine,438.4,87.4
-Ukraine,441.5,86.8
-Ukraine,443.7,85.1
-Ukraine,445.8,85.4
-Ukraine,445.9,83.8
-Ukraine,443.7,82.5
-Ukraine,444.2,78.3
-Ukraine,442.3,75.2
-Ukraine,445,75
-Ukraine,447.8,74.1
-Ukraine,450.3,77.4
-Ukraine,451.8,78.2
-Ukraine,451,80.2
-Ukraine,451,81.9
-Ukraine,453.4,81.1
-Ukraine,455,79.2
-Ukraine,458.1,77.8
-Ukraine,461,75.2
-Ukraine,462.7,73.8
-Ukraine,464.5,74.1
-Ukraine,468.3,71.3
-Ukraine,471,72.8
-Ukraine,474.5,72.4
-Ukraine,476.3,73.9
-Ukraine,478.6,73.7
-Ukraine,481.8,69.1
-Ukraine,483.5,68.6
-Ukraine,489.6,69.5
-Ukraine,492,69.3
-Ukraine,494.2,71.3
-Ukraine,495.7,81
-Ukraine,495,83.4
-Ukraine,494.8,86.6
-Ukraine,490.6,97.6
-Ukraine,491.6,101
-Ukraine,491,103.1
-Ukraine,492.2,106.9
-Ukraine,492.5,116.8
-Ukraine,494.1,117.8
-Ukraine,493.5,121.8
-Ukraine,491.7,124.7
-Ukraine,491.6,127.6
-Ukraine,496.1,130.7
-Ukraine,497.9,131.5
-Ukraine,498.6,134.3
-Ukraine,496,137.9
-Ukraine,497.7,146.9
-Ukraine,491.6,149.6
-Ukraine,488.8,154.9
-Ukraine,487.3,155.2
-Ukraine,482.3,154
-Ukraine,480.8,152.7
-Ukraine,477.7,155.1
-Ukraine,473.7,156.1
-Ukraine,470.5,156.5
-Ukraine,469.8,158
-Ukraine,465,158.6
-Ukraine,463,162.1
-Ukraine,463.4,163.5
-Ukraine,461,165.8
-Ukraine,460.3,169.1
-Ukraine,461.7,173.6
-Ukraine,462.3,175.7
-Ukraine,462.1,177.8
-Ukraine,465,180.4
-Ukraine,466.3,181.6
-Ukraine,466.5,184.8
-Ukraine,466,187.6
-Ukraine,463.4,188.8
-Ukraine,461.7,193.1
-Ukraine,462.5,195.3
-Ukraine,462.2,197.8
-Ukraine,464.1,199.1
-Ukraine,464.9,202
-Ukraine,465.8,205.7
-Ukraine,467.2,207.7
-Ukraine,470.1,208.5
-Ukraine,470.2,209.8
-Ukraine,469,210.6
-Ukraine,468.7,216
-Ukraine,468.3,218.5
-Ukraine,469.7,220.8
-Ukraine,468.1,222.9
-Ukraine,467,223.8
-Ukraine,467,224.9
-Ukraine,463.2,225.2
-Ukraine,461.6,226.4
-Ukraine,457.9,227.2
-Ukraine,454.6,227.9
-Ukraine,453.2,229
-Ukraine,450.6,226.9
-Ukraine,452,225.3
-Ukraine,453.3,223.6
-Ukraine,452.5,220
-Ukraine,448.3,216.8
-Ukraine,447.1,216.1
-Ukraine,445.1,214.1
-Ukraine,445.2,212.1
-Ukraine,442.6,212.4
-Ukraine,441.5,213.4
-Ukraine,438.5,209.1
-Ukraine,438.7,207.5
-Ukraine,435.8,204.4
-Ukraine,436.8,200.7
-Ukraine,439.4,200.2
-Ukraine,441.8,198
-Ukraine,441.2,196.4
-Ukraine,439.5,197.6
-Ukraine,436.8,197.7
-Ukraine,433.6,198.5
-Ukraine,430.8,199.3
-Ukraine,428.2,201.5
-Ukraine,430.5,203.7
-Ukraine,431.7,203.6
-Ukraine,432.4,204.6
-Ukraine,431.7,207
-Ukraine,428.9,208.6
-Ukraine,428.3,211.2
-Ukraine,424.1,209
-Ukraine,422.7,202.7
-Ukraine,419.6,201.4
-Ukraine,416.2,201.8
-Ukraine,414.6,206
-Ukraine,411.8,207.7
-Ukraine,408.9,203.9
-Ukraine,409.2,200.6
-Ukraine,408.1,197.4
-Ukraine,409.1,193.7
-Ukraine,407.1,188.4
-Ukraine,403.5,187.6
-Ukraine,403.1,183.8
-Ukraine,399.5,183.4
-Ukraine,398.5,184.6
-Ukraine,396.4,182.5
-Ukraine,397,180.5
-Ukraine,400.8,179.2
-Ukraine,403.5,175.2
-Ukraine,405.1,174.3
-Ukraine,405.6,172.3
-Ukraine,406.8,170.9
-Ukraine,406.8,169
-Ukraine,407.8,167.2
-Ukraine,406.9,165.8
-Ukraine,405.3,163.4
-Ukraine,404.9,153.5
-Ukraine,403.9,149.9
-Ukraine,404,148.5
-Ukraine,401.6,149
-Ukraine,398,147.6
-Ukraine,396.3,145.6
-Ukraine,394.9,144.9
-Ukraine,395.5,142.4
-Ukraine,393.4,138
-Ukraine,394.9,136.1
-Ukraine,395.2,133.6
-Ukraine,396.4,131.8
-Ukraine,397,129.9
-Ukraine,399.2,130
-Ukraine,399.7,132.9
-Ukraine,402.8,133.6
-Ukraine,403.3,133.1
-Ukraine,403,129.9
-Ukraine,401.4,127.4
-Ukraine,399.6,126.4
-Ukraine,398.9,124.7
-Ukraine,398.4,122
-Ukraine,400.8,120.9
-Ukraine,405.6,120.5
-Ukraine,408.5,120.8
-Ukraine,411.4,119.8
-Ukraine,412.3,118.9
-Northern Europe,394.9,144.9
-Northern Europe,396.3,145.6
-Northern Europe,398,147.6
-Northern Europe,401.6,149
-Northern Europe,404,148.5
-Northern Europe,403.9,149.9
-Northern Europe,404.9,153.5
-Northern Europe,405.3,163.4
-Northern Europe,406.9,165.8
-Northern Europe,407.8,167.2
-Northern Europe,406.8,169
-Northern Europe,406.8,170.9
-Northern Europe,405.6,172.3
-Northern Europe,405.1,174.3
-Northern Europe,403.5,175.2
-Northern Europe,400.8,179.2
-Northern Europe,397,180.5
-Northern Europe,396.4,182.5
-Northern Europe,398.5,184.6
-Northern Europe,397.8,185.8
-Northern Europe,396.4,188
-Northern Europe,393.8,190.1
-Northern Europe,392.4,192.9
-Northern Europe,392,196.5
-Northern Europe,392.7,199.1
-Northern Europe,392.3,201.3
-Northern Europe,383.2,201.2
-Northern Europe,383.1,197
-Northern Europe,381.9,194.9
-Northern Europe,383.7,191.4
-Northern Europe,380.3,189.2
-Northern Europe,378.9,190.7
-Northern Europe,372.3,191.5
-Northern Europe,372,193.6
-Northern Europe,370.1,196.5
-Northern Europe,366.6,198
-Northern Europe,364.5,198
-Northern Europe,359.9,200
-Northern Europe,358,197.3
-Northern Europe,356.6,197.3
-Northern Europe,352.6,198.8
-Northern Europe,350.8,197.2
-Northern Europe,350.2,194.9
-Northern Europe,348.5,192
-Northern Europe,347.1,190.9
-Northern Europe,344.3,187.5
-Northern Europe,343,183.8
-Northern Europe,341.9,183
-Northern Europe,343.3,180.1
-Northern Europe,344.6,179.7
-Northern Europe,345.4,176.4
-Northern Europe,347,175.6
-Northern Europe,347.5,172.4
-Northern Europe,347.1,171.9
-Northern Europe,350.8,171.2
-Northern Europe,351.8,168.3
-Northern Europe,353.6,166.2
-Northern Europe,354,163.5
-Northern Europe,354.7,160.9
-Northern Europe,355.8,160.8
-Northern Europe,356.5,158.2
-Northern Europe,359.1,156.4
-Northern Europe,359.4,154.8
-Northern Europe,361.7,152.9
-Northern Europe,363.5,144.1
-Northern Europe,362.4,144.3
-Northern Europe,360.9,139.2
-Northern Europe,362.2,136.6
-Northern Europe,363.3,136.5
-Northern Europe,364.6,135.3
-Northern Europe,365.8,137.1
-Northern Europe,367.5,139.5
-Northern Europe,367.5,142.5
-Northern Europe,367.7,145.8
-Northern Europe,369.4,147.5
-Northern Europe,371.8,148
-Northern Europe,374.1,147.7
-Northern Europe,375.6,148.1
-Northern Europe,378,147.2
-Northern Europe,380.4,147
-Northern Europe,382.4,147.1
-Northern Europe,386.3,144.9
-Northern Europe,389.9,144.3
-Northern Europe,393.4,145.1
-Western Europe,341.9,183
-Western Europe,343,183.8
-Western Europe,344.3,187.5
-Western Europe,347.1,190.9
-Western Europe,348.5,192
-Western Europe,350.2,194.9
-Western Europe,350.8,197.2
-Western Europe,352.6,198.8
-Western Europe,351.5,200
-Western Europe,349.8,202.2
-Western Europe,350.3,204.7
-Western Europe,350.3,207.5
-Western Europe,348.9,208.9
-Western Europe,348.6,210.4
-Western Europe,351.4,212.4
-Western Europe,351,215.3
-Western Europe,349.1,216.7
-Western Europe,349.8,218.8
-Western Europe,351.7,220.8
-Western Europe,352,222
-Western Europe,350,222.7
-Western Europe,348.6,224.2
-Western Europe,346.3,225
-Western Europe,345.7,223.6
-Western Europe,344,223.6
-Western Europe,344.5,222.2
-Western Europe,341.8,222.2
-Western Europe,340,222
-Western Europe,338.4,224.4
-Western Europe,338.2,226.2
-Western Europe,337.3,228
-Western Europe,337.3,229
-Western Europe,335.6,230.9
-Western Europe,333.9,232.6
-Western Europe,334.6,235.1
-Western Europe,334.5,238.1
-Western Europe,334.5,240.3
-Western Europe,336,242.4
-Western Europe,337,245.5
-Western Europe,337.4,246.1
-Western Europe,334.3,248.3
-Western Europe,332.4,251
-Western Europe,331.5,253.9
-Western Europe,330.6,255.5
-Western Europe,328,255
-Western Europe,325.6,258.1
-Western Europe,324.4,257.5
-Western Europe,323.5,262
-Western Europe,320.2,261.6
-Western Europe,318.4,258.8
-Western Europe,316.4,258.5
-Western Europe,315,257
-Western Europe,313.2,257.1
-Western Europe,311.4,255
-Western Europe,309.8,256.3
-Western Europe,305.8,256.1
-Western Europe,304.2,256.4
-Western Europe,302.7,255.7
-Western Europe,302.3,253.4
-Western Europe,301.6,251.5
-Western Europe,299.5,251.2
-Western Europe,297.6,250.6
-Western Europe,297.9,248.3
-Western Europe,299.2,246.4
-Western Europe,300.9,241.5
-Western Europe,301.4,240.7
-Western Europe,301.2,238.4
-Western Europe,302.4,236.9
-Western Europe,302.4,234.8
-Western Europe,299.4,231.7
-Western Europe,298.9,229.6
-Western Europe,298,226.7
-Western Europe,297.2,225.3
-Western Europe,297.4,223.8
-Western Europe,299.4,222.8
-Western Europe,301,221.5
-Western Europe,302.2,219.6
-Western Europe,303.9,221.2
-Western Europe,304,222.2
-Western Europe,306.1,223
-Western Europe,309.5,223.1
-Western Europe,311.9,222
-Western Europe,314.3,222
-Western Europe,316.2,222.5
-Western Europe,318,221.9
-Western Europe,318.6,219.6
-Western Europe,321,217.9
-Western Europe,321.8,217.4
-Western Europe,320.5,216.1
-Western Europe,319.3,216.1
-Western Europe,319.4,214.3
-Western Europe,320.6,212.9
-Western Europe,320.5,211
-Western Europe,321.3,209.5
-Western Europe,318.7,208
-Western Europe,317.8,208.3
-Western Europe,316.8,205.5
-Western Europe,315.1,204
-Western Europe,314.8,203
-Western Europe,311.3,201
-Western Europe,310.5,199
-Western Europe,312.8,197.6
-Western Europe,315.3,196.7
-Western Europe,321.2,197.6
-Western Europe,321.5,196.2
-Western Europe,323.1,194.1
-Western Europe,324.1,192.4
-Western Europe,327,192.6
-Western Europe,328.4,191.4
-Western Europe,332.4,192.6
-Western Europe,333.1,191.9
-Western Europe,333.3,189.4
-Western Europe,334.6,187.6
-Western Europe,336,186.7
-Western Europe,337.1,184.5
-Western Europe,339.6,184.2
-Southern Europe,352,222
-Southern Europe,351.7,220.8
-Southern Europe,349.8,218.8
-Southern Europe,349.1,216.7
-Southern Europe,351,215.3
-Southern Europe,351.4,212.4
-Southern Europe,348.6,210.4
-Southern Europe,348.9,208.9
-Southern Europe,350.3,207.5
-Southern Europe,350.3,204.7
-Southern Europe,349.8,202.2
-Southern Europe,351.5,200
-Southern Europe,352.6,198.8
-Southern Europe,356.6,197.3
-Southern Europe,352.6,198.8
-Southern Europe,356.6,197.3
-Southern Europe,358,197.3
-Southern Europe,359.9,200
-Southern Europe,364.5,198
-Southern Europe,366.6,198
-Southern Europe,370.1,196.5
-Southern Europe,372,193.6
-Southern Europe,372.3,191.5
-Southern Europe,378.9,190.7
-Southern Europe,380.3,189.2
-Southern Europe,383.7,191.4
-Southern Europe,381.9,194.9
-Southern Europe,383.1,197
-Southern Europe,383.2,201.2
-Southern Europe,392.3,201.3
-Southern Europe,392.7,199.1
-Southern Europe,392,196.5
-Southern Europe,392.4,192.9
-Southern Europe,393.8,190.1
-Southern Europe,396.4,188
-Southern Europe,397.8,185.8
-Southern Europe,398.5,184.6
-Southern Europe,399.5,183.4
-Southern Europe,403.1,183.8
-Southern Europe,403.5,187.6
-Southern Europe,407.1,188.4
-Southern Europe,409.1,193.7
-Southern Europe,408.1,197.4
-Southern Europe,409.2,200.6
-Southern Europe,408.9,203.9
-Southern Europe,411.8,207.7
-Southern Europe,411.1,209.0
-Southern Europe,412.2,210.9
-Southern Europe,411.2,212.2
-Southern Europe,410.2,213.3
-Southern Europe,410.8,215.0
-Southern Europe,410.0,217.1
-Southern Europe,408.9,219.1
-Southern Europe,408.8,220.3
-Southern Europe,407.7,222.0
-Southern Europe,407.1,223.6
-Southern Europe,406.0,224.9
-Southern Europe,404.8,226.1
-Southern Europe,404.0,227.5
-Southern Europe,403.2,228.6
-Southern Europe,402.6,229.9
-Southern Europe,403.1,231.4
-Southern Europe,402.8,232.8
-Southern Europe,401.4,234.3
-Southern Europe,400.5,234.8
-Southern Europe,400.1,236.3
-Southern Europe,399.8,237.3
-Southern Europe,398.1,237.5
-Southern Europe,396.6,237.5
-Southern Europe,395.4,238.0
-Southern Europe,394.7,239.0
-Southern Europe,395.5,240.3
-Southern Europe,396.6,241.4
-Southern Europe,397.8,242.7
-Southern Europe,398.2,243.8
-Southern Europe,398.6,245.6
-Southern Europe,398.2,247.0
-Southern Europe,397.2,247.9
-Southern Europe,397.3,249.0
-Southern Europe,397.6,250.3
-Southern Europe,398.9,251.5
-Southern Europe,400.2,252.5
-Southern Europe,399.0,253.8
-Southern Europe,397.2,253.6
-Southern Europe,396.2,251.6
-Southern Europe,395.3,253.1
-Southern Europe,394.3,253.5
-Southern Europe,392.5,253.4
-Southern Europe,391.5,252.0
-Southern Europe,390.1,251.9
-Southern Europe,389.2,250.4
-Southern Europe,389.3,249.0
-Southern Europe,389.6,247.2
-Southern Europe,388.6,245.4
-Southern Europe,388.5,243.4
-Southern Europe,388.3,241.6
-Southern Europe,387.6,239.3
-Southern Europe,386.8,236.1
-Southern Europe,385.1,235.7
-Southern Europe,384.2,234.4
-Southern Europe,382.8,234.0
-Southern Europe,382.4,232.4
-Southern Europe,382.3,228.9
-Southern Europe,382.6,227.7
-Southern Europe,381.2,225.8
-Southern Europe,379.7,225.8
-Southern Europe,378.3,223.7
-Southern Europe,376.8,223.1
-Southern Europe,375.9,222.6
-Southern Europe,375.0,221.2
-Southern Europe,374.7,220.6
-Southern Europe,372.4,220.4
-Southern Europe,371.0,220.1
-Southern Europe,370.1,221.4
-Southern Europe,370.1,223.2
-Southern Europe,370.4,224.7
-Southern Europe,371.5,225.0
-Southern Europe,371.6,226.9
-Southern Europe,372.6,227.2
-Southern Europe,374.9,225.9
-Southern Europe,375.2,226.4
-Southern Europe,375.6,229.5
-Southern Europe,376.8,230.8
-Southern Europe,378.3,232.0
-Southern Europe,379.4,233.9
-Southern Europe,380.1,235.0
-Southern Europe,380.9,235.5
-Southern Europe,380.2,237.6
-Southern Europe,378.6,238.4
-Southern Europe,376.2,236.9
-Southern Europe,376.1,235.8
-Southern Europe,373.6,236.3
-Southern Europe,372.3,235.9
-Southern Europe,372.5,237.3
-Southern Europe,373.6,238.9
-Southern Europe,374.7,239.6
-Southern Europe,374.7,241.4
-Southern Europe,373.9,243.2
-Southern Europe,373.1,244.7
-Southern Europe,372.3,246.8
-Southern Europe,371.0,247.9
-Southern Europe,369.9,248.3
-Southern Europe,369.5,250.2
-Southern Europe,366.8,251.0
-Southern Europe,365.5,251.8
-Southern Europe,363.7,251.1
-Southern Europe,362.3,250.3
-Southern Europe,361.9,249.0
-Southern Europe,360.7,250.1
-Southern Europe,359.8,247.7
-Southern Europe,358.7,248.1
-Southern Europe,358.4,245.9
-Southern Europe,360.0,244.0
-Southern Europe,361.6,244.0
-Southern Europe,363.1,244.9
-Southern Europe,365.3,244.5
-Southern Europe,366.2,246.7
-Southern Europe,367.1,243.2
-Southern Europe,369.6,240.7
-Southern Europe,369.9,238.7
-Southern Europe,368.6,237.9
-Southern Europe,368.5,234.9
-Southern Europe,367.7,233.2
-Southern Europe,365.6,231.5
-Southern Europe,363.2,230.1
-Southern Europe,361.7,228.2
-Southern Europe,360.7,227.6
-Southern Europe,359.6,228.2
-Southern Europe,358.1,226.3
-Southern Europe,356.9,225.8
-Southern Europe,356.1,223.0
-Southern Europe,353.6,221.7
+Argentina,232.5,400.9,,
+Argentina,230,401.7,,
+Argentina,228.6,403,,
+Argentina,229.5,404.5,,
+Argentina,226.5,405.2,,
+Argentina,223.3,405.8,,
+Argentina,220.8,406.8,,
+Argentina,217,407,,
+Argentina,217.3,408.5,,
+Argentina,219.9,410.1,,
+Argentina,220.2,412.6,,
+Argentina,221.6,413.9,,
+Argentina,219.7,416.3,,
+Argentina,217.3,418,,
+Argentina,214.9,417.6,,
+Argentina,212.6,419,,
+Argentina,209.9,419.2,,
+Argentina,206.6,420,,
+Argentina,207.6,422.5,,
+Argentina,205.5,425.6,,
+Argentina,205.3,426.6,,
+Argentina,202.1,427.1,,
+Argentina,201.6,428.9,,
+Argentina,202.7,429.6,,
+Argentina,200.8,432.3,,
+Argentina,201.6,434.6,,
+Argentina,200.4,436.8,,
+Argentina,199.5,438.9,,
+Argentina,197.2,440.7,,
+Argentina,196.7,442.2,,
+Argentina,198.2,443.7,,
+Argentina,197.6,446,,
+Argentina,198.8,447.3,,
+Argentina,198.6,450.1,,
+Argentina,198.1,452.9,,
+Argentina,197.8,454.8,,
+Argentina,198.1,456.3,,
+Argentina,195.9,459,,
+Argentina,196.1,461.7,,
+Argentina,196.8,463.9,,
+Argentina,198,465.1,,
+Argentina,197.3,467.6,,
+Argentina,198.8,468.8,,
+Argentina,200,470.4,,
+Argentina,200.1,472.4,,
+Argentina,201.5,473.9,,
+Argentina,201.2,475.8,,
+Argentina,200.7,478.6,,
+Argentina,202.5,477,,
+Argentina,204.8,476.6,,
+Argentina,206.6,476.3,,
+Argentina,208,477.5,,
+Argentina,209,479,,
+Argentina,211.4,479.1,,
+Argentina,213,479.2,,
+Argentina,214.6,481.1,,
+Argentina,212.5,482.2,,
+Argentina,209.9,482.2,,
+Argentina,207.8,483.4,,
+Argentina,204.8,484,,
+Argentina,202.2,482.8,,
+Argentina,200.7,481,,
+Argentina,198.1,478.5,,
+Argentina,194.7,478.5,,
+Argentina,193.4,477.5,,
+Argentina,191.7,477.6,,
+Argentina,191.6,476.6,,
+Argentina,189.5,475.9,,
+Argentina,189.5,474.5,,
+Argentina,187.3,474.1,,
+Argentina,185.4,472.8,,
+Argentina,183.6,470.9,,
+Argentina,181.2,469.8,,
+Argentina,180,467.8,,
+Argentina,179.5,466.1,,
+Argentina,177.8,465,,
+Argentina,177.6,462.2,,
+Argentina,176.5,460.4,,
+Argentina,175.8,458.1,,
+Argentina,174.6,456.6,,
+Argentina,174.5,454.1,,
+Argentina,174.3,451.7,,
+Argentina,172.8,449.6,,
+Argentina,171.7,446.5,,
+Argentina,172.2,444,,
+Argentina,173,440.7,,
+Argentina,172.3,440.1,,
+Argentina,173.8,434.7,,
+Argentina,174.9,432.5,,
+Argentina,173.9,430.2,,
+Argentina,174.6,428.5,,
+Argentina,174.6,426.7,,
+Argentina,172.8,425.5,,
+Argentina,172.9,415.8,,
+Argentina,174.1,413.4,,
+Argentina,174.6,410.1,,
+Argentina,173.6,408.2,,
+Argentina,174.8,406.7,,
+Argentina,174.7,403.6,,
+Argentina,175.9,399,,
+Argentina,176.1,395.7,,
+Argentina,174.9,390.2,,
+Argentina,175.8,387.4,,
+Argentina,176,385.3,,
+Argentina,176.1,382.5,,
+Argentina,177.2,380.2,,
+Argentina,175.8,375.3,,
+Argentina,176.7,372.7,,
+Argentina,176.5,367.5,,
+Argentina,177.5,362.8,,
+Argentina,177.3,359.2,,
+Argentina,176.4,355.6,,
+Argentina,179.4,354.2,,
+Argentina,179.5,357.7,,
+Argentina,181.8,360.3,,
+Argentina,183.9,363.1,,
+Argentina,185.7,365.3,,
+Argentina,188.2,368.6,,
+Argentina,190.1,367.3,,
+Argentina,189.8,363.2,,
+Argentina,191.9,363.1,,
+Argentina,193.9,366.1,,
+Argentina,196.5,365.9,,
+Argentina,198.8,365.2,,
+Argentina,201.3,366,,
+Argentina,203.6,366.2,,
+Argentina,205.4,367.9,,
+Argentina,206.6,369.9,,
+Argentina,208.6,370.2,,
+Argentina,210.5,372.4,,
+Argentina,213.3,373.1,,
+Argentina,216.9,373.3,,
+Argentina,216.9,375.3,,
+Argentina,216.6,378.7,,
+Argentina,214.5,382,,
+Argentina,215.7,383.1,,
+Argentina,219.4,382.1,,
+Argentina,222.1,380.6,,
+Argentina,224.9,378.6,,
+Argentina,227.9,376.8,,
+Argentina,227.9,379.9,,
+Argentina,225.7,382,,
+Argentina,224.9,384.5,,
+Argentina,222.2,385.2,,
+Argentina,220.2,387.7,,
+Argentina,222.3,388.6,,
+Argentina,225.2,389.1,,
+Argentina,224.8,392,,
+Argentina,224.8,394.1,,
+Argentina,229.1,394.1,,
+Argentina,228.7,398.6,,
+Peru,173.3,354.5,,
+Peru,171,351.1,,
+Peru,167.8,349.5,,
+Peru,165.5,347.6,,
+Peru,162.7,346.3,,
+Peru,160.9,344.8,,
+Peru,158.9,342.4,,
+Peru,157.8,339.9,,
+Peru,158.3,336.7,,
+Peru,155.6,334.7,,
+Peru,152.9,331.6,,
+Peru,150.9,329,,
+Peru,149,326.5,,
+Peru,149.1,323.5,,
+Peru,147.2,321.7,,
+Peru,145.4,318.4,,
+Peru,145,314.5,,
+Peru,145.2,312,,
+Peru,146.2,310.8,,
+Peru,144.8,308.4,,
+Peru,144.8,306.2,,
+Peru,146,303.5,,
+Peru,146.9,301,,
+Peru,147.6,298.6,,
+Peru,149,296.6,,
+Peru,151.7,297.6,,
+Peru,153.8,299.7,,
+Peru,155.6,302.2,,
+Peru,158.9,302.2,,
+Peru,161.5,303.5,,
+Peru,163.8,304.3,,
+Peru,166,304.5,,
+Peru,168.1,305.7,,
+Peru,170.4,306.5,,
+Peru,171.8,309.2,,
+Peru,168,309.4,,
+Peru,167.5,312.4,,
+Peru,166.7,315.1,,
+Peru,163.9,315.8,,
+Peru,161.6,318,,
+Peru,162.1,320.6,,
+Peru,164.3,322,,
+Peru,166.9,322.6,,
+Peru,168.3,324.1,,
+Peru,171.6,325,,
+Peru,175.5,325,,
+Peru,176.6,326,,
+Peru,175.8,327.3,,
+Peru,172.9,329,,
+Peru,172.2,330.7,,
+Peru,173.1,333.6,,
+Peru,174.7,334.2,,
+Peru,176.7,333.8,,
+Peru,181,331.9,,
+Peru,183.6,331.2,,
+Peru,186.2,331.1,,
+Peru,186.8,329.7,,
+Peru,188.3,328.8,,
+Peru,190.2,329.6,,
+Peru,191.9,330.7,,
+Peru,192.9,332.8,,
+Peru,194.3,333.8,,
+Peru,196.3,335,,
+Peru,199.1,335.7,,
+Peru,200.5,336.8,,
+Peru,201.4,338.3,,
+Peru,202.7,338.8,,
+Peru,205.8,338.3,,
+Peru,206.9,338.9,,
+Peru,208.1,341.7,,
+Peru,209.2,343.2,,
+Peru,209.1,345.3,,
+Peru,210.5,345.9,,
+Peru,212.7,347.2,,
+Peru,213.4,348.5,,
+Peru,214,350.6,,
+Peru,215.4,352.4,,
+Peru,217.8,358.3,,
+Peru,217.1,361,,
+Peru,217.7,362.2,,
+Peru,219.2,363.1,,
+Peru,221,364.7,,
+Peru,221.7,366.1,,
+Peru,223.5,366.8,,
+Peru,224.1,369.1,,
+Peru,224.9,372.4,,
+Peru,226.1,374.1,,
+Peru,227.9,376.8,,
+Peru,224.9,378.6,,
+Peru,222.1,380.6,,
+Peru,219.4,382.1,,
+Peru,215.7,383.1,,
+Peru,214.5,382,,
+Peru,216.6,378.7,,
+Peru,216.9,375.3,,
+Peru,216.9,373.3,,
+Peru,213.3,373.1,,
+Peru,210.5,372.4,,
+Peru,208.6,370.2,,
+Peru,206.6,369.9,,
+Peru,205.4,367.9,,
+Peru,203.6,366.2,,
+Peru,201.3,366,,
+Peru,198.8,365.2,,
+Peru,196.5,365.9,,
+Peru,193.9,366.1,,
+Peru,191.9,363.1,,
+Peru,189.8,363.2,,
+Peru,190.1,367.3,,
+Peru,188.2,368.6,,
+Peru,185.7,365.3,,
+Peru,183.9,363.1,,
+Peru,181.8,360.3,,
+Peru,179.5,357.7,,
+Peru,179.4,354.2,,
+Peru,176.4,355.6,,
+Venezeula,150.7,293.5,,
+Venezeula,150.6,290.2,,
+Venezeula,150.6,287,,
+Venezeula,152.6,284.6,,
+Venezeula,154.5,282.3,,
+Venezeula,154.8,278.8,,
+Venezeula,155.9,275.2,,
+Venezeula,155.9,272.1,,
+Venezeula,159.4,271.3,,
+Venezeula,161.6,270.9,,
+Venezeula,166,268.2,,
+Venezeula,169.6,266,,
+Venezeula,173.3,265.5,,
+Venezeula,175.9,263,,
+Venezeula,179.9,262.6,,
+Venezeula,181.4,264.3,,
+Venezeula,181.6,266.3,,
+Venezeula,184.5,266,,
+Venezeula,185.2,264.8,,
+Venezeula,187.2,266.1,,
+Venezeula,189.5,265.9,,
+Venezeula,195,267.7,,
+Venezeula,200.7,266.9,,
+Venezeula,203.2,268.3,,
+Venezeula,205.9,270.4,,
+Venezeula,208,272.7,,
+Venezeula,209.9,274.3,,
+Venezeula,211.7,275.8,,
+Venezeula,214.6,276.8,,
+Venezeula,215.6,278.3,,
+Venezeula,217.2,278.2,,
+Venezeula,217.7,280.5,,
+Venezeula,220.8,279.5,,
+Venezeula,222.8,280.7,,
+Venezeula,224.7,281.1,,
+Venezeula,225.5,282.1,,
+Venezeula,230.7,282.9,,
+Venezeula,232.2,281.6,,
+Venezeula,235.7,284.9,,
+Venezeula,231.6,289.1,,
+Venezeula,229.8,292.7,,
+Venezeula,220.8,293.8,,
+Venezeula,220.3,295.6,,
+Venezeula,208.3,295.5,,
+Venezeula,206.8,291.5,,
+Venezeula,205.6,290.7,,
+Venezeula,205.2,286,,
+Venezeula,200.6,287.7,,
+Venezeula,197.5,290.4,,
+Venezeula,194.6,289.2,,
+Venezeula,194,294.6,,
+Venezeula,192.1,295.7,,
+Venezeula,190.3,296.9,,
+Venezeula,187.2,297.3,,
+Venezeula,184.2,295.2,,
+Venezeula,182,294.8,,
+Venezeula,180,296.3,,
+Venezeula,178.1,298.8,,
+Venezeula,177.1,301.9,,
+Venezeula,178.8,303.7,,
+Venezeula,178.6,306.5,,
+Venezeula,175,308,,
+Venezeula,171.8,309.2,,
+Venezeula,170.4,306.5,,
+Venezeula,168.1,305.7,,
+Venezeula,166,304.5,,
+Venezeula,163.8,304.3,,
+Venezeula,161.5,303.5,,
+Venezeula,158.9,302.2,,
+Venezeula,155.6,302.2,,
+Venezeula,153.8,299.7,,
+Venezeula,151.7,297.6,,
+Venezeula,149,296.6,,
+Brazil,237.3,288.7,,
+Brazil,238.4,291.4,,
+Brazil,240.2,293.7,,
+Brazil,239.3,296.4,,
+Brazil,236.4,298.2,,
+Brazil,238.6,299.5,,
+Brazil,240.6,300.4,,
+Brazil,243.6,300.1,,
+Brazil,246.7,300.5,,
+Brazil,248.9,300.6,,
+Brazil,251.7,301.5,,
+Brazil,254.8,302.4,,
+Brazil,256.5,304.5,,
+Brazil,259,304,,
+Brazil,260.9,304.9,,
+Brazil,263.8,304.2,,
+Brazil,264.8,305.5,,
+Brazil,267.1,306.1,,
+Brazil,270.5,307.5,,
+Brazil,273.8,309.3,,
+Brazil,275.5,311.4,,
+Brazil,278,311.8,,
+Brazil,280.6,314.3,,
+Brazil,281.1,317.9,,
+Brazil,282,321.3,,
+Brazil,281.6,324.4,,
+Brazil,279.9,327.3,,
+Brazil,278.6,329.3,,
+Brazil,273.7,330.4,,
+Brazil,274.3,334.1,,
+Brazil,271.1,336.8,,
+Brazil,270.7,340.6,,
+Brazil,270.6,342.3,,
+Brazil,271.1,344.9,,
+Brazil,269.9,347,,
+Brazil,270.2,352.6,,
+Brazil,269.4,355.1,,
+Brazil,266.5,356.8,,
+Brazil,266.4,359.1,,
+Brazil,265.2,361.2,,
+Brazil,264.1,362.2,,
+Brazil,263.6,364.5,,
+Brazil,260.4,367.3,,
+Brazil,249.6,369.9,,
+Brazil,244.8,371.9,,
+Brazil,242.9,375.5,,
+Brazil,242,378.9,,
+Brazil,241.1,380.1,,
+Brazil,241.1,384.1,,
+Brazil,241.7,385.8,,
+Brazil,241.3,387.8,,
+Brazil,239.7,388.9,,
+Brazil,237.5,390,,
+Brazil,237.1,392.9,,
+Brazil,234.8,396.4,,
+Brazil,233.9,398.3,,
+Brazil,232.5,400.9,,
+Brazil,228.7,398.6,,
+Brazil,229.1,394.1,,
+Brazil,224.8,394.1,,
+Brazil,224.8,392,,
+Brazil,225.2,389.1,,
+Brazil,222.3,388.6,,
+Brazil,220.2,387.7,,
+Brazil,222.2,385.2,,
+Brazil,224.9,384.5,,
+Brazil,225.7,382,,
+Brazil,227.9,379.9,,
+Brazil,227.9,376.8,,
+Brazil,226.1,374.1,,
+Brazil,224.9,372.4,,
+Brazil,224.1,369.1,,
+Brazil,223.5,366.8,,
+Brazil,221.7,366.1,,
+Brazil,221,364.7,,
+Brazil,219.2,363.1,,
+Brazil,217.7,362.2,,
+Brazil,217.1,361,,
+Brazil,217.8,358.3,,
+Brazil,215.4,352.4,,
+Brazil,214,350.6,,
+Brazil,213.4,348.5,,
+Brazil,212.7,347.2,,
+Brazil,210.5,345.9,,
+Brazil,209.1,345.3,,
+Brazil,209.2,343.2,,
+Brazil,208.1,341.7,,
+Brazil,206.9,338.9,,
+Brazil,205.8,338.3,,
+Brazil,202.7,338.8,,
+Brazil,201.4,338.3,,
+Brazil,200.5,336.8,,
+Brazil,199.1,335.7,,
+Brazil,196.3,335,,
+Brazil,194.3,333.8,,
+Brazil,192.9,332.8,,
+Brazil,191.9,330.7,,
+Brazil,190.2,329.6,,
+Brazil,188.3,328.8,,
+Brazil,186.8,329.7,,
+Brazil,186.2,331.1,,
+Brazil,183.6,331.2,,
+Brazil,181,331.9,,
+Brazil,176.7,333.8,,
+Brazil,174.7,334.2,,
+Brazil,173.1,333.6,,
+Brazil,172.2,330.7,,
+Brazil,172.9,329,,
+Brazil,175.8,327.3,,
+Brazil,176.6,326,,
+Brazil,175.5,325,,
+Brazil,171.6,325,,
+Brazil,168.3,324.1,,
+Brazil,166.9,322.6,,
+Brazil,164.3,322,,
+Brazil,162.1,320.6,,
+Brazil,161.6,318,,
+Brazil,163.9,315.8,,
+Brazil,166.7,315.1,,
+Brazil,167.5,312.4,,
+Brazil,168,309.4,,
+Brazil,171.8,309.2,,
+Brazil,175,308,,
+Brazil,178.6,306.5,,
+Brazil,178.8,303.7,,
+Brazil,177.1,301.9,,
+Brazil,178.1,298.8,,
+Brazil,180,296.3,,
+Brazil,182,294.8,,
+Brazil,184.2,295.2,,
+Brazil,187.2,297.3,,
+Brazil,190.3,296.9,,
+Brazil,192.1,295.7,,
+Brazil,194,294.6,,
+Brazil,194.6,289.2,,
+Brazil,197.5,290.4,,
+Brazil,200.6,287.7,,
+Brazil,205.2,286,,
+Brazil,205.6,290.7,,
+Brazil,206.8,291.5,,
+Brazil,208.3,295.5,,
+Brazil,220.3,295.6,,
+Brazil,220.8,293.8,,
+Brazil,229.8,292.7,,
+Brazil,231.6,289.1,,
+Brazil,235.7,284.9,,
+Central America,153.4,280.9,,
+Central America,152,278.5,,
+Central America,150,277.6,,
+Central America,148.1,276.3,,
+Central America,146.5,277.5,,
+Central America,144.8,276.5,,
+Central America,143.6,275.1,,
+Central America,142.8,273.5,,
+Central America,141.3,272.6,,
+Central America,141.7,270.6,,
+Central America,141.4,269.2,,
+Central America,140.3,267.5,,
+Central America,140.1,265.1,,
+Central America,139.8,262.3,,
+Central America,139,260,,
+Central America,137.6,258.2,,
+Central America,136.3,254.7,,
+Central America,135.6,253.1,,
+Central America,133.5,251.7,,
+Central America,125.3,248.3,,
+Central America,121.6,247.2,,
+Central America,119,246.2,,
+Central America,118.2,244.7,,
+Central America,117.9,242.7,,
+Central America,116,241.5,,
+Central America,116,240.2,,
+Central America,118.1,237.6,,
+Central America,118.4,235.6,,
+Central America,116.8,234.5,,
+Central America,113.8,232.3,,
+Central America,113.5,231.6,,
+Central America,110.4,231.9,,
+Central America,108.3,232.7,,
+Central America,106.9,233.4,,
+Central America,106.2,232,,
+Central America,106.4,228.1,,
+Central America,106.3,226.9,,
+Central America,104.8,226.5,,
+Central America,104.2,225.3,,
+Central America,103.8,222.4,,
+Central America,102.8,218.1,,
+Central America,102.3,215.2,,
+Central America,102.5,213.1,,
+Central America,101.2,211,,
+Central America,99.3,209.6,,
+Central America,96.7,208.2,,
+Central America,96,205.8,,
+Central America,96.2,202.6,,
+Central America,97.5,204,,
+Central America,105.3,203.9,,
+Central America,109.2,206,,
+Central America,111.4,208.4,,
+Central America,120.7,208.1,,
+Central America,124.5,211.5,,
+Central America,126.4,212.1,,
+Central America,128.8,214,,
+Central America,133.7,213.8,,
+Central America,134.1,217.6,,
+Central America,133.2,221.3,,
+Central America,131.9,223.8,,
+Central America,131.1,225.6,,
+Central America,133,227.5,,
+Central America,132.6,230.3,,
+Central America,132.9,233.3,,
+Central America,133.5,235.2,,
+Central America,133.7,236.5,,
+Central America,135.7,240,,
+Central America,137.8,241.3,,
+Central America,139.6,241.5,,
+Central America,142.2,240.7,,
+Central America,145,239.6,,
+Central America,146.3,239.9,,
+Central America,147.1,237.9,,
+Central America,148.1,235.6,,
+Central America,149.6,234.7,,
+Central America,151.6,235.3,,
+Central America,153.3,235.7,,
+Central America,154.6,235.4,,
+Central America,155.8,234.9,,
+Central America,155.5,238,,
+Central America,154.9,239.9,,
+Central America,153.6,242.4,,
+Central America,151.7,243.9,,
+Central America,151.2,245.8,,
+Central America,151,247.6,,
+Central America,148.8,248.1,,
+Central America,148.6,250.9,,
+Central America,150.7,252.3,,
+Central America,152.1,254.1,,
+Central America,152.4,256.2,,
+Central America,152,258.6,,
+Central America,150.6,259,,
+Central America,149.6,260.1,,
+Central America,150.1,262.9,,
+Central America,149.8,263.8,,
+Central America,148,263.8,,
+Central America,147,265.2,,
+Central America,146.8,267.1,,
+Central America,146.1,268.1,,
+Central America,146,270.6,,
+Central America,146.3,272.2,,
+Central America,148.5,272.6,,
+Central America,149.8,272.1,,
+Central America,151.4,271.1,,
+Central America,153.2,270.1,,
+Central America,154.9,270.4,,
+Central America,155.9,272.1,,
+Central America,155.9,275.2,,
+Central America,154.8,278.8,,
+Central America,154.5,282.3,,
+Western United States,133.7,213.8,,
+Western United States,128.8,214,,
+Western United States,126.4,212.1,,
+Western United States,124.5,211.5,,
+Western United States,120.7,208.1,,
+Western United States,111.4,208.4,,
+Western United States,109.2,206,,
+Western United States,105.3,203.9,,
+Western United States,97.5,204,,
+Western United States,96.2,202.6,,
+Western United States,95.9,200.5,,
+Western United States,95.2,198.5,,
+Western United States,95.1,196.5,,
+Western United States,94.2,194.3,,
+Western United States,92.7,192.1,,
+Western United States,91.2,190.1,,
+Western United States,90,187,,
+Western United States,89.8,184.4,,
+Western United States,89.6,181.4,,
+Western United States,89.9,179.5,,
+Western United States,89.9,177.3,,
+Western United States,89.9,174.7,,
+Western United States,90.4,172.4,,
+Western United States,91.1,169.8,,
+Western United States,91.4,167.1,,
+Western United States,92,164.4,,
+Western United States,92.4,161.5,,
+Western United States,93,159.4,,
+Western United States,93.9,157.1,,
+Western United States,94.8,155.6,,
+Western United States,95.1,153.1,,
+Western United States,96.2,151.5,,
+Western United States,96.4,148.9,,
+Western United States,96.4,146.3,,
+Western United States,100.7,146.4,,
+Western United States,107.3,146.4,,
+Western United States,113.4,146.4,,
+Western United States,121.1,146.4,,
+Western United States,132.2,146.4,,
+Western United States,144.4,146.4,,
+Western United States,157.8,146,,
+Western United States,157.7,154.7,,
+Western United States,157.7,166.2,,
+Western United States,157.9,174.5,,
+Western United States,157.8,182.6,,
+Western United States,146.2,183.5,,
+Western United States,145.1,184.1,,
+Western United States,144.8,185.7,,
+Western United States,144.7,190.2,,
+Western United States,144,191.4,,
+Western United States,142.5,190.9,,
+Western United States,138.9,192.5,,
+Western United States,138.3,194.3,,
+Western United States,137.7,197.5,,
+Western United States,136.7,203.7,,
+Western United States,134.5,204.5,,
+Western United States,132.1,205,,
+Western United States,131.5,205.4,,
+Western United States,131.7,207.8,,
+Western United States,133.2,208.5,,
+Western United States,133.1,210.6,,
+Western United States,133.6,212.6,,
+Eastern United States,133,227.5,,
+Eastern United States,131.1,225.6,,
+Eastern United States,131.9,223.8,,
+Eastern United States,133.2,221.3,,
+Eastern United States,134.1,217.6,,
+Eastern United States,133.7,213.8,,
+Eastern United States,133.6,212.6,,
+Eastern United States,133.1,210.6,,
+Eastern United States,133.2,208.5,,
+Eastern United States,131.7,207.8,,
+Eastern United States,131.5,205.4,,
+Eastern United States,132.1,205,,
+Eastern United States,134.5,204.5,,
+Eastern United States,136.7,203.7,,
+Eastern United States,137.7,197.5,,
+Eastern United States,138.3,194.3,,
+Eastern United States,138.9,192.5,,
+Eastern United States,142.5,190.9,,
+Eastern United States,144,191.4,,
+Eastern United States,144.7,190.2,,
+Eastern United States,144.8,185.7,,
+Eastern United States,145.1,184.1,,
+Eastern United States,146.2,183.5,,
+Eastern United States,157.8,182.6,,
+Eastern United States,157.9,174.5,,
+Eastern United States,157.7,166.2,,
+Eastern United States,157.7,154.7,,
+Eastern United States,157.8,146,,
+Eastern United States,159.7,145.9,,
+Eastern United States,164.3,145.9,,
+Eastern United States,164.7,151.4,,
+Eastern United States,168.4,149.9,,
+Eastern United States,170.1,149.8,,
+Eastern United States,171.9,150.1,,
+Eastern United States,174.6,148.5,,
+Eastern United States,175.8,148.8,,
+Eastern United States,176.8,151.8,,
+Eastern United States,178.3,154.5,,
+Eastern United States,180.1,159.6,,
+Eastern United States,181.1,163.9,,
+Eastern United States,180.6,166,,
+Eastern United States,178.9,168.4,,
+Eastern United States,180.8,170.3,,
+Eastern United States,183.7,172.7,,
+Eastern United States,185.5,172.5,,
+Eastern United States,188,170.3,,
+Eastern United States,188.4,168.8,,
+Eastern United States,188,167.2,,
+Eastern United States,189.6,166.6,,
+Eastern United States,191.4,166.4,,
+Eastern United States,193.7,164,,
+Eastern United States,195.4,163.8,,
+Eastern United States,198.8,162.6,,
+Eastern United States,199.9,161.6,,
+Eastern United States,203.9,161.4,,
+Eastern United States,207.9,161,,
+Eastern United States,211.2,160.6,,
+Eastern United States,213.3,159.7,,
+Eastern United States,213,155.6,,
+Eastern United States,214.8,154.2,,
+Eastern United States,217,153.4,,
+Eastern United States,219.2,154.3,,
+Eastern United States,221.7,156.7,,
+Eastern United States,221.3,159.5,,
+Eastern United States,220.6,162.2,,
+Eastern United States,221,163.3,,
+Eastern United States,223.6,163.6,,
+Eastern United States,224.5,164.5,,
+Eastern United States,225.3,166.2,,
+Eastern United States,226.8,166.2,,
+Eastern United States,226.3,168.8,,
+Eastern United States,224.7,170.2,,
+Eastern United States,222.7,171.8,,
+Eastern United States,221.5,172.8,,
+Eastern United States,220.2,171.1,,
+Eastern United States,221.5,168.4,,
+Eastern United States,221.9,166.6,,
+Eastern United States,221.9,165.1,,
+Eastern United States,219.3,165.6,,
+Eastern United States,217.6,165.5,,
+Eastern United States,215.9,167.7,,
+Eastern United States,214,169.1,,
+Eastern United States,212.7,171.1,,
+Eastern United States,211.2,173.3,,
+Eastern United States,211.3,175.9,,
+Eastern United States,212.1,178.1,,
+Eastern United States,210.8,180.4,,
+Eastern United States,208.9,180.9,,
+Eastern United States,207,182.8,,
+Eastern United States,203.7,186.7,,
+Eastern United States,202.2,188.1,,
+Eastern United States,200.4,188.9,,
+Eastern United States,199.5,190.3,,
+Eastern United States,199.2,191.7,,
+Eastern United States,199.8,193.4,,
+Eastern United States,201.2,194,,
+Eastern United States,202.6,194.5,,
+Eastern United States,201.9,196.5,,
+Eastern United States,200.5,198.3,,
+Eastern United States,198.8,199.6,,
+Eastern United States,196.6,201.4,,
+Eastern United States,193.1,204.6,,
+Eastern United States,189.5,206,,
+Eastern United States,188.2,207.2,,
+Eastern United States,188.1,209.7,,
+Eastern United States,187,210.6,,
+Eastern United States,185.9,210.8,,
+Eastern United States,186.2,213.6,,
+Eastern United States,186.5,216.9,,
+Eastern United States,187.5,219.8,,
+Eastern United States,187.9,222.7,,
+Eastern United States,188.1,226.4,,
+Eastern United States,184.8,228.2,,
+Eastern United States,183.5,228,,
+Eastern United States,182.7,226.9,,
+Eastern United States,181.9,225.7,,
+Eastern United States,180.5,224.5,,
+Eastern United States,180.4,222.4,,
+Eastern United States,180.8,219,,
+Eastern United States,179,217.8,,
+Eastern United States,177.6,214,,
+Eastern United States,175.7,212.8,,
+Eastern United States,172,214.3,,
+Eastern United States,163.3,212,,
+Eastern United States,157.5,211.7,,
+Eastern United States,151.3,213,,
+Eastern United States,149,213.3,,
+Eastern United States,142.9,215.1,,
+Eastern United States,141.3,216.1,,
+Eastern United States,140.2,218.5,,
+Eastern United States,139.1,219.3,,
+Eastern United States,137.2,220.3,,
+Eastern United States,135.6,222.6,,
+Eastern United States,134.6,225,,
+Eastern United States,133.2,226.2,,
+Alberta,144.4,146.4,,
+Alberta,132.2,146.4,,
+Alberta,121.1,146.4,,
+Alberta,113.4,146.4,,
+Alberta,107.3,146.4,,
+Alberta,100.7,146.4,,
+Alberta,96.4,146.3,,
+Alberta,96.3,145.6,,
+Alberta,94.5,144,,
+Alberta,93.8,142.5,,
+Alberta,93.7,140.4,,
+Alberta,93.9,138.3,,
+Alberta,93.4,136.4,,
+Alberta,92,134.2,,
+Alberta,91.5,131.8,,
+Alberta,89.3,129.3,,
+Alberta,88.5,126.3,,
+Alberta,86.4,123.9,,
+Alberta,88.6,123.6,,
+Alberta,89.7,119.6,,
+Alberta,92.1,119.2,,
+Alberta,92.6,114.1,,
+Alberta,90.1,113.3,,
+Alberta,88.1,110.4,,
+Alberta,88.3,103.4,,
+Alberta,87,100.6,,
+Alberta,85.3,96.1,,
+Alberta,99.9,96.6,,
+Alberta,114.4,97.1,,
+Alberta,129.2,97.6,,
+Alberta,148.4,98.1,,
+Alberta,147.6,107.9,,
+Alberta,146.2,122.8,,
+Alberta,145.5,132.2,,
+Ontario,199.9,161.6,,
+Ontario,198.8,162.6,,
+Ontario,195.4,163.8,,
+Ontario,193.7,164,,
+Ontario,191.4,166.4,,
+Ontario,189.6,166.6,,
+Ontario,188,167.2,,
+Ontario,188.4,168.8,,
+Ontario,188,170.3,,
+Ontario,185.5,172.5,,
+Ontario,183.7,172.7,,
+Ontario,180.8,170.3,,
+Ontario,178.9,168.4,,
+Ontario,180.6,166,,
+Ontario,181.1,163.9,,
+Ontario,180.1,159.6,,
+Ontario,178.3,154.5,,
+Ontario,176.8,151.8,,
+Ontario,175.8,148.8,,
+Ontario,174.6,148.5,,
+Ontario,171.9,150.1,,
+Ontario,170.1,149.8,,
+Ontario,168.4,149.9,,
+Ontario,164.7,151.4,,
+Ontario,164.3,145.9,,
+Ontario,159.7,145.9,,
+Ontario,157.8,146,,
+Ontario,144.4,146.4,,
+Ontario,145.5,132.2,,
+Ontario,146.2,122.8,,
+Ontario,147.6,107.9,,
+Ontario,148.4,98.1,,
+Ontario,157.4,98.2,,
+Ontario,166.6,98.4,,
+Ontario,164.9,101.4,,
+Ontario,164.2,105.7,,
+Ontario,163.9,110,,
+Ontario,164.8,110.8,,
+Ontario,168.1,115.2,,
+Ontario,171.6,119.7,,
+Ontario,173.4,120.7,,
+Ontario,175.8,120.6,,
+Ontario,177.7,121.9,,
+Ontario,178.4,123.2,,
+Ontario,182.2,120.8,,
+Ontario,185.4,122.4,,
+Ontario,189.9,121,,
+Ontario,190.4,121.9,,
+Ontario,189.3,122.9,,
+Ontario,185.7,124.6,,
+Ontario,187,126.9,,
+Ontario,188.5,128.1,,
+Ontario,188.4,131.5,,
+Ontario,187.6,133.3,,
+Ontario,188.6,135.1,,
+Ontario,189.3,137.1,,
+Ontario,190.8,138.3,,
+Ontario,191.4,140.2,,
+Ontario,190.8,144.9,,
+Ontario,190.7,149.2,,
+Ontario,190.4,159.4,,
+Ontario,192.2,158,,
+Ontario,194.6,159.5,,
+Ontario,196.2,157.2,,
+Ontario,197.9,158.2,,
+Ontario,199.5,158.1,,
+Ontario,199.9,160.6,,
+Quebec,226.8,166.2,,
+Quebec,225.3,166.2,,
+Quebec,224.5,164.5,,
+Quebec,223.6,163.6,,
+Quebec,221,163.3,,
+Quebec,220.6,162.2,,
+Quebec,221.3,159.5,,
+Quebec,221.7,156.7,,
+Quebec,219.2,154.3,,
+Quebec,217,153.4,,
+Quebec,214.8,154.2,,
+Quebec,213,155.6,,
+Quebec,213.3,159.7,,
+Quebec,211.2,160.6,,
+Quebec,207.9,161,,
+Quebec,203.9,161.4,,
+Quebec,199.9,161.6,,
+Quebec,199.5,158.1,,
+Quebec,197.9,158.2,,
+Quebec,196.2,157.2,,
+Quebec,194.6,159.5,,
+Quebec,192.2,158,,
+Quebec,190.4,159.4,,
+Quebec,190.7,149.2,,
+Quebec,190.8,144.9,,
+Quebec,191.4,140.2,,
+Quebec,192.3,137.9,,
+Quebec,193.5,136.2,,
+Quebec,194.9,132.7,,
+Quebec,195,129.8,,
+Quebec,193.9,127.6,,
+Quebec,195,123.2,,
+Quebec,195.7,122.6,,
+Quebec,198.9,122.8,,
+Quebec,200.2,121.8,,
+Quebec,200.2,119.5,,
+Quebec,201,118.3,,
+Quebec,202.8,117.8,,
+Quebec,202.4,114,,
+Quebec,200.7,109.4,,
+Quebec,200.7,106.5,,
+Quebec,202.5,105.7,,
+Quebec,202.2,103.7,,
+Quebec,205,102.9,,
+Quebec,205.7,101.2,,
+Quebec,203.6,95.9,,
+Quebec,203.7,95,,
+Quebec,205.3,94.8,,
+Quebec,208.6,95.6,,
+Quebec,214.7,95.9,,
+Quebec,214.8,97.5,,
+Quebec,216.7,98.2,,
+Quebec,218.3,99.8,,
+Quebec,220.2,101.7,,
+Quebec,220,103.6,,
+Quebec,220.4,106,,
+Quebec,219.5,107.1,,
+Quebec,219.9,110.8,,
+Quebec,221.7,111.7,,
+Quebec,223.2,110.6,,
+Quebec,224.8,109.5,,
+Quebec,226.6,109.6,,
+Quebec,228.1,107.3,,
+Quebec,229,105.3,,
+Quebec,230.7,104.5,,
+Quebec,231.3,105.5,,
+Quebec,231.3,110.5,,
+Quebec,232.3,111.8,,
+Quebec,234.1,111.3,,
+Quebec,234.7,113.7,,
+Quebec,234.3,115.3,,
+Quebec,235.5,117.3,,
+Quebec,235.7,119.4,,
+Quebec,237.5,118.7,,
+Quebec,238.4,121.6,,
+Quebec,240.2,122.3,,
+Quebec,241.4,123.7,,
+Quebec,241.9,126.1,,
+Quebec,244.8,124.1,,
+Quebec,247.6,125.1,,
+Quebec,245.3,126.5,,
+Quebec,244.3,128.3,,
+Quebec,245.6,129,,
+Quebec,248.5,128,,
+Quebec,249,129.3,,
+Quebec,248.3,133.1,,
+Quebec,247.6,134,,
+Quebec,245.2,135.1,,
+Quebec,242.7,137.2,,
+Quebec,241.4,138,,
+Quebec,240.3,139,,
+Quebec,236.4,139.3,,
+Quebec,235.3,141.2,,
+Quebec,234.9,143.2,,
+Quebec,229.3,144.6,,
+Quebec,227.2,145.4,,
+Quebec,225.6,144.6,,
+Quebec,223.7,143.9,,
+Quebec,221.6,144.5,,
+Quebec,219.8,145.9,,
+Quebec,217.8,146.6,,
+Quebec,216.1,147.8,,
+Quebec,215.2,149.7,,
+Quebec,216.4,151.5,,
+Quebec,217.5,151.9,,
+Quebec,218.9,149.5,,
+Quebec,220.1,147.7,,
+Quebec,221.5,146.7,,
+Quebec,223.4,147.3,,
+Quebec,225.2,148.4,,
+Quebec,225.8,150.1,,
+Quebec,225.3,152.8,,
+Quebec,225.6,154.7,,
+Quebec,226.6,157,,
+Quebec,226.6,158.2,,
+Quebec,226.2,159.1,,
+Quebec,229.2,161.7,,
+Quebec,230.4,160.3,,
+Quebec,231.3,158.4,,
+Quebec,233.2,158.8,,
+Quebec,233.3,159.7,,
+Quebec,231.8,162.9,,
+Quebec,230.6,164,,
+Quebec,229.3,164,,
+Quebec,227.8,165.6,,
+Alaska,85.3,96.1,,
+Alaska,87,100.6,,
+Alaska,88.3,103.4,,
+Alaska,88.1,110.4,,
+Alaska,90.1,113.3,,
+Alaska,92.6,114.1,,
+Alaska,92.1,119.2,,
+Alaska,89.7,119.6,,
+Alaska,88.6,123.6,,
+Alaska,86.4,123.9,,
+Alaska,85.7,122.6,,
+Alaska,84.9,120.1,,
+Alaska,82.9,118.6,,
+Alaska,82.7,117.4,,
+Alaska,83.1,115.7,,
+Alaska,82.4,114.3,,
+Alaska,80.6,112.6,,
+Alaska,79.9,111.2,,
+Alaska,80,108.3,,
+Alaska,76.7,107.7,,
+Alaska,75.1,105.8,,
+Alaska,71.6,105.4,,
+Alaska,70,103,,
+Alaska,67.2,102.3,,
+Alaska,66.3,101,,
+Alaska,64.4,99.5,,
+Alaska,63.7,99.6,,
+Alaska,61.8,101,,
+Alaska,62.8,102.2,,
+Alaska,61.6,102.7,,
+Alaska,57.6,103.5,,
+Alaska,56.4,103.1,,
+Alaska,54.4,103.3,,
+Alaska,54.2,102.2,,
+Alaska,54.7,100.6,,
+Alaska,57.1,99.6,,
+Alaska,55.9,98.3,,
+Alaska,50.4,99.6,,
+Alaska,49.1,100.6,,
+Alaska,48.4,102.7,,
+Alaska,48.2,103.6,,
+Alaska,45.4,104.8,,
+Alaska,44.4,104.9,,
+Alaska,42,106.8,,
+Alaska,39.7,108.9,,
+Alaska,36.8,109.8,,
+Alaska,35.2,111.7,,
+Alaska,33.3,114.1,,
+Alaska,31.7,114.3,,
+Alaska,30.3,116,,
+Alaska,27.6,113.5,,
+Alaska,28.9,112.4,,
+Alaska,31.2,112,,
+Alaska,33.2,109,,
+Alaska,34.8,108.3,,
+Alaska,36.2,109,,
+Alaska,37.3,105.8,,
+Alaska,38,104.2,,
+Alaska,39.9,102.4,,
+Alaska,40.3,101.7,,
+Alaska,39.5,101.4,,
+Alaska,37.3,101.1,,
+Alaska,33.8,102.5,,
+Alaska,31.1,101.9,,
+Alaska,30.2,98.9,,
+Alaska,29.1,97.6,,
+Alaska,27.2,97.7,,
+Alaska,27.2,96.6,,
+Alaska,27.8,95.5,,
+Alaska,26,94.1,,
+Alaska,23.5,95,,
+Alaska,23.8,93.8,,
+Alaska,24.8,92.3,,
+Alaska,26.3,91,,
+Alaska,27.6,87.7,,
+Alaska,27.9,86.5,,
+Alaska,27.6,85.9,,
+Alaska,29.8,84.1,,
+Alaska,32.6,84,,
+Alaska,35.7,85.4,,
+Alaska,37.7,83.9,,
+Alaska,39.2,82.2,,
+Alaska,39.5,80.5,,
+Alaska,37.5,81.2,,
+Alaska,35.4,81.6,,
+Alaska,34.1,82.3,,
+Alaska,32.9,79.7,,
+Alaska,32.1,77.9,,
+Alaska,32.1,73.8,,
+Alaska,33.1,72.5,,
+Alaska,35.8,71.6,,
+Alaska,39.6,72,,
+Alaska,39.8,73.3,,
+Alaska,42,73.6,,
+Alaska,44.2,71.4,,
+Alaska,41.9,70.2,,
+Alaska,41.2,68.8,,
+Alaska,41,67,,
+Alaska,40.1,64.9,,
+Alaska,38.3,62.7,,
+Alaska,38.5,61.7,,
+Alaska,43.9,60.4,,
+Alaska,47.9,57.7,,
+Alaska,51.8,57.5,,
+Alaska,54.5,56.1,,
+Alaska,56.3,55.4,,
+Alaska,59,55.5,,
+Alaska,64.6,59.2,,
+Alaska,66.6,58.7,,
+Alaska,68.9,60.6,,
+Alaska,71.4,61.3,,
+Alaska,79,63.5,,
+Alaska,78.3,77.6,,
+Alaska,77.6,95.4,,
+Alaska,80.9,95.7,,
+Alaska,84.3,96,,
+Northwest Territory,166.6,98.4,,
+Northwest Territory,157.4,98.2,,
+Northwest Territory,148.4,98.1,,
+Northwest Territory,129.2,97.6,,
+Northwest Territory,114.4,97.1,,
+Northwest Territory,99.9,96.6,,
+Northwest Territory,85.3,96.1,,
+Northwest Territory,84.3,96,,
+Northwest Territory,80.9,95.7,,
+Northwest Territory,77.6,95.4,,
+Northwest Territory,78.3,77.6,,
+Northwest Territory,79,63.5,,
+Northwest Territory,80.9,63.7,,
+Northwest Territory,85.8,62.5,,
+Northwest Territory,96.2,66.1,,
+Northwest Territory,97.9,65.1,,
+Northwest Territory,99.3,63.7,,
+Northwest Territory,102.7,63.9,,
+Northwest Territory,107,63.1,,
+Northwest Territory,107.5,61.5,,
+Northwest Territory,110,61.4,,
+Northwest Territory,113.5,60.5,,
+Northwest Territory,116.3,59.9,,
+Northwest Territory,118.9,60,,
+Northwest Territory,119.4,62.3,,
+Northwest Territory,122.8,62.2,,
+Northwest Territory,126.1,63.3,,
+Northwest Territory,132.8,68.1,,
+Northwest Territory,134,67.8,,
+Northwest Territory,134.7,67.2,,
+Northwest Territory,135,70,,
+Northwest Territory,136.2,71.5,,
+Northwest Territory,138.9,72,,
+Northwest Territory,140.9,70.9,,
+Northwest Territory,142.5,69.2,,
+Northwest Territory,147,70.3,,
+Northwest Territory,148.8,70,,
+Northwest Territory,154,66.9,,
+Northwest Territory,155.6,66.7,,
+Northwest Territory,159.4,68.6,,
+Northwest Territory,162.9,69.3,,
+Northwest Territory,165.8,69,,
+Northwest Territory,165.8,63.6,,
+Northwest Territory,168.6,63.6,,
+Northwest Territory,169,67.1,,
+Northwest Territory,172.3,66.8,,
+Northwest Territory,174.1,65.1,,
+Northwest Territory,173.7,63.4,,
+Northwest Territory,172.2,61.8,,
+Northwest Territory,172,59,,
+Northwest Territory,173.1,55.7,,
+Northwest Territory,175,52.4,,
+Northwest Territory,176.4,50.1,,
+Northwest Territory,176.6,47.8,,
+Northwest Territory,177.7,47,,
+Northwest Territory,180.6,48.4,,
+Northwest Territory,181.4,45.6,,
+Northwest Territory,184.1,45.2,,
+Northwest Territory,185,46.5,,
+Northwest Territory,183.7,47.9,,
+Northwest Territory,183,50.3,,
+Northwest Territory,182.1,51,,
+Northwest Territory,180.2,50.7,,
+Northwest Territory,176.9,57.2,,
+Northwest Territory,178.2,58.9,,
+Northwest Territory,179.1,62.3,,
+Northwest Territory,178.9,64.8,,
+Northwest Territory,180.3,64.7,,
+Northwest Territory,181,65.8,,
+Northwest Territory,185.1,66,,
+Northwest Territory,185.4,66.7,,
+Northwest Territory,183.9,69.2,,
+Northwest Territory,188.4,70.3,,
+Northwest Territory,190.1,69.1,,
+Northwest Territory,192.1,66.6,,
+Northwest Territory,193.4,66.1,,
+Northwest Territory,194.3,67.6,,
+Northwest Territory,195.1,69.5,,
+Northwest Territory,196,70.3,,
+Northwest Territory,195.1,72.3,,
+Northwest Territory,195.8,73.4,,
+Northwest Territory,196.9,73.8,,
+Northwest Territory,193.6,77,,
+Northwest Territory,189.7,77.3,,
+Northwest Territory,187.6,81.2,,
+Northwest Territory,186.4,81.5,,
+Northwest Territory,185.2,83.4,,
+Northwest Territory,183.8,83.8,,
+Northwest Territory,182.2,83.3,,
+Northwest Territory,179,80.6,,
+Northwest Territory,178.4,82.7,,
+Northwest Territory,180.2,85.5,,
+Northwest Territory,179.9,87,,
+Northwest Territory,175.8,88.4,,
+Northwest Territory,173.3,90.6,,
+Northwest Territory,171,93.2,,
+Northwest Territory,168.6,95.8,,
+Northwest Territory,167.3,97.5,,
+Greenland,232,61.3,,
+Greenland,231.3,59.5,,
+Greenland,230.4,57.8,,
+Greenland,228.2,57.7,,
+Greenland,226.9,56.4,,
+Greenland,225.9,55.3,,
+Greenland,223.5,55.6,,
+Greenland,221.8,56.7,,
+Greenland,221.6,57.6,,
+Greenland,216.4,58.1,,
+Greenland,215.1,57.1,,
+Greenland,212.8,56.9,,
+Greenland,211.2,57.4,,
+Greenland,210,56,,
+Greenland,208.3,54.8,,
+Greenland,209.5,53.2,,
+Greenland,210.5,51.8,,
+Greenland,213,51.9,,
+Greenland,215.3,50.9,,
+Greenland,214.5,49.8,,
+Greenland,211.3,49.8,,
+Greenland,210.7,47.5,,
+Greenland,212.6,47.2,,
+Greenland,214.8,47.2,,
+Greenland,216.2,46.2,,
+Greenland,219.6,46.7,,
+Greenland,220.6,45.7,,
+Greenland,221.7,44.6,,
+Greenland,218.8,43.8,,
+Greenland,219.2,42.9,,
+Greenland,219.9,41.5,,
+Greenland,219.2,40.1,,
+Greenland,221.5,39.7,,
+Greenland,224,40,,
+Greenland,224.3,37.3,,
+Greenland,225.5,36.9,,
+Greenland,228.7,36.3,,
+Greenland,230.4,35.2,,
+Greenland,231,33.9,,
+Greenland,234.2,34.8,,
+Greenland,235.7,32.8,,
+Greenland,239.5,33.6,,
+Greenland,240.6,32.8,,
+Greenland,241.2,32.3,,
+Greenland,243.6,32.9,,
+Greenland,244,30.8,,
+Greenland,243.6,29.8,,
+Greenland,246.9,29.1,,
+Greenland,248.5,27,,
+Greenland,251.4,26.5,,
+Greenland,250.8,24.7,,
+Greenland,249.8,23.7,,
+Greenland,250.5,23,,
+Greenland,252.9,22.8,,
+Greenland,255,22,,
+Greenland,256.7,22.4,,
+Greenland,258,21.6,,
+Greenland,259.6,19.2,,
+Greenland,260.9,20.3,,
+Greenland,263.9,18.7,,
+Greenland,267.3,19.2,,
+Greenland,270.2,19.2,,
+Greenland,271.9,19.5,,
+Greenland,273.9,20.2,,
+Greenland,277.4,20.1,,
+Greenland,279.4,21.4,,
+Greenland,283.9,21.4,,
+Greenland,284.6,23.7,,
+Greenland,289,24.4,,
+Greenland,287.8,25.6,,
+Greenland,284.9,26.7,,
+Greenland,284.9,27.7,,
+Greenland,279.5,28.9,,
+Greenland,281,29.5,,
+Greenland,285,29.4,,
+Greenland,286,30.3,,
+Greenland,286.6,31.2,,
+Greenland,290.7,30.1,,
+Greenland,292.5,30.2,,
+Greenland,294.9,30.9,,
+Greenland,295.7,29.3,,
+Greenland,295.4,27.8,,
+Greenland,299.5,28.5,,
+Greenland,301.9,26.9,,
+Greenland,303,25.9,,
+Greenland,304.2,29.3,,
+Greenland,301.9,31,,
+Greenland,301.1,30.8,,
+Greenland,299.9,34.4,,
+Greenland,297.6,35.9,,
+Greenland,297.5,38.2,,
+Greenland,296.7,42.2,,
+Greenland,297,43.5,,
+Greenland,298.6,44.3,,
+Greenland,299.9,46.8,,
+Greenland,298.8,49.5,,
+Greenland,298.1,53.9,,
+Greenland,298.8,54.1,,
+Greenland,299.5,52.7,,
+Greenland,300.1,56,,
+Greenland,298.4,57.1,,
+Greenland,297.4,57.3,,
+Greenland,297.4,59.7,,
+Greenland,296.3,61.1,,
+Greenland,296,61.8,,
+Greenland,293.3,59.4,,
+Greenland,292.1,60,,
+Greenland,290.6,60.5,,
+Greenland,291.9,61.9,,
+Greenland,293.3,62.8,,
+Greenland,294.1,65.4,,
+Greenland,295.7,65.6,,
+Greenland,296,67,,
+Greenland,295.9,68.4,,
+Greenland,297.2,69.9,,
+Greenland,295.3,71.3,,
+Greenland,294.1,72.6,,
+Greenland,292.5,72.6,,
+Greenland,292,69.9,,
+Greenland,291.2,68.4,,
+Greenland,289.6,67.3,,
+Greenland,288.9,70.6,,
+Greenland,287.7,71,,
+Greenland,291.5,74,,
+Greenland,289.9,75.8,,
+Greenland,289,75.7,,
+Greenland,287.9,75.2,,
+Greenland,284.6,78.3,,
+Greenland,284,79.1,,
+Greenland,282.2,76.6,,
+Greenland,281.3,79.7,,
+Greenland,280.1,82.9,,
+Greenland,279,83.2,,
+Greenland,277.1,82.9,,
+Greenland,275.4,84.9,,
+Greenland,273.5,85.7,,
+Greenland,273.1,84.6,,
+Greenland,271.4,88.1,,
+Greenland,264.2,89,,
+Greenland,260.9,90.4,,
+Greenland,261.1,95.6,,
+Greenland,259.7,98.1,,
+Greenland,258.6,103.6,,
+Greenland,257.5,105.1,,
+Greenland,256.7,112.2,,
+Greenland,255.7,112.2,,
+Greenland,255.6,113.9,,
+Greenland,252.7,114.4,,
+Greenland,252.1,111.7,,
+Greenland,249.8,111.7,,
+Greenland,248.8,112,,
+Greenland,248.5,109.4,,
+Greenland,247.6,108.5,,
+Greenland,247.2,109.5,,
+Greenland,243.6,105.6,,
+Greenland,241.7,101.7,,
+Greenland,241.4,99,,
+Greenland,240.1,96.9,,
+Greenland,240.4,92.7,,
+Greenland,238.5,87.3,,
+Greenland,239.1,86.2,,
+Greenland,241.7,85,,
+Greenland,242.9,79.5,,
+Greenland,239.4,78.7,,
+Greenland,238.5,77.7,,
+Greenland,237.4,78.1,,
+Greenland,235,76.9,,
+Greenland,239.4,75.5,,
+Greenland,240.9,76.3,,
+Greenland,240.4,74.3,,
+Greenland,236.2,71.5,,
+Greenland,236,67.3,,
+Greenland,234.2,65.2,,
+Greenland,233.5,61.9,,
+Iceland,304.1,96.3,,
+Iceland,304,94.6,,
+Iceland,305.2,93.3,,
+Iceland,307.6,95.2,,
+Iceland,308.4,93.3,,
+Iceland,311,95.3,,
+Iceland,313.5,94.7,,
+Iceland,312,97.8,,
+Iceland,314,100.3,,
+Iceland,315.4,99.8,,
+Iceland,316.6,96,,
+Iceland,319.7,96.8,,
+Iceland,319.3,98.2,,
+Iceland,321.4,96.9,,
+Iceland,322,95.4,,
+Iceland,324.2,97.4,,
+Iceland,325.1,96.4,,
+Iceland,324.9,94.9,,
+Iceland,327.2,95.6,,
+Iceland,328.2,94.3,,
+Iceland,328.6,92.7,,
+Iceland,330.3,93,,
+Iceland,332.1,91.1,,
+Iceland,333.7,92.7,,
+Iceland,336.2,93.3,,
+Iceland,337.1,96.7,,
+Iceland,338.6,96.1,,
+Iceland,338.3,98.9,,
+Iceland,340.7,98.8,,
+Iceland,341.6,101.6,,
+Iceland,341.5,103.9,,
+Iceland,342,106.2,,
+Iceland,339.4,107.4,,
+Iceland,337.8,108.8,,
+Iceland,336.6,111.8,,
+Iceland,334.4,112.8,,
+Iceland,331.1,113.3,,
+Iceland,329.6,111.2,,
+Iceland,329,113,,
+Iceland,327.4,111.6,,
+Iceland,327.7,114.6,,
+Iceland,327.5,116.3,,
+Iceland,326.2,117.3,,
+Iceland,324.2,117.6,,
+Iceland,322.6,118.4,,
+Iceland,320.7,119.6,,
+Iceland,318.4,118.2,,
+Iceland,314.8,116.6,,
+Iceland,312.9,116,,
+Iceland,311.1,116.5,,
+Iceland,309.1,116.1,,
+Iceland,307.1,116.3,,
+Iceland,306.5,115.7,,
+Iceland,306.9,113.5,,
+Iceland,309.1,111.8,,
+Iceland,308.9,110.2,,
+Iceland,308,109.7,,
+Iceland,307,107.8,,
+Iceland,305.3,108.1,,
+Iceland,303.8,108.4,,
+Iceland,302.2,106.8,,
+Iceland,303.1,105.4,,
+Iceland,304.8,105.2,,
+Iceland,305.5,105.4,,
+Iceland,306.9,102.3,,
+Iceland,304.5,102.7,,
+Iceland,303,100,,
+Iceland,301.6,99.4,,
+Iceland,302.6,97.7,,
+Great Britian,304.5,149,,
+Great Britian,303.6,148.4,,
+Great Britian,302.4,147.6,,
+Great Britian,300.7,147.2,,
+Great Britian,300.3,144.6,,
+Great Britian,298.6,144.4,,
+Great Britian,298.3,142.7,,
+Great Britian,297.4,141,,
+Great Britian,299.9,139.1,,
+Great Britian,299.1,137.3,,
+Great Britian,296.6,137.5,,
+Great Britian,295.6,136,,
+Great Britian,297.2,134.8,,
+Great Britian,298.5,132.9,,
+Great Britian,300.7,132.3,,
+Great Britian,301.7,129.5,,
+Great Britian,303.2,125.8,,
+Great Britian,306.2,126.3,,
+Great Britian,310.3,125.6,,
+Great Britian,311.1,128.4,,
+Great Britian,308.8,130.2,,
+Great Britian,308.4,134.1,,
+Great Britian,309.5,134.4,,
+Great Britian,311.1,133.7,,
+Great Britian,312.8,134.1,,
+Great Britian,314.9,132.6,,
+Great Britian,315.5,134.9,,
+Great Britian,316.3,136.7,,
+Great Britian,315.5,138.3,,
+Great Britian,314.7,140.1,,
+Great Britian,313.7,140.7,,
+Great Britian,314.5,142.3,,
+Great Britian,312.8,142.8,,
+Great Britian,311.8,144.7,,
+Great Britian,309.8,145.6,,
+Great Britian,310.3,147.2,,
+Great Britian,312.5,146.4,,
+Great Britian,315.6,146.4,,
+Great Britian,316.7,147.7,,
+Great Britian,318.1,149.3,,
+Great Britian,318,151.9,,
+Great Britian,319,154.2,,
+Great Britian,320.3,155.9,,
+Great Britian,321.8,157,,
+Great Britian,322.8,158.7,,
+Great Britian,323.9,160.9,,
+Great Britian,324.7,163.3,,
+Great Britian,324.7,165.5,,
+Great Britian,323.7,167.5,,
+Great Britian,324.4,168.8,,
+Great Britian,326.2,168.3,,
+Great Britian,329.5,167,,
+Great Britian,331.5,167.7,,
+Great Britian,332.9,169.3,,
+Great Britian,332.8,171.1,,
+Great Britian,331.2,174.6,,
+Great Britian,329.1,175.1,,
+Great Britian,327.7,177,,
+Great Britian,328.5,179.1,,
+Great Britian,329.3,181,,
+Great Britian,327.6,182.1,,
+Great Britian,324.5,182.1,,
+Great Britian,321.5,183.4,,
+Great Britian,317.2,183.1,,
+Great Britian,314.5,184.3,,
+Great Britian,312.1,182.3,,
+Great Britian,309.4,185.1,,
+Great Britian,305.8,185.4,,
+Great Britian,303.4,187.8,,
+Great Britian,301.2,187.7,,
+Great Britian,300.7,187.1,,
+Great Britian,303.4,183.2,,
+Great Britian,306.1,181.7,,
+Great Britian,306.8,179.5,,
+Great Britian,308.3,178.7,,
+Great Britian,308,177.4,,
+Great Britian,305.9,176.6,,
+Great Britian,303.2,175.6,,
+Great Britian,298.1,175.7,,
+Great Britian,295.2,176.2,,
+Great Britian,292.6,177.2,,
+Great Britian,289.4,178.4,,
+Great Britian,286.6,180,,
+Great Britian,284.6,179.1,,
+Great Britian,284.3,178.1,,
+Great Britian,281.9,178.1,,
+Great Britian,282.9,176.7,,
+Great Britian,281.9,176,,
+Great Britian,283.7,175.2,,
+Great Britian,285.5,172.8,,
+Great Britian,286.8,170.2,,
+Great Britian,283.2,168.4,,
+Great Britian,283.8,166,,
+Great Britian,282.7,164.4,,
+Great Britian,283.7,163,,
+Great Britian,283.4,161.2,,
+Great Britian,287.1,158.4,,
+Great Britian,288.5,159.6,,
+Great Britian,290.6,156.8,,
+Great Britian,293.5,154.5,,
+Great Britian,297.9,154.9,,
+Great Britian,299.2,153.9,,
+Great Britian,299.6,156,,
+Great Britian,303.4,155.5,,
+Great Britian,304.1,153,,
+Great Britian,305.1,151,,
+Scandanavia,354.9,128.8,,
+Scandanavia,354.8,126.9,,
+Scandanavia,351.7,123.5,,
+Scandanavia,352.4,119.6,,
+Scandanavia,352.4,118.1,,
+Scandanavia,351.2,115.3,,
+Scandanavia,349.3,113.4,,
+Scandanavia,349.6,111.2,,
+Scandanavia,349.9,109.7,,
+Scandanavia,351.9,109.6,,
+Scandanavia,352.1,106,,
+Scandanavia,354.6,103.3,,
+Scandanavia,356.2,105.7,,
+Scandanavia,357.8,103.7,,
+Scandanavia,359.5,101.5,,
+Scandanavia,359.4,99.1,,
+Scandanavia,362.1,99.3,,
+Scandanavia,363.6,97.9,,
+Scandanavia,365.4,97.4,,
+Scandanavia,366.2,95.3,,
+Scandanavia,367.8,93.2,,
+Scandanavia,368.3,90.5,,
+Scandanavia,371.3,85.9,,
+Scandanavia,372.8,83.2,,
+Scandanavia,374.4,82,,
+Scandanavia,375.9,78.9,,
+Scandanavia,375.1,78,,
+Scandanavia,380.7,76,,
+Scandanavia,382,76.7,,
+Scandanavia,382.3,74.7,,
+Scandanavia,384.3,73.5,,
+Scandanavia,387.2,74.3,,
+Scandanavia,387.4,71.6,,
+Scandanavia,390.2,70.4,,
+Scandanavia,391.9,69,,
+Scandanavia,395,67.9,,
+Scandanavia,396.6,66.6,,
+Scandanavia,398.1,67.9,,
+Scandanavia,404.8,66.6,,
+Scandanavia,405.8,68.6,,
+Scandanavia,408.4,68.3,,
+Scandanavia,410.1,69.7,,
+Scandanavia,410.4,73.3,,
+Scandanavia,410.3,77.2,,
+Scandanavia,409,87.5,,
+Scandanavia,410,94,,
+Scandanavia,410.5,100.5,,
+Scandanavia,411.7,104.8,,
+Scandanavia,412.5,107.6,,
+Scandanavia,411.7,110.9,,
+Scandanavia,410.6,115.6,,
+Scandanavia,411.1,117.9,,
+Scandanavia,408.8,117.4,,
+Scandanavia,407.4,115.9,,
+Scandanavia,405,116.2,,
+Scandanavia,403,115.1,,
+Scandanavia,401.5,116.1,,
+Scandanavia,396.3,116.7,,
+Scandanavia,392.7,117.1,,
+Scandanavia,391.3,115.2,,
+Scandanavia,391.6,112.7,,
+Scandanavia,392.2,110.6,,
+Scandanavia,392.3,107.8,,
+Scandanavia,394.5,105.6,,
+Scandanavia,395.5,102.7,,
+Scandanavia,394.8,100,,
+Scandanavia,392.1,99.1,,
+Scandanavia,389.1,101.5,,
+Scandanavia,389.1,104.1,,
+Scandanavia,387.7,106.5,,
+Scandanavia,387.4,108.5,,
+Scandanavia,384.7,109.8,,
+Scandanavia,383.9,112.3,,
+Scandanavia,385.7,116.4,,
+Scandanavia,386.5,121.6,,
+Scandanavia,385.4,126,,
+Scandanavia,383.9,127.7,,
+Scandanavia,380.7,130.2,,
+Scandanavia,380.3,135.7,,
+Scandanavia,377.4,138.4,,
+Scandanavia,377,140.6,,
+Scandanavia,375.8,141.6,,
+Scandanavia,373.1,141.4,,
+Scandanavia,371,139.2,,
+Scandanavia,369.3,138.8,,
+Scandanavia,367.5,138,,
+Scandanavia,367.3,132.1,,
+Scandanavia,365.6,129.2,,
+Scandanavia,366.1,127.6,,
+Scandanavia,364.6,125.9,,
+Scandanavia,362.9,126.9,,
+Scandanavia,360.7,130.2,,
+Scandanavia,358.4,130.5,,
+Scandanavia,357.4,131.4,,
+Scandanavia,356,130.1,,
+Ukraine,411.1,117.9,,
+Ukraine,410.6,115.6,,
+Ukraine,411.7,110.9,,
+Ukraine,412.5,107.6,,
+Ukraine,411.7,104.8,,
+Ukraine,410.5,100.5,,
+Ukraine,410,94,,
+Ukraine,409,87.5,,
+Ukraine,410.3,77.2,,
+Ukraine,410.4,73.3,,
+Ukraine,410.1,69.7,,
+Ukraine,411.7,69.8,,
+Ukraine,413.5,70.1,,
+Ukraine,415.5,71,,
+Ukraine,417.9,71.1,,
+Ukraine,419.9,72,,
+Ukraine,426.6,72,,
+Ukraine,428.5,73,,
+Ukraine,429.6,72.7,,
+Ukraine,431.2,72.4,,
+Ukraine,436.3,75.5,,
+Ukraine,438.4,77.8,,
+Ukraine,439,80.5,,
+Ukraine,436.8,82.6,,
+Ukraine,433.8,83.2,,
+Ukraine,430.2,83.6,,
+Ukraine,420.9,83.1,,
+Ukraine,418.3,83.5,,
+Ukraine,417.8,85.1,,
+Ukraine,420.7,87.3,,
+Ukraine,421.9,88.2,,
+Ukraine,424,88.6,,
+Ukraine,424.9,90.4,,
+Ukraine,425.7,92.4,,
+Ukraine,425.6,95,,
+Ukraine,428.6,95.1,,
+Ukraine,429.5,95.8,,
+Ukraine,431.8,93.3,,
+Ukraine,429.7,89.4,,
+Ukraine,431,88.1,,
+Ukraine,433,89.9,,
+Ukraine,435.2,90.4,,
+Ukraine,438.4,87.4,,
+Ukraine,441.5,86.8,,
+Ukraine,443.7,85.1,,
+Ukraine,445.8,85.4,,
+Ukraine,445.9,83.8,,
+Ukraine,443.7,82.5,,
+Ukraine,444.2,78.3,,
+Ukraine,442.3,75.2,,
+Ukraine,445,75,,
+Ukraine,447.8,74.1,,
+Ukraine,450.3,77.4,,
+Ukraine,451.8,78.2,,
+Ukraine,451,80.2,,
+Ukraine,451,81.9,,
+Ukraine,453.4,81.1,,
+Ukraine,455,79.2,,
+Ukraine,458.1,77.8,,
+Ukraine,461,75.2,,
+Ukraine,462.7,73.8,,
+Ukraine,464.5,74.1,,
+Ukraine,468.3,71.3,,
+Ukraine,471,72.8,,
+Ukraine,474.5,72.4,,
+Ukraine,476.3,73.9,,
+Ukraine,478.6,73.7,,
+Ukraine,481.8,69.1,,
+Ukraine,483.5,68.6,,
+Ukraine,489.6,69.5,,
+Ukraine,492,69.3,,
+Ukraine,494.2,71.3,,
+Ukraine,495.7,81,,
+Ukraine,495,83.4,,
+Ukraine,494.8,86.6,,
+Ukraine,490.6,97.6,,
+Ukraine,491.6,101,,
+Ukraine,491,103.1,,
+Ukraine,492.2,106.9,,
+Ukraine,492.5,116.8,,
+Ukraine,494.1,117.8,,
+Ukraine,493.5,121.8,,
+Ukraine,491.7,124.7,,
+Ukraine,491.6,127.6,,
+Ukraine,496.1,130.7,,
+Ukraine,497.9,131.5,,
+Ukraine,498.6,134.3,,
+Ukraine,496,137.9,,
+Ukraine,497.7,146.9,,
+Ukraine,491.6,149.6,,
+Ukraine,488.8,154.9,,
+Ukraine,487.3,155.2,,
+Ukraine,482.3,154,,
+Ukraine,480.8,152.7,,
+Ukraine,477.7,155.1,,
+Ukraine,473.7,156.1,,
+Ukraine,470.5,156.5,,
+Ukraine,469.8,158,,
+Ukraine,465,158.6,,
+Ukraine,463,162.1,,
+Ukraine,463.4,163.5,,
+Ukraine,461,165.8,,
+Ukraine,460.3,169.1,,
+Ukraine,461.7,173.6,,
+Ukraine,462.3,175.7,,
+Ukraine,462.1,177.8,,
+Ukraine,465,180.4,,
+Ukraine,466.3,181.6,,
+Ukraine,466.5,184.8,,
+Ukraine,466,187.6,,
+Ukraine,463.4,188.8,,
+Ukraine,461.7,193.1,,
+Ukraine,462.5,195.3,,
+Ukraine,462.2,197.8,,
+Ukraine,464.1,199.1,,
+Ukraine,464.9,202,,
+Ukraine,465.8,205.7,,
+Ukraine,467.2,207.7,,
+Ukraine,470.1,208.5,,
+Ukraine,470.2,209.8,,
+Ukraine,469,210.6,,
+Ukraine,468.7,216,,
+Ukraine,468.3,218.5,,
+Ukraine,469.7,220.8,,
+Ukraine,468.1,222.9,,
+Ukraine,467,223.8,,
+Ukraine,467,224.9,,
+Ukraine,463.2,225.2,,
+Ukraine,461.6,226.4,,
+Ukraine,457.9,227.2,,
+Ukraine,454.6,227.9,,
+Ukraine,453.2,229,,
+Ukraine,450.6,226.9,,
+Ukraine,452,225.3,,
+Ukraine,453.3,223.6,,
+Ukraine,452.5,220,,
+Ukraine,448.3,216.8,,
+Ukraine,447.1,216.1,,
+Ukraine,445.1,214.1,,
+Ukraine,445.2,212.1,,
+Ukraine,442.6,212.4,,
+Ukraine,441.5,213.4,,
+Ukraine,438.5,209.1,,
+Ukraine,438.7,207.5,,
+Ukraine,435.8,204.4,,
+Ukraine,436.8,200.7,,
+Ukraine,439.4,200.2,,
+Ukraine,441.8,198,,
+Ukraine,441.2,196.4,,
+Ukraine,439.5,197.6,,
+Ukraine,436.8,197.7,,
+Ukraine,433.6,198.5,,
+Ukraine,430.8,199.3,,
+Ukraine,428.2,201.5,,
+Ukraine,430.5,203.7,,
+Ukraine,431.7,203.6,,
+Ukraine,432.4,204.6,,
+Ukraine,431.7,207,,
+Ukraine,428.9,208.6,,
+Ukraine,428.3,211.2,,
+Ukraine,424.1,209,,
+Ukraine,422.7,202.7,,
+Ukraine,419.6,201.4,,
+Ukraine,416.2,201.8,,
+Ukraine,414.6,206,,
+Ukraine,411.8,207.7,,
+Ukraine,408.9,203.9,,
+Ukraine,409.2,200.6,,
+Ukraine,408.1,197.4,,
+Ukraine,409.1,193.7,,
+Ukraine,407.1,188.4,,
+Ukraine,403.5,187.6,,
+Ukraine,403.1,183.8,,
+Ukraine,399.5,183.4,,
+Ukraine,398.5,184.6,,
+Ukraine,396.4,182.5,,
+Ukraine,397,180.5,,
+Ukraine,400.8,179.2,,
+Ukraine,403.5,175.2,,
+Ukraine,405.1,174.3,,
+Ukraine,405.6,172.3,,
+Ukraine,406.8,170.9,,
+Ukraine,406.8,169,,
+Ukraine,407.8,167.2,,
+Ukraine,406.9,165.8,,
+Ukraine,405.3,163.4,,
+Ukraine,404.9,153.5,,
+Ukraine,403.9,149.9,,
+Ukraine,404,148.5,,
+Ukraine,401.6,149,,
+Ukraine,398,147.6,,
+Ukraine,396.3,145.6,,
+Ukraine,394.9,144.9,,
+Ukraine,395.5,142.4,,
+Ukraine,393.4,138,,
+Ukraine,394.9,136.1,,
+Ukraine,395.2,133.6,,
+Ukraine,396.4,131.8,,
+Ukraine,397,129.9,,
+Ukraine,399.2,130,,
+Ukraine,399.7,132.9,,
+Ukraine,402.8,133.6,,
+Ukraine,403.3,133.1,,
+Ukraine,403,129.9,,
+Ukraine,401.4,127.4,,
+Ukraine,399.6,126.4,,
+Ukraine,398.9,124.7,,
+Ukraine,398.4,122,,
+Ukraine,400.8,120.9,,
+Ukraine,405.6,120.5,,
+Ukraine,408.5,120.8,,
+Ukraine,411.4,119.8,,
+Ukraine,412.3,118.9,,
+Northern Europe,394.9,144.9,,
+Northern Europe,396.3,145.6,,
+Northern Europe,398,147.6,,
+Northern Europe,401.6,149,,
+Northern Europe,404,148.5,,
+Northern Europe,403.9,149.9,,
+Northern Europe,404.9,153.5,,
+Northern Europe,405.3,163.4,,
+Northern Europe,406.9,165.8,,
+Northern Europe,407.8,167.2,,
+Northern Europe,406.8,169,,
+Northern Europe,406.8,170.9,,
+Northern Europe,405.6,172.3,,
+Northern Europe,405.1,174.3,,
+Northern Europe,403.5,175.2,,
+Northern Europe,400.8,179.2,,
+Northern Europe,397,180.5,,
+Northern Europe,396.4,182.5,,
+Northern Europe,398.5,184.6,,
+Northern Europe,397.8,185.8,,
+Northern Europe,396.4,188,,
+Northern Europe,393.8,190.1,,
+Northern Europe,392.4,192.9,,
+Northern Europe,392,196.5,,
+Northern Europe,392.7,199.1,,
+Northern Europe,392.3,201.3,,
+Northern Europe,383.2,201.2,,
+Northern Europe,383.1,197,,
+Northern Europe,381.9,194.9,,
+Northern Europe,383.7,191.4,,
+Northern Europe,380.3,189.2,,
+Northern Europe,378.9,190.7,,
+Northern Europe,372.3,191.5,,
+Northern Europe,372,193.6,,
+Northern Europe,370.1,196.5,,
+Northern Europe,366.6,198,,
+Northern Europe,364.5,198,,
+Northern Europe,359.9,200,,
+Northern Europe,358,197.3,,
+Northern Europe,356.6,197.3,,
+Northern Europe,352.6,198.8,,
+Northern Europe,350.8,197.2,,
+Northern Europe,350.2,194.9,,
+Northern Europe,348.5,192,,
+Northern Europe,347.1,190.9,,
+Northern Europe,344.3,187.5,,
+Northern Europe,343,183.8,,
+Northern Europe,341.9,183,,
+Northern Europe,343.3,180.1,,
+Northern Europe,344.6,179.7,,
+Northern Europe,345.4,176.4,,
+Northern Europe,347,175.6,,
+Northern Europe,347.5,172.4,,
+Northern Europe,347.1,171.9,,
+Northern Europe,350.8,171.2,,
+Northern Europe,351.8,168.3,,
+Northern Europe,353.6,166.2,,
+Northern Europe,354,163.5,,
+Northern Europe,354.7,160.9,,
+Northern Europe,355.8,160.8,,
+Northern Europe,356.5,158.2,,
+Northern Europe,359.1,156.4,,
+Northern Europe,359.4,154.8,,
+Northern Europe,361.7,152.9,,
+Northern Europe,363.5,144.1,,
+Northern Europe,362.4,144.3,,
+Northern Europe,360.9,139.2,,
+Northern Europe,362.2,136.6,,
+Northern Europe,363.3,136.5,,
+Northern Europe,364.6,135.3,,
+Northern Europe,365.8,137.1,,
+Northern Europe,367.5,139.5,,
+Northern Europe,367.5,142.5,,
+Northern Europe,367.7,145.8,,
+Northern Europe,369.4,147.5,,
+Northern Europe,371.8,148,,
+Northern Europe,374.1,147.7,,
+Northern Europe,375.6,148.1,,
+Northern Europe,378,147.2,,
+Northern Europe,380.4,147,,
+Northern Europe,382.4,147.1,,
+Northern Europe,386.3,144.9,,
+Northern Europe,389.9,144.3,,
+Northern Europe,393.4,145.1,,
+Western Europe,341.9,183,,
+Western Europe,343,183.8,,
+Western Europe,344.3,187.5,,
+Western Europe,347.1,190.9,,
+Western Europe,348.5,192,,
+Western Europe,350.2,194.9,,
+Western Europe,350.8,197.2,,
+Western Europe,352.6,198.8,,
+Western Europe,351.5,200,,
+Western Europe,349.8,202.2,,
+Western Europe,350.3,204.7,,
+Western Europe,350.3,207.5,,
+Western Europe,348.9,208.9,,
+Western Europe,348.6,210.4,,
+Western Europe,351.4,212.4,,
+Western Europe,351,215.3,,
+Western Europe,349.1,216.7,,
+Western Europe,349.8,218.8,,
+Western Europe,351.7,220.8,,
+Western Europe,352,222,,
+Western Europe,350,222.7,,
+Western Europe,348.6,224.2,,
+Western Europe,346.3,225,,
+Western Europe,345.7,223.6,,
+Western Europe,344,223.6,,
+Western Europe,344.5,222.2,,
+Western Europe,341.8,222.2,,
+Western Europe,340,222,,
+Western Europe,338.4,224.4,,
+Western Europe,338.2,226.2,,
+Western Europe,337.3,228,,
+Western Europe,337.3,229,,
+Western Europe,335.6,230.9,,
+Western Europe,333.9,232.6,,
+Western Europe,334.6,235.1,,
+Western Europe,334.5,238.1,,
+Western Europe,334.5,240.3,,
+Western Europe,336,242.4,,
+Western Europe,337,245.5,,
+Western Europe,337.4,246.1,,
+Western Europe,334.3,248.3,,
+Western Europe,332.4,251,,
+Western Europe,331.5,253.9,,
+Western Europe,330.6,255.5,,
+Western Europe,328,255,,
+Western Europe,325.6,258.1,,
+Western Europe,324.4,257.5,,
+Western Europe,323.5,262,,
+Western Europe,320.2,261.6,,
+Western Europe,318.4,258.8,,
+Western Europe,316.4,258.5,,
+Western Europe,315,257,,
+Western Europe,313.2,257.1,,
+Western Europe,311.4,255,,
+Western Europe,309.8,256.3,,
+Western Europe,305.8,256.1,,
+Western Europe,304.2,256.4,,
+Western Europe,302.7,255.7,,
+Western Europe,302.3,253.4,,
+Western Europe,301.6,251.5,,
+Western Europe,299.5,251.2,,
+Western Europe,297.6,250.6,,
+Western Europe,297.9,248.3,,
+Western Europe,299.2,246.4,,
+Western Europe,300.9,241.5,,
+Western Europe,301.4,240.7,,
+Western Europe,301.2,238.4,,
+Western Europe,302.4,236.9,,
+Western Europe,302.4,234.8,,
+Western Europe,299.4,231.7,,
+Western Europe,298.9,229.6,,
+Western Europe,298,226.7,,
+Western Europe,297.2,225.3,,
+Western Europe,297.4,223.8,,
+Western Europe,299.4,222.8,,
+Western Europe,301,221.5,,
+Western Europe,302.2,219.6,,
+Western Europe,303.9,221.2,,
+Western Europe,304,222.2,,
+Western Europe,306.1,223,,
+Western Europe,309.5,223.1,,
+Western Europe,311.9,222,,
+Western Europe,314.3,222,,
+Western Europe,316.2,222.5,,
+Western Europe,318,221.9,,
+Western Europe,318.6,219.6,,
+Western Europe,321,217.9,,
+Western Europe,321.8,217.4,,
+Western Europe,320.5,216.1,,
+Western Europe,319.3,216.1,,
+Western Europe,319.4,214.3,,
+Western Europe,320.6,212.9,,
+Western Europe,320.5,211,,
+Western Europe,321.3,209.5,,
+Western Europe,318.7,208,,
+Western Europe,317.8,208.3,,
+Western Europe,316.8,205.5,,
+Western Europe,315.1,204,,
+Western Europe,314.8,203,,
+Western Europe,311.3,201,,
+Western Europe,310.5,199,,
+Western Europe,312.8,197.6,,
+Western Europe,315.3,196.7,,
+Western Europe,321.2,197.6,,
+Western Europe,321.5,196.2,,
+Western Europe,323.1,194.1,,
+Western Europe,324.1,192.4,,
+Western Europe,327,192.6,,
+Western Europe,328.4,191.4,,
+Western Europe,332.4,192.6,,
+Western Europe,333.1,191.9,,
+Western Europe,333.3,189.4,,
+Western Europe,334.6,187.6,,
+Western Europe,336,186.7,,
+Western Europe,337.1,184.5,,
+Western Europe,339.6,184.2,,
+Southern Europe,352,222,,
+Southern Europe,351.7,220.8,,
+Southern Europe,349.8,218.8,,
+Southern Europe,349.1,216.7,,
+Southern Europe,351,215.3,,
+Southern Europe,351.4,212.4,,
+Southern Europe,348.6,210.4,,
+Southern Europe,348.9,208.9,,
+Southern Europe,350.3,207.5,,
+Southern Europe,350.3,204.7,,
+Southern Europe,349.8,202.2,,
+Southern Europe,351.5,200,,
+Southern Europe,352.6,198.8,,
+Southern Europe,356.6,197.3,,
+Southern Europe,352.6,198.8,,
+Southern Europe,356.6,197.3,,
+Southern Europe,358,197.3,,
+Southern Europe,359.9,200,,
+Southern Europe,364.5,198,,
+Southern Europe,366.6,198,,
+Southern Europe,370.1,196.5,,
+Southern Europe,372,193.6,,
+Southern Europe,372.3,191.5,,
+Southern Europe,378.9,190.7,,
+Southern Europe,380.3,189.2,,
+Southern Europe,383.7,191.4,,
+Southern Europe,381.9,194.9,,
+Southern Europe,383.1,197,,
+Southern Europe,383.2,201.2,,
+Southern Europe,392.3,201.3,,
+Southern Europe,392.7,199.1,,
+Southern Europe,392,196.5,,
+Southern Europe,392.4,192.9,,
+Southern Europe,393.8,190.1,,
+Southern Europe,396.4,188,,
+Southern Europe,397.8,185.8,,
+Southern Europe,398.5,184.6,,
+Southern Europe,399.5,183.4,,
+Southern Europe,403.1,183.8,,
+Southern Europe,403.5,187.6,,
+Southern Europe,407.1,188.4,,
+Southern Europe,409.1,193.7,,
+Southern Europe,408.1,197.4,,
+Southern Europe,409.2,200.6,,
+Southern Europe,408.9,203.9,,
+Southern Europe,411.8,207.7,,
+Southern Europe,411.1,209,,
+Southern Europe,412.2,210.9,,
+Southern Europe,411.2,212.2,,
+Southern Europe,410.2,213.3,,
+Southern Europe,410.8,215,,
+Southern Europe,410,217.1,,
+Southern Europe,408.9,219.1,,
+Southern Europe,408.8,220.3,,
+Southern Europe,407.7,222,,
+Southern Europe,407.1,223.6,,
+Southern Europe,406,224.9,,
+Southern Europe,404.8,226.1,,
+Southern Europe,404,227.5,,
+Southern Europe,403.2,228.6,,
+Southern Europe,402.6,229.9,,
+Southern Europe,403.1,231.4,,
+Southern Europe,402.8,232.8,,
+Southern Europe,401.4,234.3,,
+Southern Europe,400.5,234.8,,
+Southern Europe,400.1,236.3,,
+Southern Europe,399.8,237.3,,
+Southern Europe,398.1,237.5,,
+Southern Europe,396.6,237.5,,
+Southern Europe,395.4,238,,
+Southern Europe,394.7,239,,
+Southern Europe,395.5,240.3,,
+Southern Europe,396.6,241.4,,
+Southern Europe,397.8,242.7,,
+Southern Europe,398.2,243.8,,
+Southern Europe,398.6,245.6,,
+Southern Europe,398.2,247,,
+Southern Europe,397.2,247.9,,
+Southern Europe,397.3,249,,
+Southern Europe,397.6,250.3,,
+Southern Europe,398.9,251.5,,
+Southern Europe,400.2,252.5,,
+Southern Europe,399,253.8,,
+Southern Europe,397.2,253.6,,
+Southern Europe,396.2,251.6,,
+Southern Europe,395.3,253.1,,
+Southern Europe,394.3,253.5,,
+Southern Europe,392.5,253.4,,
+Southern Europe,391.5,252,,
+Southern Europe,390.1,251.9,,
+Southern Europe,389.2,250.4,,
+Southern Europe,389.3,249,,
+Southern Europe,389.6,247.2,,
+Southern Europe,388.6,245.4,,
+Southern Europe,388.5,243.4,,
+Southern Europe,388.3,241.6,,
+Southern Europe,387.6,239.3,,
+Southern Europe,386.8,236.1,,
+Southern Europe,385.1,235.7,,
+Southern Europe,384.2,234.4,,
+Southern Europe,382.8,234,,
+Southern Europe,382.4,232.4,,
+Southern Europe,382.3,228.9,,
+Southern Europe,382.6,227.7,,
+Southern Europe,381.2,225.8,,
+Southern Europe,379.7,225.8,,
+Southern Europe,378.3,223.7,,
+Southern Europe,376.8,223.1,,
+Southern Europe,375.9,222.6,,
+Southern Europe,375,221.2,,
+Southern Europe,374.7,220.6,,
+Southern Europe,372.4,220.4,,
+Southern Europe,371,220.1,,
+Southern Europe,370.1,221.4,,
+Southern Europe,370.1,223.2,,
+Southern Europe,370.4,224.7,,
+Southern Europe,371.5,225,,
+Southern Europe,371.6,226.9,,
+Southern Europe,372.6,227.2,,
+Southern Europe,374.9,225.9,,
+Southern Europe,375.2,226.4,,
+Southern Europe,375.6,229.5,,
+Southern Europe,376.8,230.8,,
+Southern Europe,378.3,232,,
+Southern Europe,379.4,233.9,,
+Southern Europe,380.1,235,,
+Southern Europe,380.9,235.5,,
+Southern Europe,380.2,237.6,,
+Southern Europe,378.6,238.4,,
+Southern Europe,376.2,236.9,,
+Southern Europe,376.1,235.8,,
+Southern Europe,373.6,236.3,,
+Southern Europe,372.3,235.9,,
+Southern Europe,372.5,237.3,,
+Southern Europe,373.6,238.9,,
+Southern Europe,374.7,239.6,,
+Southern Europe,374.7,241.4,,
+Southern Europe,373.9,243.2,,
+Southern Europe,373.1,244.7,,
+Southern Europe,372.3,246.8,,
+Southern Europe,371,247.9,,
+Southern Europe,369.9,248.3,,
+Southern Europe,369.5,250.2,,
+Southern Europe,366.8,251,,
+Southern Europe,365.5,251.8,,
+Southern Europe,363.7,251.1,,
+Southern Europe,362.3,250.3,,
+Southern Europe,361.9,249,,
+Southern Europe,360.7,250.1,,
+Southern Europe,359.8,247.7,,
+Southern Europe,358.7,248.1,,
+Southern Europe,358.4,245.9,,
+Southern Europe,360,244,,
+Southern Europe,361.6,244,,
+Southern Europe,363.1,244.9,,
+Southern Europe,365.3,244.5,,
+Southern Europe,366.2,246.7,,
+Southern Europe,367.1,243.2,,
+Southern Europe,369.6,240.7,,
+Southern Europe,369.9,238.7,,
+Southern Europe,368.6,237.9,,
+Southern Europe,368.5,234.9,,
+Southern Europe,367.7,233.2,,
+Southern Europe,365.6,231.5,,
+Southern Europe,363.2,230.1,,
+Southern Europe,361.7,228.2,,
+Southern Europe,360.7,227.6,,
+Southern Europe,359.6,228.2,,
+Southern Europe,358.1,226.3,,
+Southern Europe,356.9,225.8,,
+Southern Europe,356.1,223,,
+Southern Europe,353.6,221.7,,
+North Africa,323.5,262,,
+North Africa,325.6,262.8,,
+North Africa,331,262.8,,
+North Africa,334.6,261.6,,
+North Africa,336.1,261.5,,
+North Africa,338.5,260,,
+North Africa,339.6,259.9,,
+North Africa,341.5,260.5,,
+North Africa,346,258.3,,
+North Africa,346.1,257.3,,
+North Africa,349.7,256.9,,
+North Africa,354.9,254.3,,
+North Africa,356.1,253.1,,
+North Africa,359.1,252.8,,
+North Africa,361.7,252.6,,
+North Africa,363.8,252.7,,
+North Africa,365.7,253,,
+North Africa,366.9,255,,
+North Africa,368,256.5,,
+North Africa,370.4,258.1,,
+North Africa,371.7,262.7,,
+North Africa,373.4,262.5,,
+North Africa,375.6,265.9,,
+North Africa,376.6,267.4,,
+North Africa,376.1,269.4,,
+North Africa,373.7,271.2,,
+North Africa,372.8,272.2,,
+North Africa,371.3,272.9,,
+North Africa,373.6,276.7,,
+North Africa,372.4,277.7,,
+North Africa,370.8,278.3,,
+North Africa,369.9,279.9,,
+North Africa,370.2,282.2,,
+North Africa,370.1,283.8,,
+North Africa,371.5,285,,
+North Africa,372.1,288.1,,
+North Africa,372,291.3,,
+North Africa,372.4,294.7,,
+North Africa,373.7,295.7,,
+North Africa,373.8,297.6,,
+North Africa,376,298.2,,
+North Africa,378.3,298.3,,
+North Africa,380,301,,
+North Africa,381.6,301.3,,
+North Africa,384.4,300.5,,
+North Africa,385.9,302.2,,
+North Africa,389.1,301.1,,
+North Africa,393.2,303,,
+North Africa,395.6,303.1,,
+North Africa,396,306.1,,
+North Africa,399.6,306,,
+North Africa,400.2,306.9,,
+North Africa,401,309.6,,
+North Africa,402.5,310.7,,
+North Africa,407.1,310.8,,
+North Africa,407.8,315.6,,
+North Africa,407.6,318.1,,
+North Africa,407.3,319.7,,
+North Africa,405.8,320.9,,
+North Africa,407.3,322.4,,
+North Africa,406.1,325.9,,
+North Africa,405.1,328.3,,
+North Africa,404.8,331.8,,
+North Africa,405.9,334,,
+North Africa,406.7,336.4,,
+North Africa,404.4,338.9,,
+North Africa,404.4,340.9,,
+North Africa,403.5,342.1,,
+North Africa,397.1,345,,
+North Africa,394.9,346.8,,
+North Africa,392.5,347.8,,
+North Africa,390.1,349.2,,
+North Africa,389.4,350.4,,
+North Africa,388.2,350.8,,
+North Africa,388.1,353.8,,
+North Africa,388.3,355.9,,
+North Africa,389.5,355,,
+North Africa,389.6,357.9,,
+North Africa,388.8,361.8,,
+North Africa,389.6,364.5,,
+North Africa,387.5,366.1,,
+North Africa,385.7,365.7,,
+North Africa,384,364.4,,
+North Africa,381.5,365.3,,
+North Africa,377.5,364.8,,
+North Africa,374.8,366.1,,
+North Africa,372.8,363.8,,
+North Africa,373,362.7,,
+North Africa,372.4,360.9,,
+North Africa,373,359.3,,
+North Africa,373.7,357.6,,
+North Africa,373.4,356.7,,
+North Africa,371.5,356.3,,
+North Africa,365,356.8,,
+North Africa,363.1,356.6,,
+North Africa,362.3,355.5,,
+North Africa,362.3,353.6,,
+North Africa,361.8,352.3,,
+North Africa,360.2,351.4,,
+North Africa,358.3,351.1,,
+North Africa,354.7,350.8,,
+North Africa,353.2,351.1,,
+North Africa,350.8,351.3,,
+North Africa,349.2,352.1,,
+North Africa,347.5,353.5,,
+North Africa,345.8,353.7,,
+North Africa,344.1,353.5,,
+North Africa,341.9,353.7,,
+North Africa,338.1,354,,
+North Africa,334.9,354.3,,
+North Africa,330.7,354.6,,
+North Africa,328.7,353.9,,
+North Africa,326.9,351.9,,
+North Africa,325.6,350.3,,
+North Africa,321.7,348.8,,
+North Africa,320.5,346.6,,
+North Africa,318.4,345.2,,
+North Africa,316.4,343.6,,
+North Africa,315.9,339.9,,
+North Africa,313.5,338,,
+North Africa,312.4,336.2,,
+North Africa,312,334.3,,
+North Africa,310.4,333.2,,
+North Africa,307.4,332,,
+North Africa,306.4,328.5,,
+North Africa,304.8,326.5,,
+North Africa,304.8,325.6,,
+North Africa,305.9,323.7,,
+North Africa,306.6,321.3,,
+North Africa,307.4,318.4,,
+North Africa,307.6,315,,
+North Africa,307.3,311.8,,
+North Africa,307.4,308.9,,
+North Africa,307.4,306.2,,
+North Africa,305.6,303.3,,
+North Africa,305.8,300.5,,
+North Africa,306.2,297.9,,
+North Africa,307.9,295.9,,
+North Africa,308.7,294,,
+North Africa,308.7,292.7,,
+North Africa,310,289.9,,
+North Africa,311.5,289.1,,
+North Africa,311.4,286.8,,
+North Africa,312.9,285.7,,
+North Africa,314.4,281.7,,
+North Africa,316,277.8,,
+North Africa,317.5,272.6,,
+North Africa,320.6,269,,
+North Africa,320.4,264.3,,
+Egypt,407.1,310.8,,
+Egypt,402.5,310.7,,
+Egypt,401,309.6,,
+Egypt,400.2,306.9,,
+Egypt,399.6,306,,
+Egypt,396,306.1,,
+Egypt,395.6,303.1,,
+Egypt,393.2,303,,
+Egypt,389.1,301.1,,
+Egypt,385.9,302.2,,
+Egypt,384.4,300.5,,
+Egypt,381.6,301.3,,
+Egypt,380,301,,
+Egypt,378.3,298.3,,
+Egypt,376,298.2,,
+Egypt,373.8,297.6,,
+Egypt,373.7,295.7,,
+Egypt,372.4,294.7,,
+Egypt,372,291.3,,
+Egypt,372.1,288.1,,
+Egypt,371.5,285,,
+Egypt,370.1,283.8,,
+Egypt,370.2,282.2,,
+Egypt,369.9,279.9,,
+Egypt,370.8,278.3,,
+Egypt,372.4,277.7,,
+Egypt,373.6,276.7,,
+Egypt,371.3,272.9,,
+Egypt,372.8,272.2,,
+Egypt,373.7,271.2,,
+Egypt,376.1,269.4,,
+Egypt,376.6,267.4,,
+Egypt,378.9,267.3,,
+Egypt,380.8,267.8,,
+Egypt,382.4,269.9,,
+Egypt,386.7,271.8,,
+Egypt,388.8,272.4,,
+Egypt,390.7,272,,
+Egypt,393.8,270.7,,
+Egypt,396,270.2,,
+Egypt,402.8,269.7,,
+Egypt,405.6,270.4,,
+Egypt,407.6,271.7,,
+Egypt,408.8,272.9,,
+Egypt,411.3,272.7,,
+Egypt,416.1,274.1,,
+Egypt,418.1,274.3,,
+Egypt,420.1,275.2,,
+Egypt,426.9,276.7,,
+Egypt,428.5,275.1,,
+Egypt,431,275.9,,
+Egypt,431.8,275.8,,
+Egypt,432.2,275.1,,
+Egypt,434.3,273.9,,
+Egypt,436.1,278.4,,
+Egypt,435.2,281.4,,
+Egypt,435,284.2,,
+Egypt,433.1,283.9,,
+Egypt,431.9,282.8,,
+Egypt,430.3,281.1,,
+Egypt,429.8,282,,
+Egypt,430.2,284,,
+Egypt,434.2,289.8,,
+Egypt,439.1,296.8,,
+Egypt,438.2,297.8,,
+Egypt,439.7,300.3,,
+Egypt,440.8,304.6,,
+Egypt,437.6,304.9,,
+Egypt,432.6,305,,
+Egypt,427.3,304.8,,
+Egypt,422.5,304.7,,
+Egypt,417.9,304.7,,
+Egypt,411.9,304.7,,
+Egypt,410.5,306.4,,
+Egypt,409.9,309.8,,
+East Africa,406.7,336.4,,
+East Africa,405.9,334,,
+East Africa,404.8,331.8,,
+East Africa,405.1,328.3,,
+East Africa,406.1,325.9,,
+East Africa,407.3,322.4,,
+East Africa,405.8,320.9,,
+East Africa,407.3,319.7,,
+East Africa,407.6,318.1,,
+East Africa,407.8,315.6,,
+East Africa,407.1,310.8,,
+East Africa,409.9,309.8,,
+East Africa,410.5,306.4,,
+East Africa,411.9,304.7,,
+East Africa,417.9,304.7,,
+East Africa,422.5,304.7,,
+East Africa,427.3,304.8,,
+East Africa,432.6,305,,
+East Africa,437.6,304.9,,
+East Africa,440.8,304.6,,
+East Africa,442.4,305.6,,
+East Africa,444.4,308,,
+East Africa,445.7,313.3,,
+East Africa,446.4,314,,
+East Africa,447.7,315.2,,
+East Africa,447.5,318.2,,
+East Africa,449.1,320,,
+East Africa,450,321.9,,
+East Africa,451.2,325.4,,
+East Africa,452.1,326.7,,
+East Africa,453.4,326.9,,
+East Africa,453.6,329.1,,
+East Africa,455.9,331,,
+East Africa,457.5,332.8,,
+East Africa,458.8,334.4,,
+East Africa,457.5,338.2,,
+East Africa,458.9,340.2,,
+East Africa,460.4,340.8,,
+East Africa,466.4,340.2,,
+East Africa,468.1,338.8,,
+East Africa,474.4,338.2,,
+East Africa,479.7,336.6,,
+East Africa,481.5,337.1,,
+East Africa,482.3,339.5,,
+East Africa,481.3,343.4,,
+East Africa,479.7,347.5,,
+East Africa,477.9,351.4,,
+East Africa,475.7,356.4,,
+East Africa,472.5,360.7,,
+East Africa,468.8,364.7,,
+East Africa,464.7,368.5,,
+East Africa,461.4,372,,
+East Africa,459,375.3,,
+East Africa,457.4,378,,
+East Africa,455.5,380.4,,
+East Africa,453,382.4,,
+East Africa,450.2,383.8,,
+East Africa,449.2,385.5,,
+East Africa,448.9,388.4,,
+East Africa,448.5,390.8,,
+East Africa,449.1,393.1,,
+East Africa,448.8,396.1,,
+East Africa,450.5,397.5,,
+East Africa,450.9,400,,
+East Africa,450.8,402.4,,
+East Africa,448.9,404.5,,
+East Africa,446.7,405.2,,
+East Africa,445.4,406,,
+East Africa,441.9,407,,
+East Africa,439.8,408.9,,
+East Africa,440.3,411.5,,
+East Africa,441,413.9,,
+East Africa,439.7,416,,
+East Africa,440,419.1,,
+East Africa,438.2,421.3,,
+East Africa,436.7,420.5,,
+East Africa,434.7,417.7,,
+East Africa,435,415.1,,
+East Africa,435.6,412.7,,
+East Africa,433.9,408.6,,
+East Africa,434.2,406.5,,
+East Africa,434.4,404.2,,
+East Africa,433.3,402.1,,
+East Africa,430.5,399.2,,
+East Africa,429.2,397.8,,
+East Africa,428.9,396,,
+East Africa,426.5,396.3,,
+East Africa,425.5,394.1,,
+East Africa,424.5,384.2,,
+East Africa,424.6,381.8,,
+East Africa,427.7,382.5,,
+East Africa,428.2,379.4,,
+East Africa,428.4,373.8,,
+East Africa,432.3,373.5,,
+East Africa,433.4,372.1,,
+East Africa,434.8,369.3,,
+East Africa,436.6,368.4,,
+East Africa,437.8,365.6,,
+East Africa,439,362.9,,
+East Africa,438.4,360.9,,
+East Africa,434.4,359.3,,
+East Africa,432.2,359.8,,
+East Africa,425.4,358.7,,
+East Africa,423.7,356.6,,
+East Africa,422.5,356.5,,
+East Africa,420.8,358.5,,
+East Africa,418.8,356.4,,
+East Africa,417.1,353.2,,
+East Africa,414.6,351,,
+East Africa,414.2,347.2,,
+East Africa,411.7,345.1,,
+East Africa,410.1,342.8,,
+East Africa,408.3,341.8,,
+East Africa,407.5,338.1,,
+Congo,372.8,363.8,,
+Congo,374.8,366.1,,
+Congo,377.5,364.8,,
+Congo,381.5,365.3,,
+Congo,384,364.4,,
+Congo,385.7,365.7,,
+Congo,387.5,366.1,,
+Congo,389.6,364.5,,
+Congo,388.8,361.8,,
+Congo,389.6,357.9,,
+Congo,389.5,355,,
+Congo,388.3,355.9,,
+Congo,388.1,353.8,,
+Congo,388.2,350.8,,
+Congo,389.4,350.4,,
+Congo,390.1,349.2,,
+Congo,392.5,347.8,,
+Congo,394.9,346.8,,
+Congo,397.1,345,,
+Congo,403.5,342.1,,
+Congo,404.4,340.9,,
+Congo,404.4,338.9,,
+Congo,406.7,336.4,,
+Congo,407.5,338.1,,
+Congo,408.3,341.8,,
+Congo,410.1,342.8,,
+Congo,411.7,345.1,,
+Congo,414.2,347.2,,
+Congo,414.6,351,,
+Congo,417.1,353.2,,
+Congo,418.8,356.4,,
+Congo,420.8,358.5,,
+Congo,422.5,356.5,,
+Congo,423.7,356.6,,
+Congo,425.4,358.7,,
+Congo,432.2,359.8,,
+Congo,434.4,359.3,,
+Congo,438.4,360.9,,
+Congo,439,362.9,,
+Congo,437.8,365.6,,
+Congo,436.6,368.4,,
+Congo,434.8,369.3,,
+Congo,433.4,372.1,,
+Congo,432.3,373.5,,
+Congo,428.4,373.8,,
+Congo,428.2,379.4,,
+Congo,427.7,382.5,,
+Congo,424.6,381.8,,
+Congo,424.5,384.2,,
+Congo,425.5,394.1,,
+Congo,426.5,396.3,,
+Congo,424.1,397.4,,
+Congo,422.6,397.9,,
+Congo,421.5,402.5,,
+Congo,422.3,403.5,,
+Congo,424.3,404.3,,
+Congo,423.3,410,,
+Congo,421.8,409.8,,
+Congo,420.2,407.4,,
+Congo,418.5,406.3,,
+Congo,411.8,405.5,,
+Congo,410.3,404.4,,
+Congo,407.2,403.9,,
+Congo,405.8,401.9,,
+Congo,406.7,399.6,,
+Congo,406.4,397.7,,
+Congo,404.3,395.9,,
+Congo,404.3,392.7,,
+Congo,403.3,392,,
+Congo,396.9,393.1,,
+Congo,395.3,394.1,,
+Congo,393.2,393.1,,
+Congo,393.6,388.4,,
+Congo,391.8,388.2,,
+Congo,388.9,387.7,,
+Congo,385.9,387.5,,
+Congo,382.1,385.1,,
+Congo,378.8,385.9,,
+Congo,376.5,382,,
+Congo,372.1,377.6,,
+Congo,368.9,374.7,,
+Congo,368.3,373.5,,
+Congo,369.3,372.4,,
+Congo,371,370.7,,
+Congo,372.7,368,,
+Congo,371.6,365.9,,
+South Africa,378.8,385.9,,
+South Africa,382.1,385.1,,
+South Africa,385.9,387.5,,
+South Africa,388.9,387.7,,
+South Africa,391.8,388.2,,
+South Africa,393.6,388.4,,
+South Africa,393.2,393.1,,
+South Africa,395.3,394.1,,
+South Africa,396.9,393.1,,
+South Africa,403.3,392,,
+South Africa,404.3,392.7,,
+South Africa,404.3,395.9,,
+South Africa,406.4,397.7,,
+South Africa,406.7,399.6,,
+South Africa,405.8,401.9,,
+South Africa,407.2,403.9,,
+South Africa,410.3,404.4,,
+South Africa,411.8,405.5,,
+South Africa,418.5,406.3,,
+South Africa,420.2,407.4,,
+South Africa,421.8,409.8,,
+South Africa,423.3,410,,
+South Africa,424.3,404.3,,
+South Africa,422.3,403.5,,
+South Africa,421.5,402.5,,
+South Africa,422.6,397.9,,
+South Africa,424.1,397.4,,
+South Africa,426.5,396.3,,
+South Africa,428.9,396,,
+South Africa,429.2,397.8,,
+South Africa,430.5,399.2,,
+South Africa,433.3,402.1,,
+South Africa,434.4,404.2,,
+South Africa,434.2,406.5,,
+South Africa,433.9,408.6,,
+South Africa,435.6,412.7,,
+South Africa,435,415.1,,
+South Africa,434.7,417.7,,
+South Africa,436.7,420.5,,
+South Africa,438.2,421.3,,
+South Africa,440,419.1,,
+South Africa,439.7,416,,
+South Africa,441,413.9,,
+South Africa,440.3,411.5,,
+South Africa,439.8,408.9,,
+South Africa,441.9,407,,
+South Africa,445.4,406,,
+South Africa,446.7,405.2,,
+South Africa,448.9,404.5,,
+South Africa,450.8,402.4,,
+South Africa,453.1,402.3,,
+South Africa,453.2,405,,
+South Africa,454,407.9,,
+South Africa,454.6,411.8,,
+South Africa,454,413.7,,
+South Africa,454.3,416.1,,
+South Africa,453.3,420,,
+South Africa,451.5,421.2,,
+South Africa,449.6,423.6,,
+South Africa,447.2,427.6,,
+South Africa,446.3,428.5,,
+South Africa,444.6,429,,
+South Africa,443.3,430.1,,
+South Africa,441.9,432.3,,
+South Africa,440.5,436.6,,
+South Africa,440.5,439.4,,
+South Africa,441.7,441.7,,
+South Africa,439.8,444.5,,
+South Africa,437.7,448.5,,
+South Africa,435.5,449.6,,
+South Africa,435.2,452.2,,
+South Africa,432.4,457.6,,
+South Africa,434.5,455.1,,
+South Africa,433.7,459.1,,
+South Africa,433.4,461.9,,
+South Africa,431.4,462.4,,
+South Africa,428.2,466.3,,
+South Africa,428.5,467.4,,
+South Africa,430.2,467.2,,
+South Africa,428.1,469.3,,
+South Africa,425.4,472.3,,
+South Africa,427,474.1,,
+South Africa,424.9,474.1,,
+South Africa,422.8,475.4,,
+South Africa,417.3,476.8,,
+South Africa,414.6,479.7,,
+South Africa,411,480.3,,
+South Africa,406.3,480.3,,
+South Africa,405.2,481.2,,
+South Africa,402.3,481.5,,
+South Africa,399.8,482.9,,
+South Africa,399,483.8,,
+South Africa,397.6,482.2,,
+South Africa,395,481.8,,
+South Africa,393.6,480.2,,
+South Africa,394.1,478.7,,
+South Africa,393.2,475.3,,
+South Africa,393.2,469.2,,
+South Africa,393.1,467.7,,
+South Africa,391.5,465.1,,
+South Africa,391.2,462.9,,
+South Africa,391.2,460.8,,
+South Africa,389.6,460.2,,
+South Africa,388.1,457.5,,
+South Africa,388.4,455.8,,
+South Africa,388.5,452.4,,
+South Africa,387.2,450.2,,
+South Africa,385.6,446.9,,
+South Africa,385.3,443.9,,
+South Africa,385.6,441.8,,
+South Africa,384.7,439.9,,
+South Africa,381.3,436.3,,
+South Africa,381.1,435,,
+South Africa,378.6,432,,
+South Africa,378.9,430.4,,
+South Africa,378.4,427.4,,
+South Africa,377.2,424.5,,
+South Africa,377.5,421.8,,
+South Africa,378.1,419.2,,
+South Africa,378.2,417,,
+South Africa,379.9,414,,
+South Africa,380.1,412.1,,
+South Africa,382.6,408.1,,
+South Africa,381.8,404.4,,
+South Africa,379.4,400,,
+South Africa,379.5,398.8,,
+South Africa,382.3,395.5,,
+South Africa,383.2,393.2,,
+South Africa,382.4,391,,
+South Africa,380.4,388.1,,
+Madagascar,465,426.4,,
+Madagascar,465.2,424.7,,
+Madagascar,468.2,424.8,,
+Madagascar,470,424.4,,
+Madagascar,470.9,423.6,,
+Madagascar,475.3,424.2,,
+Madagascar,476.7,423.1,,
+Madagascar,477.8,422.3,,
+Madagascar,478.5,420.1,,
+Madagascar,480.9,419.4,,
+Madagascar,483,416.8,,
+Madagascar,482.6,414.7,,
+Madagascar,485.1,414.9,,
+Madagascar,486.1,413.5,,
+Madagascar,486.7,409.8,,
+Madagascar,490.2,406.9,,
+Madagascar,491.4,409.8,,
+Madagascar,492.9,411.3,,
+Madagascar,492.6,414.4,,
+Madagascar,491.1,415.4,,
+Madagascar,492,417.1,,
+Madagascar,492.3,421.8,,
+Madagascar,491.7,422.4,,
+Madagascar,489.8,420,,
+Madagascar,489.9,423.7,,
+Madagascar,490.4,425.4,,
+Madagascar,487.9,425.8,,
+Madagascar,488,428.2,,
+Madagascar,486.9,429.4,,
+Madagascar,486.4,431.8,,
+Madagascar,487.5,432.7,,
+Madagascar,485.6,435.6,,
+Madagascar,485.2,441.4,,
+Madagascar,485.5,442.3,,
+Madagascar,482.4,446.4,,
+Madagascar,482.4,448.6,,
+Madagascar,480.1,450.9,,
+Madagascar,479,452.1,,
+Madagascar,478.8,454.5,,
+Madagascar,477.6,456.3,,
+Madagascar,477,458.2,,
+Madagascar,475.1,460.2,,
+Madagascar,474,460.6,,
+Madagascar,473.9,463.2,,
+Madagascar,472.8,464.4,,
+Madagascar,461.5,464.3,,
+Madagascar,461.6,457.8,,
+Madagascar,461,455.9,,
+Madagascar,459.2,453.9,,
+Madagascar,458.2,450.5,,
+Madagascar,459.6,449,,
+Madagascar,461.3,447.4,,
+Madagascar,462.4,445.9,,
+Madagascar,462.6,443.5,,
+Madagascar,463.3,441.8,,
+Madagascar,463.6,438.8,,
+Madagascar,464.2,436.8,,
+Madagascar,466.3,436.7,,
+Madagascar,467.1,435.4,,
+Madagascar,465.3,434.5,,
+Madagascar,464.3,433.6,,
+Madagascar,463.7,431.9,,
+Madagascar,462.7,430.4,,
+Madagascar,464.2,428.4,,
+Middle East,436.1,278.4,,
+Middle East,434.3,273.9,,
+Middle East,435.4,271.5,,
+Middle East,436.6,270.6,,
+Middle East,436.3,267.3,,
+Middle East,436,262.8,,
+Middle East,436.1,258.3,,
+Middle East,435.6,254.8,,
+Middle East,435.2,252.6,,
+Middle East,435.6,250.5,,
+Middle East,434.5,249.6,,
+Middle East,432.1,249.9,,
+Middle East,430.4,251.3,,
+Middle East,429.1,252.3,,
+Middle East,426.9,251.7,,
+Middle East,424,252,,
+Middle East,421.5,250.8,,
+Middle East,418.2,249.3,,
+Middle East,417.5,251,,
+Middle East,416.4,252.1,,
+Middle East,416.9,254.5,,
+Middle East,414,253.9,,
+Middle East,413.6,249.9,,
+Middle East,411,250.3,,
+Middle East,407.3,248.5,,
+Middle East,406.6,246.5,,
+Middle East,406.2,244,,
+Middle East,404.7,241.8,,
+Middle East,402.9,238.7,,
+Middle East,405.1,237.6,,
+Middle East,404.1,235.5,,
+Middle East,402.8,232.8,,
+Middle East,403.1,231.4,,
+Middle East,402.6,229.9,,
+Middle East,403.2,228.6,,
+Middle East,404,227.5,,
+Middle East,404.8,226.1,,
+Middle East,406,224.9,,
+Middle East,407.1,223.6,,
+Middle East,407.7,222,,
+Middle East,410.5,223.6,,
+Middle East,412.5,226.1,,
+Middle East,416.6,226.7,,
+Middle East,419.9,226.7,,
+Middle East,423.7,225.1,,
+Middle East,423.7,223.2,,
+Middle East,426,222.9,,
+Middle East,430.5,224,,
+Middle East,432.7,222.6,,
+Middle East,436.6,223.6,,
+Middle East,439.4,224.9,,
+Middle East,441.1,227.2,,
+Middle East,444.7,227.3,,
+Middle East,446.1,225,,
+Middle East,449.7,224.5,,
+Middle East,452,225.3,,
+Middle East,450.6,226.9,,
+Middle East,453.2,229,,
+Middle East,454.6,227.9,,
+Middle East,457.9,227.2,,
+Middle East,461.6,226.4,,
+Middle East,463.2,225.2,,
+Middle East,467,224.9,,
+Middle East,467,223.8,,
+Middle East,468.1,222.9,,
+Middle East,469.7,220.8,,
+Middle East,470,224.4,,
+Middle East,471,226.1,,
+Middle East,473.2,227.2,,
+Middle East,475.9,227.6,,
+Middle East,480.5,229,,
+Middle East,481.3,228.5,,
+Middle East,480.6,227.6,,
+Middle East,483.8,226.3,,
+Middle East,484.1,225.1,,
+Middle East,484.4,223,,
+Middle East,487.7,223.8,,
+Middle East,489.3,222.2,,
+Middle East,491.3,222,,
+Middle East,492.8,222.8,,
+Middle East,494.5,223.3,,
+Middle East,496.5,225.4,,
+Middle East,497.5,227.5,,
+Middle East,500.6,227.8,,
+Middle East,502.3,229.5,,
+Middle East,504.1,231.3,,
+Middle East,503.8,233.9,,
+Middle East,503.2,239,,
+Middle East,502.9,243.2,,
+Middle East,504.6,244,,
+Middle East,505.3,246.7,,
+Middle East,505.8,249.4,,
+Middle East,507.1,251.7,,
+Middle East,507,253.9,,
+Middle East,509.5,256.5,,
+Middle East,509.6,258.7,,
+Middle East,508.9,260.7,,
+Middle East,510.3,262.4,,
+Middle East,511.6,268.4,,
+Middle East,509,268.5,,
+Middle East,506.9,271.2,,
+Middle East,504.5,272.8,,
+Middle East,503.6,273.5,,
+Middle East,503.6,274.9,,
+Middle East,502,276.1,,
+Middle East,499.5,277.2,,
+Middle East,498.3,276.4,,
+Middle East,497.6,275.1,,
+Middle East,497.3,273.4,,
+Middle East,495.8,271,,
+Middle East,494.6,272.7,,
+Middle East,494.4,275.2,,
+Middle East,491.3,275,,
+Middle East,489.1,276.1,,
+Middle East,488.4,275,,
+Middle East,487.7,273.6,,
+Middle East,485.5,273.5,,
+Middle East,484.9,271.5,,
+Middle East,483.7,269.4,,
+Middle East,483.8,263.3,,
+Middle East,483,261.2,,
+Middle East,480.6,261.9,,
+Middle East,478.9,263.3,,
+Middle East,476.2,263.9,,
+Middle East,475.2,265.2,,
+Middle East,476.4,266.5,,
+Middle East,477.8,269,,
+Middle East,479.6,270.9,,
+Middle East,479.9,272.2,,
+Middle East,480.2,274.6,,
+Middle East,481.8,274.7,,
+Middle East,482.3,276.8,,
+Middle East,485,278.8,,
+Middle East,485.5,281.4,,
+Middle East,486.7,283,,
+Middle East,489.8,282.6,,
+Middle East,492.4,282.4,,
+Middle East,493.2,280.6,,
+Middle East,496,279.7,,
+Middle East,496.2,282.3,,
+Middle East,498,282.2,,
+Middle East,500.5,284.1,,
+Middle East,502.9,284.6,,
+Middle East,504.2,286.4,,
+Middle East,504.2,288.4,,
+Middle East,505.6,289.7,,
+Middle East,505.2,292.8,,
+Middle East,503.9,295.6,,
+Middle East,504.5,298,,
+Middle East,503.4,300.7,,
+Middle East,502,302.1,,
+Middle East,502.2,304,,
+Middle East,500.4,308.2,,
+Middle East,497.8,312.5,,
+Middle East,496.7,314.5,,
+Middle East,496.3,315.9,,
+Middle East,493.5,315.3,,
+Middle East,492.5,317.1,,
+Middle East,491.1,318.3,,
+Middle East,489.6,320.3,,
+Middle East,487.1,321.3,,
+Middle East,486.2,323.1,,
+Middle East,483.3,324.6,,
+Middle East,479.1,326.1,,
+Middle East,474.2,326.9,,
+Middle East,470.1,327.4,,
+Middle East,466.2,327.8,,
+Middle East,465.2,325.8,,
+Middle East,464,323.9,,
+Middle East,462.8,322.2,,
+Middle East,463.2,317.9,,
+Middle East,461.4,315.5,,
+Middle East,460.1,312.6,,
+Middle East,457.7,310.9,,
+Middle East,455.2,309.5,,
+Middle East,453.5,307.4,,
+Middle East,452.8,305.4,,
+Middle East,450.7,303.6,,
+Middle East,449.8,302,,
+Middle East,448.9,300.6,,
+Middle East,447.4,300.1,,
+Middle East,446.2,296.2,,
+Middle East,444.6,293.5,,
+Middle East,442.5,291.8,,
+Middle East,441.6,289.9,,
+Middle East,439.5,288.1,,
+Middle East,437.1,285.9,,
+Middle East,437.7,283.4,,
+Middle East,436.7,281,,
+India,511.6,268.4,,
+India,510.3,262.4,,
+India,508.9,260.7,,
+India,509.6,258.7,,
+India,509.5,256.5,,
+India,507,253.9,,
+India,507.1,251.7,,
+India,505.8,249.4,,
+India,505.3,246.7,,
+India,504.6,244,,
+India,502.9,243.2,,
+India,503.2,239,,
+India,503.8,233.9,,
+India,504.1,231.3,,
+India,506.9,230.4,,
+India,508.3,228.1,,
+India,510,226.5,,
+India,510.3,224.3,,
+India,513.8,223.4,,
+India,516.2,223.5,,
+India,517,222,,
+India,517.8,219.3,,
+India,521.1,218.5,,
+India,525.5,221.4,,
+India,529.8,221.2,,
+India,532.9,217,,
+India,535.8,216.5,,
+India,537.3,214.2,,
+India,538.1,217.7,,
+India,540,219,,
+India,543.5,218.9,,
+India,545.9,218.2,,
+India,545.3,221,,
+India,545.9,227.5,,
+India,546.1,230.4,,
+India,545.2,232.3,,
+India,543.7,233.4,,
+India,542.9,235.4,,
+India,544.5,236.6,,
+India,546.8,235.3,,
+India,547.6,237.4,,
+India,548.7,238.9,,
+India,551.9,240.3,,
+India,553.8,241,,
+India,555.3,242.4,,
+India,558,243.1,,
+India,558.7,241.6,,
+India,560.2,242.1,,
+India,560.1,243.7,,
+India,563.8,246.2,,
+India,565.1,244,,
+India,568.4,245.1,,
+India,568.5,249.2,,
+India,570.1,250.7,,
+India,571.9,248.5,,
+India,581.5,249,,
+India,584.6,256.3,,
+India,583.3,258.7,,
+India,581.8,263.6,,
+India,579.9,264.2,,
+India,579.5,266.7,,
+India,577.7,269.3,,
+India,576,270,,
+India,575.4,273.9,,
+India,572.6,274.2,,
+India,572.1,276.1,,
+India,571.5,277.6,,
+India,570.3,279.8,,
+India,567.6,278.6,,
+India,566,280.6,,
+India,565,283.8,,
+India,565.5,285.8,,
+India,563.5,286.9,,
+India,563.2,292.5,,
+India,560.4,295.2,,
+India,560.6,298.6,,
+India,559.8,299.8,,
+India,558.8,304.9,,
+India,558.5,307.7,,
+India,556.4,312.2,,
+India,557.1,315.2,,
+India,556.2,321.5,,
+India,556.2,323.7,,
+India,556.6,325.2,,
+India,554.9,326.4,,
+India,553.5,326.7,,
+India,553.3,328.8,,
+India,553.7,331.3,,
+India,552,332,,
+India,551.3,333.8,,
+India,549.2,334,,
+India,547.8,331.4,,
+India,546,326.9,,
+India,544.6,325.6,,
+India,543.4,321.3,,
+India,542.5,319.1,,
+India,541.5,318.5,,
+India,540.5,316.9,,
+India,540,314.4,,
+India,538.9,312.5,,
+India,538.4,310.4,,
+India,536.4,309.4,,
+India,536.2,306.2,,
+India,535.3,303.5,,
+India,533.4,301.1,,
+India,533.5,298.6,,
+India,532.2,297.2,,
+India,531.7,293.2,,
+India,532.3,291.2,,
+India,532.6,287.7,,
+India,533.1,284.4,,
+India,532.9,282.6,,
+India,531.7,282.2,,
+India,530.5,284.4,,
+India,527.4,284.1,,
+India,525.7,281.2,,
+India,524.3,280.4,,
+India,527.1,277.9,,
+India,527.2,277.2,,
+India,522.9,276.3,,
+India,522.9,273.1,,
+India,520.2,273.3,,
+India,517.6,271.7,,
+India,517.2,268,,
+India,516.4,267.2,,
+India,514.5,267.2,,
+Afghanistan,532.9,217,,
+Afghanistan,529.8,221.2,,
+Afghanistan,525.5,221.4,,
+Afghanistan,521.1,218.5,,
+Afghanistan,517.8,219.3,,
+Afghanistan,517,222,,
+Afghanistan,516.2,223.5,,
+Afghanistan,513.8,223.4,,
+Afghanistan,510.3,224.3,,
+Afghanistan,510,226.5,,
+Afghanistan,508.3,228.1,,
+Afghanistan,506.9,230.4,,
+Afghanistan,504.1,231.3,,
+Afghanistan,502.3,229.5,,
+Afghanistan,500.6,227.8,,
+Afghanistan,497.5,227.5,,
+Afghanistan,496.5,225.4,,
+Afghanistan,494.5,223.3,,
+Afghanistan,492.8,222.8,,
+Afghanistan,491.3,222,,
+Afghanistan,489.3,222.2,,
+Afghanistan,487.7,223.8,,
+Afghanistan,484.4,223,,
+Afghanistan,484.4,220.7,,
+Afghanistan,483.7,218.8,,
+Afghanistan,483.8,215.9,,
+Afghanistan,481.7,214.9,,
+Afghanistan,481,212.6,,
+Afghanistan,483.2,213,,
+Afghanistan,482.3,208.7,,
+Afghanistan,479.3,208.2,,
+Afghanistan,479.5,204.9,,
+Afghanistan,478.2,203.2,,
+Afghanistan,479.5,201.1,,
+Afghanistan,477.8,199.8,,
+Afghanistan,474.6,199.8,,
+Afghanistan,474.7,197.6,,
+Afghanistan,473.4,196.7,,
+Afghanistan,472.7,192.5,,
+Afghanistan,473.9,190.4,,
+Afghanistan,476.4,189,,
+Afghanistan,477.1,186.3,,
+Afghanistan,477,184.2,,
+Afghanistan,476.4,181.7,,
+Afghanistan,475.6,180.3,,
+Afghanistan,473.5,180.5,,
+Afghanistan,470.7,181.4,,
+Afghanistan,468.7,185,,
+Afghanistan,466.5,184.8,,
+Afghanistan,466.3,181.6,,
+Afghanistan,465,180.4,,
+Afghanistan,462.1,177.8,,
+Afghanistan,462.3,175.7,,
+Afghanistan,461.7,173.6,,
+Afghanistan,460.3,169.1,,
+Afghanistan,461,165.8,,
+Afghanistan,463.4,163.5,,
+Afghanistan,463,162.1,,
+Afghanistan,465,158.6,,
+Afghanistan,469.8,158,,
+Afghanistan,470.5,156.5,,
+Afghanistan,473.7,156.1,,
+Afghanistan,477.7,155.1,,
+Afghanistan,480.8,152.7,,
+Afghanistan,482.3,154,,
+Afghanistan,487.3,155.2,,
+Afghanistan,488.8,154.9,,
+Afghanistan,491.6,149.6,,
+Afghanistan,497.7,146.9,,
+Afghanistan,500.6,148.1,,
+Afghanistan,502.4,150.1,,
+Afghanistan,503.6,151.9,,
+Afghanistan,505.1,154.1,,
+Afghanistan,509.3,156.7,,
+Afghanistan,509.8,158.6,,
+Afghanistan,511.6,159.4,,
+Afghanistan,511.7,160.7,,
+Afghanistan,514.6,161.8,,
+Afghanistan,516.6,164.1,,
+Afghanistan,518.6,166.4,,
+Afghanistan,519.8,168.3,,
+Afghanistan,522.7,169.9,,
+Afghanistan,525.9,169.2,,
+Afghanistan,527.9,170.6,,
+Afghanistan,530.6,171,,
+Afghanistan,533.8,170.6,,
+Afghanistan,535.2,172.4,,
+Afghanistan,535.7,175.1,,
+Afghanistan,538.8,180.3,,
+Afghanistan,538.4,182.7,,
+Afghanistan,538.7,177.9,,
+Afghanistan,539.7,186,,
+Afghanistan,540.3,190.1,,
+Afghanistan,539.4,192,,
+Afghanistan,537.4,192.6,,
+Afghanistan,535.3,199.2,,
+Afghanistan,532.6,199.8,,
+Afghanistan,529.4,201.1,,
+Afghanistan,528.5,204.5,,
+Afghanistan,529.2,208.1,,
+Afghanistan,531.1,209.9,,
+Afghanistan,532.8,212.8,,
+Ural,538.7,177.9,,
+Ural,538.4,182.7,,
+Ural,538.8,180.3,,
+Ural,535.7,175.1,,
+Ural,535.2,172.4,,
+Ural,533.8,170.6,,
+Ural,530.6,171,,
+Ural,527.9,170.6,,
+Ural,525.9,169.2,,
+Ural,522.7,169.9,,
+Ural,519.8,168.3,,
+Ural,518.6,166.4,,
+Ural,516.6,164.1,,
+Ural,514.6,161.8,,
+Ural,511.7,160.7,,
+Ural,511.6,159.4,,
+Ural,509.8,158.6,,
+Ural,509.3,156.7,,
+Ural,505.1,154.1,,
+Ural,503.6,151.9,,
+Ural,502.4,150.1,,
+Ural,500.6,148.1,,
+Ural,497.7,146.9,,
+Ural,496,137.9,,
+Ural,498.6,134.3,,
+Ural,497.9,131.5,,
+Ural,496.1,130.7,,
+Ural,491.6,127.6,,
+Ural,491.7,124.7,,
+Ural,493.5,121.8,,
+Ural,494.1,117.8,,
+Ural,492.5,116.8,,
+Ural,492.2,106.9,,
+Ural,491,103.1,,
+Ural,491.6,101,,
+Ural,490.6,97.6,,
+Ural,494.8,86.6,,
+Ural,495,83.4,,
+Ural,495.7,81,,
+Ural,494.2,71.3,,
+Ural,495,69.2,,
+Ural,493.7,65.9,,
+Ural,491.3,65.3,,
+Ural,491.2,62.1,,
+Ural,493.6,60.3,,
+Ural,491.7,56.8,,
+Ural,492.7,54.8,,
+Ural,492.1,52.7,,
+Ural,493.2,50.3,,
+Ural,496.2,51.3,,
+Ural,497.8,52.4,,
+Ural,499.4,52.6,,
+Ural,500.3,54.4,,
+Ural,502.4,54.7,,
+Ural,502.9,56.6,,
+Ural,501.1,59.5,,
+Ural,499.8,61.1,,
+Ural,501.4,62.6,,
+Ural,502.3,65.1,,
+Ural,504,66.3,,
+Ural,503.6,68.3,,
+Ural,504.9,69.6,,
+Ural,506.4,73.1,,
+Ural,507.4,72.2,,
+Ural,508.6,73.9,,
+Ural,511.1,74.7,,
+Ural,513.1,72.7,,
+Ural,514.9,72.3,,
+Ural,515.1,75.3,,
+Ural,515.5,78.7,,
+Ural,517.4,80,,
+Ural,519.7,82,,
+Ural,521.2,85.5,,
+Ural,522.1,88.8,,
+Ural,524.6,89.1,,
+Ural,525.3,92.3,,
+Ural,525.7,94.9,,
+Ural,525.3,98.5,,
+Ural,528.2,100.1,,
+Ural,529.9,101.5,,
+Ural,530.9,103.4,,
+Ural,532.7,105.2,,
+Ural,533.5,107.6,,
+Ural,534.9,109.4,,
+Ural,535.2,111.7,,
+Ural,534.7,116.1,,
+Ural,537,117.4,,
+Ural,537,119.3,,
+Ural,538.3,120.7,,
+Ural,538.8,123.4,,
+Ural,539.9,125,,
+Ural,538.8,126.8,,
+Ural,536.8,127.9,,
+Ural,536.3,130,,
+Ural,535.1,133.6,,
+Ural,533.6,134.3,,
+Ural,532.9,138.5,,
+Ural,534.4,139.2,,
+Ural,536.1,137.1,,
+Ural,538.5,137.6,,
+Ural,540.2,139.4,,
+Ural,539.9,143.1,,
+Ural,539.6,145.2,,
+Ural,543.3,145.8,,
+Ural,544.4,148.1,,
+Ural,546.3,148.9,,
+Ural,548.2,152.1,,
+Ural,548.8,153.7,,
+Ural,550.1,156,,
+Ural,550.3,161.8,,
+Ural,547.5,162,,
+Ural,548.1,166.5,,
+Ural,544,167.4,,
+Ural,543.8,171.5,,
+Ural,541.1,174,,
+Ural,541.8,177.7,,
+Siberia,550.3,161.8,,
+Siberia,550.1,156,,
+Siberia,548.8,153.7,,
+Siberia,548.2,152.1,,
+Siberia,546.3,148.9,,
+Siberia,544.4,148.1,,
+Siberia,543.3,145.8,,
+Siberia,539.6,145.2,,
+Siberia,539.9,143.1,,
+Siberia,540.2,139.4,,
+Siberia,538.5,137.6,,
+Siberia,536.1,137.1,,
+Siberia,534.4,139.2,,
+Siberia,532.9,138.5,,
+Siberia,533.6,134.3,,
+Siberia,535.1,133.6,,
+Siberia,536.3,130,,
+Siberia,536.8,127.9,,
+Siberia,538.8,126.8,,
+Siberia,539.9,125,,
+Siberia,538.8,123.4,,
+Siberia,538.3,120.7,,
+Siberia,537,119.3,,
+Siberia,537,117.4,,
+Siberia,534.7,116.1,,
+Siberia,535.2,111.7,,
+Siberia,534.9,109.4,,
+Siberia,533.5,107.6,,
+Siberia,532.7,105.2,,
+Siberia,530.9,103.4,,
+Siberia,529.9,101.5,,
+Siberia,528.2,100.1,,
+Siberia,525.3,98.5,,
+Siberia,525.7,94.9,,
+Siberia,525.3,92.3,,
+Siberia,524.6,89.1,,
+Siberia,522.1,88.8,,
+Siberia,521.2,85.5,,
+Siberia,519.7,82,,
+Siberia,517.4,80,,
+Siberia,515.5,78.7,,
+Siberia,515.1,75.3,,
+Siberia,518.1,75,,
+Siberia,518,72.3,,
+Siberia,516.9,70.8,,
+Siberia,514.8,70.9,,
+Siberia,512.2,71.2,,
+Siberia,508.9,70.4,,
+Siberia,508.8,68.5,,
+Siberia,508.3,66.7,,
+Siberia,506.7,64.6,,
+Siberia,507.1,60.3,,
+Siberia,506,58.9,,
+Siberia,507.2,57.5,,
+Siberia,512.3,59.5,,
+Siberia,515.7,62.8,,
+Siberia,516.5,62.1,,
+Siberia,518,61.4,,
+Siberia,516.1,59.9,,
+Siberia,516.1,55.6,,
+Siberia,513.6,52.6,,
+Siberia,514.2,48.2,,
+Siberia,514.8,49.9,,
+Siberia,517.2,52,,
+Siberia,519.8,51.1,,
+Siberia,521.4,52.8,,
+Siberia,524.1,53.2,,
+Siberia,525.2,50.4,,
+Siberia,523.2,50.6,,
+Siberia,518.7,49.2,,
+Siberia,515.4,47,,
+Siberia,517.7,44.1,,
+Siberia,519.8,42.3,,
+Siberia,523.1,42.5,,
+Siberia,524.2,38,,
+Siberia,526.3,38,,
+Siberia,528.4,37.3,,
+Siberia,536.5,32.2,,
+Siberia,538.5,32.1,,
+Siberia,542.2,31.8,,
+Siberia,547.8,29.1,,
+Siberia,548.6,31.8,,
+Siberia,553.2,28.9,,
+Siberia,554.5,27.1,,
+Siberia,557.1,27.7,,
+Siberia,557.3,30.1,,
+Siberia,560.7,32.9,,
+Siberia,564.4,30.9,,
+Siberia,566.1,33.3,,
+Siberia,568.3,35.4,,
+Siberia,566.4,38.4,,
+Siberia,564,41.6,,
+Siberia,564.1,43.5,,
+Siberia,561.6,44.2,,
+Siberia,559.4,46.7,,
+Siberia,557.4,47.4,,
+Siberia,557.2,50,,
+Siberia,560.7,48.1,,
+Siberia,564,46.3,,
+Siberia,567.4,42.9,,
+Siberia,571.7,42.6,,
+Siberia,573.1,42.9,,
+Siberia,579.5,41.1,,
+Siberia,582.6,42,,
+Siberia,585,43.9,,
+Siberia,587.3,44.3,,
+Siberia,587.8,47.6,,
+Siberia,588.4,49.8,,
+Siberia,590.9,51.2,,
+Siberia,590.5,55.9,,
+Siberia,588.9,58.5,,
+Siberia,588.6,61.3,,
+Siberia,587.4,63.6,,
+Siberia,588.6,66.5,,
+Siberia,588.3,69,,
+Siberia,582.7,70.1,,
+Siberia,580.6,68.9,,
+Siberia,577.6,69.4,,
+Siberia,577.5,71.3,,
+Siberia,574.2,72.6,,
+Siberia,574,75.2,,
+Siberia,575.7,76.7,,
+Siberia,578,77.9,,
+Siberia,578.9,78.9,,
+Siberia,582,81.1,,
+Siberia,580.3,83.3,,
+Siberia,581.5,87.3,,
+Siberia,582.8,88.9,,
+Siberia,583.7,93.8,,
+Siberia,585.5,95.8,,
+Siberia,586,99.5,,
+Siberia,586.9,104.7,,
+Siberia,585.2,108.5,,
+Siberia,583.8,114.4,,
+Siberia,585.1,119.6,,
+Siberia,585.6,125,,
+Siberia,583.9,128.6,,
+Siberia,582.5,129.1,,
+Siberia,581.4,128.3,,
+Siberia,580.8,126.9,,
+Siberia,578.4,126.4,,
+Siberia,574.1,128.5,,
+Siberia,571.7,126.8,,
+Siberia,570.4,127.7,,
+Siberia,568.8,130.1,,
+Siberia,565.4,130.9,,
+Siberia,562.9,134.9,,
+Siberia,563.1,136.6,,
+Siberia,564.9,137.4,,
+Siberia,564.5,143.2,,
+Siberia,563.3,143.2,,
+Siberia,563.5,145.4,,
+Siberia,563.9,147.3,,
+Siberia,562.9,149.4,,
+Siberia,564,151.3,,
+Siberia,565.3,150.9,,
+Siberia,565.9,153.1,,
+Siberia,568.5,155.1,,
+Siberia,570.1,158.4,,
+Siberia,568.5,162.9,,
+Siberia,569.5,165.9,,
+Siberia,571.6,168.1,,
+Siberia,570.9,171.6,,
+Siberia,570.9,174.1,,
+Siberia,569.4,176.7,,
+Siberia,567.4,176,,
+Siberia,567.1,174.8,,
+Siberia,565,175.9,,
+Siberia,563.9,174.4,,
+Siberia,561.7,174.2,,
+Siberia,563.1,171.7,,
+Siberia,563.6,169.2,,
+Siberia,562.7,166.6,,
+Siberia,560.8,165.6,,
+Siberia,559,163.5,,
+Siberia,557,164.8,,
+Siberia,553.5,165.1,,
+Siberia,551.8,163.3,,
+Yakutsk,586.9,104.7,,
+Yakutsk,586,99.5,,
+Yakutsk,585.5,95.8,,
+Yakutsk,583.7,93.8,,
+Yakutsk,582.8,88.9,,
+Yakutsk,581.5,87.3,,
+Yakutsk,580.3,83.3,,
+Yakutsk,582,81.1,,
+Yakutsk,578.9,78.9,,
+Yakutsk,578,77.9,,
+Yakutsk,575.7,76.7,,
+Yakutsk,574,75.2,,
+Yakutsk,574.2,72.6,,
+Yakutsk,577.5,71.3,,
+Yakutsk,577.6,69.4,,
+Yakutsk,580.6,68.9,,
+Yakutsk,582.7,70.1,,
+Yakutsk,588.3,69,,
+Yakutsk,588.6,66.5,,
+Yakutsk,587.4,63.6,,
+Yakutsk,588.6,61.3,,
+Yakutsk,588.9,58.5,,
+Yakutsk,590.5,55.9,,
+Yakutsk,590.9,51.2,,
+Yakutsk,588.4,49.8,,
+Yakutsk,587.8,47.6,,
+Yakutsk,587.3,44.3,,
+Yakutsk,590.7,41.8,,
+Yakutsk,594.2,38,,
+Yakutsk,597.5,39.4,,
+Yakutsk,598.6,43.3,,
+Yakutsk,604.4,46.4,,
+Yakutsk,604.8,48,,
+Yakutsk,605.8,51,,
+Yakutsk,607,49.6,,
+Yakutsk,607.2,48.5,,
+Yakutsk,610.1,47.7,,
+Yakutsk,612.1,48.2,,
+Yakutsk,615,45.8,,
+Yakutsk,617.2,45.3,,
+Yakutsk,619.7,43.8,,
+Yakutsk,625.8,43,,
+Yakutsk,628.2,45.1,,
+Yakutsk,630.3,43.3,,
+Yakutsk,633,43.1,,
+Yakutsk,637.1,44.6,,
+Yakutsk,635.6,48,,
+Yakutsk,641.3,50.2,,
+Yakutsk,641.7,51.8,,
+Yakutsk,643,55.3,,
+Yakutsk,639.9,56,,
+Yakutsk,638.5,57.6,,
+Yakutsk,637.3,59.8,,
+Yakutsk,634.4,60.9,,
+Yakutsk,633.8,70.6,,
+Yakutsk,638.8,71.9,,
+Yakutsk,639.9,73.8,,
+Yakutsk,640.1,76.8,,
+Yakutsk,638.6,78.6,,
+Yakutsk,638.7,81.1,,
+Yakutsk,636.7,82.9,,
+Yakutsk,633.9,83.3,,
+Yakutsk,633.4,81.9,,
+Yakutsk,629.3,82.2,,
+Yakutsk,628.1,78.4,,
+Yakutsk,623.9,78.5,,
+Yakutsk,620.5,82.5,,
+Yakutsk,619.4,81.7,,
+Yakutsk,616.1,87.7,,
+Yakutsk,616.2,90.8,,
+Yakutsk,613.1,94.8,,
+Yakutsk,601.9,94.6,,
+Yakutsk,600.7,95,,
+Yakutsk,601.2,97.2,,
+Yakutsk,597.9,97.1,,
+Yakutsk,596.8,94.9,,
+Yakutsk,595.5,95.8,,
+Yakutsk,594.1,101.6,,
+Yakutsk,591.1,103.4,,
+Irkutsk,568.5,155.1,,
+Irkutsk,565.9,153.1,,
+Irkutsk,565.3,150.9,,
+Irkutsk,564,151.3,,
+Irkutsk,562.9,149.4,,
+Irkutsk,563.9,147.3,,
+Irkutsk,563.5,145.4,,
+Irkutsk,563.3,143.2,,
+Irkutsk,564.5,143.2,,
+Irkutsk,564.9,137.4,,
+Irkutsk,563.1,136.6,,
+Irkutsk,562.9,134.9,,
+Irkutsk,565.4,130.9,,
+Irkutsk,568.8,130.1,,
+Irkutsk,570.4,127.7,,
+Irkutsk,571.7,126.8,,
+Irkutsk,574.1,128.5,,
+Irkutsk,578.4,126.4,,
+Irkutsk,580.8,126.9,,
+Irkutsk,581.4,128.3,,
+Irkutsk,582.5,129.1,,
+Irkutsk,583.9,128.6,,
+Irkutsk,585.6,125,,
+Irkutsk,585.1,119.6,,
+Irkutsk,583.8,114.4,,
+Irkutsk,585.2,108.5,,
+Irkutsk,586.9,104.7,,
+Irkutsk,591.1,103.4,,
+Irkutsk,594.1,101.6,,
+Irkutsk,595.5,95.8,,
+Irkutsk,596.8,94.9,,
+Irkutsk,597.9,97.1,,
+Irkutsk,601.2,97.2,,
+Irkutsk,600.7,95,,
+Irkutsk,601.9,94.6,,
+Irkutsk,613.1,94.8,,
+Irkutsk,613.2,98.3,,
+Irkutsk,614.1,102,,
+Irkutsk,613.6,106.2,,
+Irkutsk,613.4,111.1,,
+Irkutsk,613.9,115.7,,
+Irkutsk,616.1,118.8,,
+Irkutsk,620.1,121.4,,
+Irkutsk,621.4,124,,
+Irkutsk,623.6,126.4,,
+Irkutsk,624.6,130.6,,
+Irkutsk,627.2,128.7,,
+Irkutsk,630.1,128.4,,
+Irkutsk,633.4,128.6,,
+Irkutsk,635.3,129.2,,
+Irkutsk,636,131.8,,
+Irkutsk,638.4,132.2,,
+Irkutsk,640,136.2,,
+Irkutsk,640.6,139,,
+Irkutsk,639.7,141.4,,
+Irkutsk,640.6,143.9,,
+Irkutsk,639,147.3,,
+Irkutsk,638.9,151.1,,
+Irkutsk,638.7,154,,
+Irkutsk,635.1,153.9,,
+Irkutsk,633.7,151.9,,
+Irkutsk,631.6,151.2,,
+Irkutsk,630.9,146.9,,
+Irkutsk,628.7,146.6,,
+Irkutsk,628.1,143.8,,
+Irkutsk,624.9,143.3,,
+Irkutsk,624.6,140.9,,
+Irkutsk,624.9,138.6,,
+Irkutsk,622.4,137,,
+Irkutsk,620.1,138.7,,
+Irkutsk,617,139.1,,
+Irkutsk,614.6,138.2,,
+Irkutsk,612.6,141.1,,
+Irkutsk,612.6,142.8,,
+Irkutsk,613.4,144.6,,
+Irkutsk,613.2,146.8,,
+Irkutsk,611.2,149.8,,
+Irkutsk,612.8,153.1,,
+Irkutsk,610.2,158.2,,
+Irkutsk,608.8,157.2,,
+Irkutsk,607.8,153.9,,
+Irkutsk,605.9,153.4,,
+Irkutsk,605,155.6,,
+Irkutsk,602.4,157.6,,
+Irkutsk,598.9,156.9,,
+Irkutsk,596.6,158.5,,
+Irkutsk,592.9,156.4,,
+Irkutsk,589.3,156.5,,
+Irkutsk,586.4,156,,
+Irkutsk,583,154.9,,
+Irkutsk,580,155.6,,
+Irkutsk,578.7,157,,
+Irkutsk,576.6,156.5,,
+Irkutsk,574.3,155.5,,
+Irkutsk,572,154.2,,
+Kamchatcka,638.7,154,,
+Kamchatcka,638.9,151.1,,
+Kamchatcka,639,147.3,,
+Kamchatcka,640.6,143.9,,
+Kamchatcka,639.7,141.4,,
+Kamchatcka,640.6,139,,
+Kamchatcka,640,136.2,,
+Kamchatcka,638.4,132.2,,
+Kamchatcka,636,131.8,,
+Kamchatcka,635.3,129.2,,
+Kamchatcka,633.4,128.6,,
+Kamchatcka,630.1,128.4,,
+Kamchatcka,627.2,128.7,,
+Kamchatcka,624.6,130.6,,
+Kamchatcka,623.6,126.4,,
+Kamchatcka,621.4,124,,
+Kamchatcka,620.1,121.4,,
+Kamchatcka,616.1,118.8,,
+Kamchatcka,613.9,115.7,,
+Kamchatcka,613.4,111.1,,
+Kamchatcka,613.6,106.2,,
+Kamchatcka,614.1,102,,
+Kamchatcka,613.2,98.3,,
+Kamchatcka,613.1,94.8,,
+Kamchatcka,616.2,90.8,,
+Kamchatcka,616.1,87.7,,
+Kamchatcka,619.4,81.7,,
+Kamchatcka,620.5,82.5,,
+Kamchatcka,623.9,78.5,,
+Kamchatcka,628.1,78.4,,
+Kamchatcka,629.3,82.2,,
+Kamchatcka,633.4,81.9,,
+Kamchatcka,633.9,83.3,,
+Kamchatcka,636.7,82.9,,
+Kamchatcka,638.7,81.1,,
+Kamchatcka,638.6,78.6,,
+Kamchatcka,640.1,76.8,,
+Kamchatcka,639.9,73.8,,
+Kamchatcka,638.8,71.9,,
+Kamchatcka,633.8,70.6,,
+Kamchatcka,634.4,60.9,,
+Kamchatcka,637.3,59.8,,
+Kamchatcka,638.5,57.6,,
+Kamchatcka,639.9,56,,
+Kamchatcka,643,55.3,,
+Kamchatcka,641.7,51.8,,
+Kamchatcka,644.8,49.9,,
+Kamchatcka,648.8,49.5,,
+Kamchatcka,651.9,50.5,,
+Kamchatcka,657.6,53.3,,
+Kamchatcka,661,52.6,,
+Kamchatcka,664.7,53.9,,
+Kamchatcka,668.4,53.8,,
+Kamchatcka,670.6,51.9,,
+Kamchatcka,672.6,49.4,,
+Kamchatcka,677,50.9,,
+Kamchatcka,682.5,51.3,,
+Kamchatcka,683.8,54.2,,
+Kamchatcka,688.7,54.6,,
+Kamchatcka,688.9,56.6,,
+Kamchatcka,691.5,56.8,,
+Kamchatcka,695.6,59.9,,
+Kamchatcka,697.4,61.2,,
+Kamchatcka,699.4,62.9,,
+Kamchatcka,699.2,64.3,,
+Kamchatcka,701.6,66.5,,
+Kamchatcka,703.7,64.3,,
+Kamchatcka,706.1,65,,
+Kamchatcka,706.5,66.9,,
+Kamchatcka,710.5,67.7,,
+Kamchatcka,713.4,74.2,,
+Kamchatcka,711.5,77,,
+Kamchatcka,708.5,78.7,,
+Kamchatcka,702.4,76.7,,
+Kamchatcka,701.4,73.7,,
+Kamchatcka,699.7,73.2,,
+Kamchatcka,697.1,74.4,,
+Kamchatcka,695.4,73.7,,
+Kamchatcka,692.6,75.5,,
+Kamchatcka,697.6,78.4,,
+Kamchatcka,698.9,81,,
+Kamchatcka,692.1,87.2,,
+Kamchatcka,691.5,89.6,,
+Kamchatcka,688.8,93.2,,
+Kamchatcka,687.3,96.4,,
+Kamchatcka,683.3,96.5,,
+Kamchatcka,679.4,95.6,,
+Kamchatcka,678.9,97.6,,
+Kamchatcka,677.7,99.8,,
+Kamchatcka,679.2,104.5,,
+Kamchatcka,681.1,108.9,,
+Kamchatcka,682,113.2,,
+Kamchatcka,682.5,118.3,,
+Kamchatcka,681.8,121.5,,
+Kamchatcka,680.3,124,,
+Kamchatcka,681.1,128,,
+Kamchatcka,679.9,132.7,,
+Kamchatcka,674.9,129.7,,
+Kamchatcka,671.3,125.6,,
+Kamchatcka,669.5,119.1,,
+Kamchatcka,668.7,107.4,,
+Kamchatcka,669.7,105.7,,
+Kamchatcka,670.9,99.2,,
+Kamchatcka,667.6,96.7,,
+Kamchatcka,666.6,93.2,,
+Kamchatcka,665,91.5,,
+Kamchatcka,660.9,88.8,,
+Kamchatcka,662.5,91.9,,
+Kamchatcka,661.5,98,,
+Kamchatcka,663.1,97.9,,
+Kamchatcka,663.9,99.3,,
+Kamchatcka,662.9,101.4,,
+Kamchatcka,661,100.8,,
+Kamchatcka,656.4,99.3,,
+Kamchatcka,652.8,101.5,,
+Kamchatcka,649.7,99.8,,
+Kamchatcka,646.5,101.7,,
+Kamchatcka,641.9,102.1,,
+Kamchatcka,637.6,105.8,,
+Kamchatcka,637.6,109.8,,
+Kamchatcka,634.7,114.9,,
+Kamchatcka,634.8,117.3,,
+Kamchatcka,637.6,117.9,,
+Kamchatcka,639.6,117.9,,
+Kamchatcka,642.8,118.6,,
+Kamchatcka,645.5,119.9,,
+Kamchatcka,646,122.1,,
+Kamchatcka,649.5,122.3,,
+Kamchatcka,651.3,125.1,,
+Kamchatcka,650.9,131.7,,
+Kamchatcka,652.6,135.3,,
+Kamchatcka,654.7,139.9,,
+Kamchatcka,655,144.4,,
+Kamchatcka,655.8,147.8,,
+Kamchatcka,654.8,151.9,,
+Kamchatcka,654.6,157.2,,
+Kamchatcka,654.1,161.1,,
+Kamchatcka,653.4,164.2,,
+Kamchatcka,652,166.6,,
+Kamchatcka,649.1,171,,
+Kamchatcka,646.4,168.8,,
+Kamchatcka,644.1,167.7,,
+Kamchatcka,641.9,163.4,,
+Kamchatcka,639.4,162.6,,
+Kamchatcka,636.4,157.6,,
+Kamchatcka,639.3,155.5,,
+Japan,672.6,135.6,,
+Japan,675.3,137.7,,
+Japan,678.3,140.2,,
+Japan,683.1,140.1,,
+Japan,686.2,139,,
+Japan,691.1,139.5,,
+Japan,692.5,140.8,,
+Japan,692.7,142.2,,
+Japan,694.8,143.5,,
+Japan,693,146.7,,
+Japan,690.7,146.1,,
+Japan,689.1,146.5,,
+Japan,688.6,148.8,,
+Japan,689.2,150.7,,
+Japan,687.5,153.8,,
+Japan,682,153.9,,
+Japan,679.9,154.1,,
+Japan,678.9,153.9,,
+Japan,678.6,156.8,,
+Japan,680.8,157.4,,
+Japan,679.5,159.8,,
+Japan,681.5,160.4,,
+Japan,684.5,160.7,,
+Japan,685,162.8,,
+Japan,687.1,162.8,,
+Japan,688.2,162.7,,
+Japan,689.3,164.8,,
+Japan,690.7,168.7,,
+Japan,689.7,172.5,,
+Japan,688.9,174.9,,
+Japan,690.3,176,,
+Japan,690.4,181,,
+Japan,692.6,183.5,,
+Japan,693.7,185.5,,
+Japan,693.7,187.5,,
+Japan,690.9,187.7,,
+Japan,690,189.9,,
+Japan,688.2,191.2,,
+Japan,687.9,193.2,,
+Japan,684.8,193.6,,
+Japan,683.6,195.5,,
+Japan,681.4,195.5,,
+Japan,681.7,199.7,,
+Japan,677.9,201,,
+Japan,677.6,202.1,,
+Japan,675.6,201.5,,
+Japan,674.6,200.2,,
+Japan,674.3,198.4,,
+Japan,672.1,199.6,,
+Japan,670.7,200.7,,
+Japan,668,199.8,,
+Japan,669.3,204.9,,
+Japan,670.4,205.7,,
+Japan,669.7,208.2,,
+Japan,667.3,208.8,,
+Japan,664.5,208.8,,
+Japan,663.1,212.8,,
+Japan,662.7,215.6,,
+Japan,660.7,216.6,,
+Japan,660.7,212.3,,
+Japan,659.2,211.4,,
+Japan,656,211.1,,
+Japan,656.7,209.3,,
+Japan,661,206.6,,
+Japan,658.4,205.5,,
+Japan,660.1,203.8,,
+Japan,661.2,201.8,,
+Japan,665.8,193,,
+Japan,669.3,192.6,,
+Japan,671.3,187.5,,
+Japan,670.6,184.3,,
+Japan,671.6,182.6,,
+Japan,674.8,181.7,,
+Japan,675.8,178.7,,
+Japan,678.1,176.3,,
+Japan,679.4,174.3,,
+Japan,678.5,171.2,,
+Japan,677.1,169.4,,
+Japan,676.4,162.4,,
+Japan,677.8,160.9,,
+Japan,676.1,158.1,,
+Japan,676.2,156.6,,
+Japan,674.6,154.3,,
+Japan,674.8,150.6,,
+Japan,676.3,149.1,,
+Japan,677.8,148.6,,
+Japan,676.9,143.3,,
+Japan,674.3,139.8,,
+Japan,672.6,137.3,,
+Mongolia,569.4,176.7,,Border with Siberia
+Mongolia,570.9,174.1,,Border with Siberia
+Mongolia,570.9,171.6,,Border with Siberia
+Mongolia,571.6,168.1,,Border with Siberia
+Mongolia,569.5,165.9,,Border with Siberia
+Mongolia,568.5,162.9,,Border with Siberia
+Mongolia,570.1,158.4,,Border with Siberia
+Mongolia,568.5,155.1,,Border with Siberia -corner
+Mongolia,572,154.2,,Border with Irkutsk
+Mongolia,574.3,155.5,,Border with Irkutsk
+Mongolia,576.6,156.5,,Border with Irkutsk
+Mongolia,578.7,157,,Border with Irkutsk
+Mongolia,580,155.6,,Border with Irkutsk
+Mongolia,583,154.9,,Border with Irkutsk
+Mongolia,586.4,156,,Border with Irkutsk
+Mongolia,589.3,156.5,,Border with Irkutsk
+Mongolia,592.9,156.4,,Border with Irkutsk
+Mongolia,596.6,158.5,,Border with Irkutsk
+Mongolia,598.9,156.9,,Border with Irkutsk
+Mongolia,602.4,157.6,,Border with Irkutsk
+Mongolia,605,155.6,,Border with Irkutsk
+Mongolia,605.9,153.4,,Border with Irkutsk
+Mongolia,607.8,153.9,,Border with Irkutsk
+Mongolia,608.8,157.2,,Border with Irkutsk
+Mongolia,610.2,158.2,,Border with Irkutsk
+Mongolia,612.8,153.1,,Border with Irkutsk
+Mongolia,611.2,149.8,,Border with Irkutsk
+Mongolia,613.2,146.8,,Border with Irkutsk
+Mongolia,613.4,144.6,,Border with Irkutsk
+Mongolia,612.6,142.8,,Border with Irkutsk
+Mongolia,612.6,141.1,,Border with Irkutsk
+Mongolia,614.6,138.2,,Border with Irkutsk
+Mongolia,617,139.1,,Border with Irkutsk
+Mongolia,620.1,138.7,,Border with Irkutsk
+Mongolia,622.4,137,,Border with Irkutsk
+Mongolia,624.9,138.6,,Border with Irkutsk
+Mongolia,624.6,140.9,,Border with Irkutsk
+Mongolia,624.9,143.3,,Border with Irkutsk
+Mongolia,628.1,143.8,,Border with Irkutsk
+Mongolia,628.7,146.6,,Border with Irkutsk
+Mongolia,630.9,146.9,,Border with Irkutsk
+Mongolia,631.6,151.2,,Border with Irkutsk
+Mongolia,633.7,151.9,,Border with Irkutsk
+Mongolia,635.1,153.9,,Border with Irkutsk
+Mongolia,638.7,154,,Border with Irkutsk
+Mongolia,639.3,155.5,,Border with Kamchatcka
+Mongolia,636.4,157.6,,Border with Kamchatcka
+Mongolia,639.4,162.6,,Border with Kamchatcka
+Mongolia,641.9,163.4,,Border with Kamchatcka
+Mongolia,644.1,167.7,,Border with Kamchatcka
+Mongolia,646.4,168.8,,Border with Kamchatcka
+Mongolia,649.1,171,,Border with Kamchatcka
+Mongolia,647.3,173.1,,
+Mongolia,646.2,176.4,,
+Mongolia,645.4,178.1,,
+Mongolia,645.5,181.4,,
+Mongolia,643.8,183.3,,
+Mongolia,644.2,185.5,,
+Mongolia,646.5,187,,
+Mongolia,648.9,188.7,,
+Mongolia,650.4,190.9,,
+Mongolia,652.2,192.3,,
+Mongolia,652.1,194.5,,
+Mongolia,654.1,195.5,,
+Mongolia,653.2,199.1,,
+Mongolia,653.5,200.6,,
+Mongolia,652.5,202.5,,
+Mongolia,649.8,205.9,,
+Mongolia,647.2,204.6,,
+Mongolia,647.7,200.8,,
+Mongolia,646.6,196.9,,
+Mongolia,643.2,197.1,,
+Mongolia,642.1,195,,
+Mongolia,639.5,191.5,,
+Mongolia,634.7,191,,
+Mongolia,634.7,188.8,,
+Mongolia,633.6,187,,
+Mongolia,632.6,187.1,,
+Mongolia,631.9,189.6,,
+Mongolia,630.5,190.9,,
+Mongolia,630.2,192.4,,
+Mongolia,628.2,193.4,,
+Mongolia,627.1,194.3,,
+Mongolia,626.7,196.2,,
+Mongolia,629.1,197.7,,
+Mongolia,631.9,197.4,,
+Mongolia,632.2,198.4,,
+Mongolia,634.8,198.5,,
+Mongolia,636.2,199.7,,
+Mongolia,639.6,199.9,,
+Mongolia,637.5,202.3,,
+Mongolia,634.9,205.3,,
+Mongolia,633.1,205.6,,
+Mongolia,630.6,204.6,,
+Mongolia,627,204,,
+Mongolia,624.2,203.6,,
+Mongolia,620.5,202.2,,
+Mongolia,617.4,203.8,,
+Mongolia,614.9,202.8,,
+Mongolia,614.5,200.6,,
+Mongolia,612.3,201,,
+Mongolia,610,201.2,,
+Mongolia,608.4,202.5,,
+Mongolia,605.3,203.6,,
+Mongolia,604.5,202.2,,
+Mongolia,600.9,201.5,,
+Mongolia,598.3,201.3,,
+Mongolia,596.7,199.7,,
+Mongolia,592,200.2,,
+Mongolia,586.9,200.6,,
+Mongolia,586.3,198.3,,
+Mongolia,584.7,197.5,,
+Mongolia,584.2,196.6,,
+Mongolia,582.9,196.3,,
+Mongolia,582.5,194.4,,
+Mongolia,578.8,193.6,,
+Mongolia,577.8,191,,
+Mongolia,575.7,190.2,,
+Mongolia,575.6,188.7,,
+Mongolia,574.2,187.5,,
+Mongolia,573.6,184.7,,
+Mongolia,572.4,185.2,,
+Mongolia,572,180.8,,
+Mongolia,570.9,178.3,,
+China,575.4,273.9,,Border with India
+China,576,270,,Border with India
+China,577.7,269.3,,Border with India
+China,579.5,266.7,,Border with India
+China,579.9,264.2,,Border with India
+China,581.8,263.6,,Border with India
+China,583.3,258.7,,Border with India
+China,584.6,256.3,,Border with India
+China,581.5,249,,Border with India
+China,571.9,248.5,,Border with India
+China,570.1,250.7,,Border with India
+China,568.5,249.2,,Border with India
+China,568.4,245.1,,Border with India
+China,565.1,244,,Border with India
+China,563.8,246.2,,Border with India
+China,560.1,243.7,,Border with India
+China,560.2,242.1,,Border with India
+China,558.7,241.6,,Border with India
+China,558,243.1,,Border with India
+China,555.3,242.4,,Border with India
+China,553.8,241,,Border with India
+China,551.9,240.3,,Border with India
+China,548.7,238.9,,Border with India
+China,547.6,237.4,,Border with India
+China,546.8,235.3,,Border with India
+China,544.5,236.6,,Border with India
+China,542.9,235.4,,Border with India
+China,543.7,233.4,,Border with India
+China,545.2,232.3,,Border with India
+China,546.1,230.4,,Border with India
+China,545.9,227.5,,Border with India
+China,545.3,221,,Border with India
+China,545.9,218.2,,Border with India
+China,543.5,218.9,,Border with India
+China,540,219,,Border with India
+China,538.1,217.7,,Border with India
+China,537.3,214.2,,Border with India
+China,535.8,216.5,,Border with India - corner
+China,532.9,217,,Border with Afghanistan
+China,532.8,212.8,,Border with Afghanistan
+China,531.1,209.9,,Border with Afghanistan
+China,529.2,208.1,,Border with Afghanistan
+China,528.5,204.5,,Border with Afghanistan
+China,529.4,201.1,,Border with Afghanistan
+China,532.6,199.8,,Border with Afghanistan
+China,535.3,199.2,,Border with Afghanistan
+China,537.4,192.6,,Border with Afghanistan
+China,539.4,192,,Border with Afghanistan
+China,540.3,190.1,,Border with Afghanistan
+China,539.7,186,,Border with Afghanistan
+China,538.7,177.9,,Border with Afghanistan
+China,541.8,177.7,,Border with Ural
+China,541.1,174,,Border with Ural
+China,543.8,171.5,,Border with Ural
+China,544,167.4,,Border with Ural
+China,548.1,166.5,,Border with Ural
+China,547.5,162,,Border with Ural
+China,550.3,161.8,,Border with Siberia
+China,551.8,163.3,,Border with Siberia
+China,553.5,165.1,,Border with Siberia
+China,557,164.8,,Border with Siberia
+China,559,163.5,,Border with Siberia
+China,560.8,165.6,,Border with Siberia
+China,562.7,166.6,,Border with Siberia
+China,563.6,169.2,,Border with Siberia
+China,563.1,171.7,,Border with Siberia
+China,561.7,174.2,,Border with Siberia
+China,563.9,174.4,,Border with Siberia
+China,565,175.9,,Border with Siberia
+China,567.1,174.8,,Border with Siberia
+China,567.4,176,,Border with Siberia
+China,569.4,176.7,,Border with Siberia
+China,570.9,178.3,,Border with Siberia
+China,572,180.8,,Border with Siberia
+China,572.4,185.2,,Border with Siberia
+China,573.6,184.7,,Border with Siberia
+China,574.2,187.5,,Border with Siberia
+China,575.6,188.7,,Border with Siberia
+China,575.7,190.2,,Border with Siberia
+China,577.8,191,,Border with Siberia
+China,578.8,193.6,,Border with Siberia
+China,582.5,194.4,,Border with Siberia
+China,582.9,196.3,,Border with Siberia
+China,584.2,196.6,,Border with Siberia
+China,584.7,197.5,,Border with Siberia
+China,586.3,198.3,,Border with Siberia
+China,586.9,200.6,,Border with Siberia
+China,592,200.2,,Border with Siberia
+China,596.7,199.7,,Border with Siberia
+China,598.3,201.3,,Border with Siberia
+China,600.9,201.5,,Border with Siberia
+China,604.5,202.2,,Border with Siberia
+China,605.3,203.6,,Border with Siberia
+China,608.4,202.5,,Border with Siberia
+China,610,201.2,,Border with Siberia
+China,612.3,201,,Border with Siberia
+China,614.5,200.6,,Border with Siberia
+China,614.9,202.8,,Border with Siberia
+China,617.4,203.8,,Border with Siberia
+China,620.5,202.2,,Border with Siberia
+China,624.2,203.6,,Border with Siberia
+China,627,204,,Border with Siberia
+China,630.6,204.6,,Border with Siberia
+China,633.1,205.6,,Border with Siberia
+China,634.1,208.4,,
+China,635.3,209.7,,
+China,635,211.5,,
+China,636.6,212.1,,
+China,637.1,214.2,,
+China,638.8,214.1,,
+China,639.3,215.3,,
+China,637.6,216.9,,
+China,640.9,217.7,,
+China,641.7,219.2,,
+China,641.2,221.4,,
+China,643.3,224.6,,
+China,641.4,229.5,,
+China,643.6,230.1,,
+China,644.5,233,,
+China,643.4,236,,
+China,643.8,239,,
+China,643.2,242.4,,
+China,642.8,244.1,,
+China,641.8,245.8,,
+China,641.9,249.3,,
+China,638.6,250.9,,
+China,638.6,252.8,,
+China,636.5,254.9,,
+China,635.8,257.3,,
+China,633.4,259.6,,
+China,632.6,263.2,,
+China,631.1,262.8,,
+China,629.5,264.2,,
+China,625.8,266.8,,
+China,626.9,267.8,,
+China,625.4,269.5,,
+China,622.9,272.1,,
+China,621,270,,
+China,618.8,267.5,,
+China,618.1,265.2,,
+China,616.7,263.4,,
+China,615.6,262.8,,
+China,615.2,259.7,,
+China,612.8,259.6,,
+China,611.8,258.3,,
+China,609.9,259,,
+China,608,261.1,,
+China,604.4,261.5,,
+China,603.5,263.6,,
+China,603.2,265.5,,
+China,599.6,265.2,,
+China,597,262.3,,
+China,594.5,260.5,,
+China,594.8,259.4,,
+China,593.1,258.4,,
+China,592.2,255.3,,
+China,590.3,254.4,,
+China,588.3,252.8,,
+China,587.1,254.8,,
+Siam,575.4,273.9,,Border with India
+Siam,576,270,,Border with India
+Siam,577.7,269.3,,Border with India
+Siam,579.5,266.7,,Border with India
+Siam,579.9,264.2,,Border with India
+Siam,581.8,263.6,,Border with India
+Siam,583.3,258.7,,Border with India
+Siam,584.6,256.3,,Border with India
+Siam,587.1,254.8,,Border with China
+Siam,588.3,252.8,,Border with China
+Siam,590.3,254.4,,Border with China
+Siam,592.2,255.3,,Border with China
+Siam,593.1,258.4,,Border with China
+Siam,594.8,259.4,,Border with China
+Siam,594.5,260.5,,Border with China
+Siam,597,262.3,,Border with China
+Siam,599.6,265.2,,Border with China
+Siam,603.2,265.5,,Border with China
+Siam,603.5,263.6,,Border with China
+Siam,604.4,261.5,,Border with China
+Siam,608,261.1,,Border with China
+Siam,609.9,259,,Border with China
+Siam,611.8,258.3,,Border with China
+Siam,612.8,259.6,,Border with China
+Siam,615.2,259.7,,Border with China
+Siam,615.6,262.8,,Border with China
+Siam,616.7,263.4,,Border with China
+Siam,618.1,265.2,,Border with China
+Siam,618.8,267.5,,Border with China
+Siam,616.7,267.2,,
+Siam,615,267.6,,
+Siam,613.7,269.9,,
+Siam,613.1,273.6,,
+Siam,613.3,277.1,,
+Siam,614.7,278.4,,
+Siam,618.2,278.5,,
+Siam,619.3,282.1,,
+Siam,618.5,284.9,,
+Siam,621.7,283.9,,
+Siam,623.2,285,,
+Siam,624.5,288.1,,
+Siam,625.3,291.1,,
+Siam,626.4,293.3,,
+Siam,627.6,295.2,,
+Siam,628.3,299.5,,
+Siam,628.3,303,,
+Siam,627.5,307.3,,
+Siam,624.9,311.7,,
+Siam,624,314,,
+Siam,621.1,317.1,,
+Siam,619.9,318.2,,
+Siam,618.8,316.7,,
+Siam,617.4,312.7,,
+Siam,616,311.2,,
+Siam,616.3,308.8,,
+Siam,613.4,307.9,,
+Siam,611,305.3,,
+Siam,608.6,304.8,,
+Siam,608,306.3,,
+Siam,605.7,308.7,,
+Siam,608.8,311.1,,
+Siam,608.7,315.2,,
+Siam,611.3,322.9,,
+Siam,612.1,322.8,,
+Siam,612.3,324.8,,
+Siam,607.2,325.2,,
+Siam,602.8,318.5,,
+Siam,601.1,317,,
+Siam,601.6,314.9,,
+Siam,601.1,311,,
+Siam,599.6,307,,
+Siam,599.5,304.9,,
+Siam,600,301.9,,
+Siam,598.5,299.6,,
+Siam,598,297,,
+Siam,593.6,295,,
+Siam,591.7,295.2,,
+Siam,590.5,293,,
+Siam,587.1,293.1,,
+Siam,586.5,291.6,,
+Siam,580.2,283.1,,
+Siam,579.4,279.2,,
+Siam,577.9,278.6,,
+Siam,576.3,275.5,,
+New Guineau,648.8,343.8,,
+New Guineau,654.2,339,,
+New Guineau,650.8,338.1,,
+New Guineau,649.5,333.7,,
+New Guineau,647.5,332.3,,
+New Guineau,647.6,330.3,,
+New Guineau,649.3,326.7,,
+New Guineau,651.4,325.7,,
+New Guineau,653.8,325.8,,
+New Guineau,657.5,327.9,,
+New Guineau,659.8,327.4,,
+New Guineau,660.8,328.6,,
+New Guineau,660.6,332.7,,
+New Guineau,662.2,335.5,,
+New Guineau,664,336.9,,
+New Guineau,664.5,334.4,,
+New Guineau,666,332.6,,
+New Guineau,665.2,328.8,,
+New Guineau,667.3,328.4,,
+New Guineau,671,327.7,,
+New Guineau,672.9,326.8,,
+New Guineau,675.2,328.9,,
+New Guineau,678.8,329.3,,
+New Guineau,680.6,330.9,,
+New Guineau,682.3,334.2,,
+New Guineau,686.8,337.5,,
+New Guineau,693.3,340.2,,
+New Guineau,694,342.5,,
+New Guineau,694.4,344.1,,
+New Guineau,692.8,344.6,,
+New Guineau,699.5,348.2,,
+New Guineau,701.1,351.3,,
+New Guineau,699.6,352.1,,
+New Guineau,697.8,352.6,,
+New Guineau,698.2,354.4,,
+New Guineau,699.4,356.5,,
+New Guineau,700.7,359,,
+New Guineau,700.8,361.9,,
+New Guineau,703.3,363.6,,
+New Guineau,703.4,366.9,,
+New Guineau,701.1,368.1,,
+New Guineau,697.6,367,,
+New Guineau,694.8,366.4,,
+New Guineau,693.3,363,,
+New Guineau,691.4,361.1,,
+New Guineau,686.7,359.7,,
+New Guineau,687.2,361.7,,
+New Guineau,685.4,362.9,,
+New Guineau,683.1,363.1,,
+New Guineau,683.9,364.5,,
+New Guineau,681.4,364.5,,
+New Guineau,678.4,363.9,,
+New Guineau,676.5,363.6,,
+New Guineau,674.6,364.3,,
+New Guineau,670.4,362.4,,
+New Guineau,667.4,360.2,,
+New Guineau,665,359.7,,
+New Guineau,664.4,357,,
+New Guineau,665.7,354.8,,
+New Guineau,666,351.8,,
+New Guineau,666.4,348.5,,
+New Guineau,663.7,346.8,,
+New Guineau,663,344.2,,
+New Guineau,660.4,344.5,,
+New Guineau,657.8,344.6,,
+New Guineau,655.5,342.5,,
+New Guineau,654,342.4,,
+New Guineau,651.6,342.9,,
+Indonesia,634.9,396.3,,
+Indonesia,632.8,395.5,,
+Indonesia,627.3,395.1,,
+Indonesia,624.1,393.8,,
+Indonesia,621.2,394,,
+Indonesia,617.5,394.9,,
+Indonesia,615.6,394.3,,
+Indonesia,610.7,394.4,,
+Indonesia,609.2,393.2,,
+Indonesia,602.9,391.4,,
+Indonesia,602.6,388.8,,
+Indonesia,600.2,388.6,,
+Indonesia,598.4,386.2,,
+Indonesia,595.3,384.3,,
+Indonesia,594.2,379.3,,
+Indonesia,591.8,375.8,,
+Indonesia,588.8,371.9,,
+Indonesia,586.7,371.9,,
+Indonesia,585.4,370.2,,
+Indonesia,585.3,367,,
+Indonesia,583.6,363.4,,
+Indonesia,582.4,360.3,,
+Indonesia,579,355.9,,
+Indonesia,576,353.3,,
+Indonesia,573.8,351.1,,
+Indonesia,573.7,348.3,,
+Indonesia,573,345.6,,
+Indonesia,575.8,344.7,,
+Indonesia,578.9,347.2,,
+Indonesia,581.7,346.9,,
+Indonesia,584.5,349.7,,
+Indonesia,587,353.7,,
+Indonesia,589.8,352.4,,
+Indonesia,590.2,354.5,,
+Indonesia,591.2,354.4,,
+Indonesia,591.2,357.8,,
+Indonesia,594,356.2,,
+Indonesia,595.4,359.7,,
+Indonesia,598.5,361.2,,
+Indonesia,603.8,354.9,,
+Indonesia,606.2,353.3,,
+Indonesia,608.9,353.2,,
+Indonesia,612.8,350.3,,
+Indonesia,616.2,346.7,,
+Indonesia,617.8,344.5,,
+Indonesia,617.6,342,,
+Indonesia,620.6,339.5,,
+Indonesia,622.1,333.7,,
+Indonesia,624.3,333.9,,
+Indonesia,626.9,335.4,,
+Indonesia,629.1,337.6,,
+Indonesia,632,338.3,,
+Indonesia,632.4,344.2,,
+Indonesia,629,347.8,,
+Indonesia,629.3,352,,
+Indonesia,643.8,355.1,,
+Indonesia,646.6,355.4,,
+Indonesia,647.3,357.2,,
+Indonesia,645.5,359.5,,
+Indonesia,644.4,361.6,,
+Indonesia,641.5,362.8,,
+Indonesia,638.2,362.6,,
+Indonesia,636.4,362.9,,
+Indonesia,636.9,364.6,,
+Indonesia,639.9,364.9,,
+Indonesia,642.7,365.3,,
+Indonesia,641.2,368.1,,
+Indonesia,637.8,368.3,,
+Indonesia,637.5,373.3,,
+Indonesia,639.8,372.8,,
+Indonesia,640.5,378.7,,
+Indonesia,642.8,380.9,,
+Indonesia,641.7,382.9,,
+Indonesia,639.8,384.2,,
+Indonesia,636.8,392,,
+Indonesia,636.6,394.5,,
+Eastern Australia,663.3,391.4,,
+Eastern Australia,664.3,388.6,,
+Eastern Australia,664.6,385.1,,
+Eastern Australia,665.8,383.1,,
+Eastern Australia,669.1,381,,
+Eastern Australia,671.1,380,,
+Eastern Australia,673.9,380.6,,
+Eastern Australia,675.5,378.2,,
+Eastern Australia,680,380,,
+Eastern Australia,683.6,379.3,,
+Eastern Australia,685.2,378.6,,
+Eastern Australia,685.4,380.4,,
+Eastern Australia,687.1,380.9,,
+Eastern Australia,683.3,386.4,,
+Eastern Australia,682.9,389.7,,
+Eastern Australia,683,391.8,,
+Eastern Australia,686.6,391.4,,
+Eastern Australia,689.3,391.6,,
+Eastern Australia,690.4,395,,
+Eastern Australia,691.5,397.2,,
+Eastern Australia,693.5,397.7,,
+Eastern Australia,695.9,397.7,,
+Eastern Australia,697.6,397.3,,
+Eastern Australia,697.9,393.1,,
+Eastern Australia,697.1,392.3,,
+Eastern Australia,698.7,389.5,,
+Eastern Australia,700.7,387.9,,
+Eastern Australia,700.3,383.5,,
+Eastern Australia,699.4,381,,
+Eastern Australia,700.5,377.1,,
+Eastern Australia,702.4,378.2,,
+Eastern Australia,702.9,381.8,,
+Eastern Australia,703.6,385.4,,
+Eastern Australia,704.2,389.8,,
+Eastern Australia,705.6,390.7,,
+Eastern Australia,707.7,389.6,,
+Eastern Australia,708.4,386.7,,
+Eastern Australia,710,388.5,,
+Eastern Australia,710.2,392.9,,
+Eastern Australia,711.3,394.7,,
+Eastern Australia,712,398.8,,
+Eastern Australia,711.4,401.7,,
+Eastern Australia,711.8,405.9,,
+Eastern Australia,714.1,406.8,,
+Eastern Australia,715.3,406.5,,
+Eastern Australia,716.9,408.3,,
+Eastern Australia,719.8,408.6,,
+Eastern Australia,719.9,411.6,,
+Eastern Australia,720.9,414.4,,
+Eastern Australia,722.9,415.4,,
+Eastern Australia,723.3,420.1,,
+Eastern Australia,724.9,420.8,,
+Eastern Australia,726.8,423.4,,
+Eastern Australia,727.6,423.9,,
+Eastern Australia,728.4,426.5,,
+Eastern Australia,729.9,428.8,,
+Eastern Australia,730.2,430.8,,
+Eastern Australia,730.6,432,,
+Eastern Australia,730.1,436.8,,
+Eastern Australia,729.7,440.6,,
+Eastern Australia,729.7,444.8,,
+Eastern Australia,729,445.9,,
+Eastern Australia,728.8,449.8,,
+Eastern Australia,727.1,451.7,,
+Eastern Australia,724.6,451.7,,
+Eastern Australia,723.7,453.3,,
+Eastern Australia,725.9,453.9,,
+Eastern Australia,725.6,456,,
+Eastern Australia,723.5,457.9,,
+Eastern Australia,721.7,458.8,,
+Eastern Australia,720,463.1,,
+Eastern Australia,718.3,466.1,,
+Eastern Australia,717.8,469.1,,
+Eastern Australia,716.2,472,,
+Eastern Australia,716.5,474.4,,
+Eastern Australia,715.4,475.9,,
+Eastern Australia,709.7,476.8,,
+Eastern Australia,708.6,476.2,,
+Eastern Australia,707.1,478.4,,
+Eastern Australia,705.3,479.2,,
+Eastern Australia,705.2,480.3,,
+Eastern Australia,704,481.9,,
+Eastern Australia,701.8,481.1,,
+Eastern Australia,701.2,479.4,,
+Eastern Australia,698.1,478.2,,
+Eastern Australia,697.1,480.2,,
+Eastern Australia,694.7,481.7,,
+Eastern Australia,693.9,480.8,,
+Eastern Australia,694.1,472.9,,
+Eastern Australia,692.6,471.3,,
+Eastern Australia,693,461.7,,
+Eastern Australia,693,453.4,,
+Eastern Australia,693.3,446.7,,
+Eastern Australia,693.3,440.4,,
+Eastern Australia,693.5,434,,
+Eastern Australia,693.7,428.6,,
+Eastern Australia,688.6,428.3,,
+Eastern Australia,680.7,428.2,,
+Eastern Australia,672.4,428.7,,
+Eastern Australia,663.9,428.8,,
+Eastern Australia,663.8,422.7,,
+Eastern Australia,663.6,416.4,,
+Eastern Australia,663.5,409.2,,
+Eastern Australia,663.3,401.8,,
+Eastern Australia,663.2,395.8,,
+Western Australia,663.2,395.8,18,Border with Eastern Australia
+Western Australia,663.3,401.8,17,Border with Eastern Australia
+Western Australia,663.5,409.2,16,Border with Eastern Australia
+Western Australia,663.6,416.4,15,Border with Eastern Australia
+Western Australia,663.8,422.7,14,Border with Eastern Australia
+Western Australia,663.9,428.8,13,Border with Eastern Australia
+Western Australia,672.4,428.7,12,Border with Eastern Australia
+Western Australia,680.7,428.2,11,Border with Eastern Australia
+Western Australia,688.6,428.3,10,Border with Eastern Australia
+Western Australia,693.7,428.6,9,Border with Eastern Australia
+Western Australia,693.5,434,8,Border with Eastern Australia
+Western Australia,693.3,440.4,7,Border with Eastern Australia
+Western Australia,693.3,446.7,6,Border with Eastern Australia
+Western Australia,693,453.4,5,Border with Eastern Australia
+Western Australia,693,461.7,4,Border with Eastern Australia
+Western Australia,692.6,471.3,3,Border with Eastern Australia
+Western Australia,694.1,472.9,2,Border with Eastern Australia
+Western Australia,693.9,480.8,1,Border with Eastern Australia
+Western Australia,692.3,479.9
+Western Australia,691.0,479.0
+Western Australia,689.4,476.8
+Western Australia,688.2,474.3
+Western Australia,687.8,472.1
+Western Australia,688.2,469.8
+Western Australia,686.3,468.2
+Western Australia,686.9,464.9
+Western Australia,685.5,464.0
+Western Australia,682.8,466.9
+Western Australia,681.8,465.3
+Western Australia,683.6,462.2
+Western Australia,686.0,460.4
+Western Australia,687.1,456.3
+Western Australia,684.9,455.2
+Western Australia,684.2,457.5
+Western Australia,684.4,459.0
+Western Australia,682.0,460.1
+Western Australia,680.1,462.6
+Western Australia,678.9,464.1
+Western Australia,676.9,461.9
+Western Australia,674.8,459.0
+Western Australia,675.2,456.2
+Western Australia,673.3,454.4
+Western Australia,670.9,453.5
+Western Australia,666.6,453.4
+Western Australia,663.7,453.2
+Western Australia,661.5,455.3
+Western Australia,658.7,455.6
+Western Australia,655.9,456.9
+Western Australia,652.8,457.7
+Western Australia,651.6,459.8
+Western Australia,652.1,462.5
+Western Australia,647.1,463.3
+Western Australia,646.7,462.4
+Western Australia,643.3,461.9
+Western Australia,639.8,463.2
+Western Australia,637.4,464.6
+Western Australia,634.6,467.0
+Western Australia,632.5,467.9
+Western Australia,629.5,470.2
+Western Australia,627.1,470.2
+Western Australia,625.3,470.9
+Western Australia,621.8,468.2
+Western Australia,618.8,466.1
+Western Australia,619.2,463.0
+Western Australia,621.4,461.5
+Western Australia,621.6,457.7
+Western Australia,622.7,455.8
+Western Australia,622.0,453.0
+Western Australia,619.6,451.1
+Western Australia,618.2,449.8
+Western Australia,617.9,445.6
+Western Australia,618.1,443.1
+Western Australia,617.0,440.7
+Western Australia,615.3,438.3
+Western Australia,614.4,435.0
+Western Australia,615.8,432.9
+Western Australia,615.8,430.0
+Western Australia,618.3,430.0
+Western Australia,618.5,427.0
+Western Australia,617.0,426.7
+Western Australia,615.9,424.5
+Western Australia,617.3,421.0
+Western Australia,616.8,418.6
+Western Australia,618.8,417.0
+Western Australia,622.2,416.6
+Western Australia,624.7,414.2
+Western Australia,626.4,412.9
+Western Australia,627.5,411.2
+Western Australia,629.9,410.9
+Western Australia,633.2,411.6
+Western Australia,635.8,409.4
+Western Australia,638.4,406.9
+Western Australia,640.2,405.9
+Western Australia,640.9,403.7
+Western Australia,642.4,402.1
+Western Australia,644.0,401.7
+Western Australia,644.9,399.0
+Western Australia,646.7,398.9
+Western Australia,648.0,399.5
+Western Australia,648.3,397.7
+Western Australia,648.2,396.6
+Western Australia,650.0,395.9
+Western Australia,652.0,396.0
+Western Australia,653.3,392.0
+Western Australia,656.6,390.7
+Western Australia,658.3,388.2
+Western Australia,660.5,389.5

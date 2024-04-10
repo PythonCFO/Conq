@@ -134,12 +134,12 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
             self.mapScene.addEllipse(point.x() - radius, point.y() - radius, radius * 2, radius * 2, pen)
 
     def plot_country(self, name, coords):    
-        if name == 'Ukraine':
+        if name == 'Mongolia':
             pen = qtg.QPen(qtc.Qt.cyan)
-        elif name == 'Western Europe':
+        elif name == 'Siberia':
+            pen = qtg.QPen(qtc.Qt.yellow)
+        elif name == 'India':
             pen = qtg.QPen(qtc.Qt.magenta)
-        #elif name == 'Venezuela':
-        #    pen = qtg.QPen(qtc.Qt.yellow)
         #elif name == 'Eastern United States':
         #    pen = qtg.QPen(qtc.Qt.magenta)
         #elif name == 'Western United States': 
