@@ -12,7 +12,7 @@ from ui_clientGUI import Ui_MainWindow
 import sys
 from collections import Counter
 import random
-from config import classic_territories, region_bonus, cards, game_players
+from config import classic_territories, region_bonus, classic_cards, game_players
 
 class CustomGraphicsView(qtw.QGraphicsView):
     def __init__(self, parent=None):
@@ -84,6 +84,14 @@ class Territory:
         self.armies = 0
 
 
+class Card:
+    def __init__(self, name, unit):
+        self.name = name
+        self.unit = unit
+        self.owner = 'Deck'
+
+
+
 class GameBoard(qtw.QMainWindow, Ui_MainWindow):
     # Start with loading game parameters from a config file
     #   Later can accept game parameters from adminGUI
@@ -93,7 +101,8 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         self.players = self.load_players()
         self.territories = self.load_territories()
         #self.test_adj()        # test all adjacencies are valid territories  TODO: move to load territories
-
+        self.load_cards()       # TODO: standardize on whether using methods or functions in init
+    
 
 
         # Overrides mapview created by Designer
@@ -169,7 +178,11 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
                 else:
                     print("Error - ", a)
 
-
+    def load_cards(self):
+        self.deck = {}
+        for c in classic_cards:
+            self.deck[c[0]] = Card(c[0], c[1])
+        
 
 
 

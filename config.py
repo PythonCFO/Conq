@@ -46,7 +46,7 @@ classic_territories = [
 
 region_bonus = {'North America':5, 'South America':2, 'Europe':5, 'Africa':3, 'Asia':7, 'Australia':2}
 
-cards = [
+classic_cards = [
     ['Alaska', 'Cavalry'],
     ['Alberta', 'Artillery'],
     ['Central America', 'Cavalry'],
