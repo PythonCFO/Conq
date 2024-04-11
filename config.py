@@ -1,6 +1,6 @@
 
 classic_territories = [
-    ['North America', 'Alaska', ['Northwest Territory', 'Alberta', 'Kamchatcka']],
+    ['North America', 'Alaska', ['Northwest Territory', 'Alberta', 'Kamchatka']],
     ['North America', 'Alberta', ['Alaska', 'Northwest Territory', 'Ontario', 'Western United States']],
     ['North America', 'Central America', ['Western United States', 'Eastern United States', 'Venezuela']],
     ['North America', 'Eastern United States', ['Central America', 'Western United States', 'Quebec', 'Ontario']],
@@ -29,15 +29,15 @@ classic_territories = [
     ['Asia', 'Afghanistan', ['Middle East', 'Ukraine', 'Ural', 'China', 'India']],
     ['Asia', 'China', ['India', 'Afghanistan', 'Ural', 'Siberia', 'Mongolia', 'Siam']],
     ['Asia', 'India', ['Middle East', 'Afghanistan', 'China', 'Siam']],
-    ['Asia', 'Irkutsk', ['Siberia', 'Yakutsk', 'Kamchatcka', 'Mongolia']],
-    ['Asia', 'Japan', ['Mongolia', 'Kamchatcka']],
+    ['Asia', 'Irkutsk', ['Siberia', 'Yakutsk', 'Kamchatka', 'Mongolia']],
+    ['Asia', 'Japan', ['Mongolia', 'Kamchatka']],
     ['Asia', 'Kamchatka', ['Mongolia', 'Irkutsk', 'Yakutsk', 'Alaska', 'Japan']],
     ['Asia', 'Middle East', ['Egypt', 'Southern Europe', 'Ukraine', 'Afghanistan', 'India', 'East Africa']],
-    ['Asia', 'Mongolia', ['China', 'Siberia', 'Irkutsk', 'Kamchatcka', 'Japan']],
+    ['Asia', 'Mongolia', ['China', 'Siberia', 'Irkutsk', 'Kamchatka', 'Japan']],
     ['Asia', 'Siam', ['India', 'China', 'Indonesia']],
     ['Asia', 'Siberia', ['Ural', 'Yakutsk', 'Irkutsk', 'Mongolia', 'China']],
     ['Asia', 'Ural', ['Ukraine', 'Siberia', 'China', 'Afghanistan']],
-    ['Asia', 'Yakutsk', ['Siberia', 'Kamchatcka', 'Irkutsk']],
+    ['Asia', 'Yakutsk', ['Siberia', 'Kamchatka', 'Irkutsk']],
     ['Australia', 'Eastern Australia', ['Western Australia', 'New Guinea']],
     ['Australia', 'Indonesia', ['Siam', 'New Guinea', 'Western Australia']],
     ['Australia', 'New Guinea', ['Indonesia', 'Eastern Australia', 'Western Australia']],
@@ -91,5 +91,11 @@ cards = [
     ['Western Australia', 'Cavalry'],
     ['Wild_1', 'All'],  # Need unique name
     ['Wild_2', 'All']   # Need unique name
+]
+
+game_players = [('Andrew', 'Blue'), 
+           ('Jay', 'Red'),
+           ('Frank', 'Black'),
+           ('Becky', 'Pink')
 ]
 

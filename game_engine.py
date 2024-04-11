@@ -12,7 +12,7 @@ from ui_clientGUI import Ui_MainWindow
 import sys
 from collections import Counter
 import random
-from config import classic_territories, region_bonus, cards
+from config import classic_territories, region_bonus, cards, game_players
 
 class CustomGraphicsView(qtw.QGraphicsView):
     def __init__(self, parent=None):
@@ -22,7 +22,6 @@ class CustomGraphicsView(qtw.QGraphicsView):
 
     def wheelEvent(self, event: qtg.QWheelEvent):
         scaleFactor = 1.25
-
         # Zoom in
         if event.angleDelta().y() > 0:
             self.scale(scaleFactor, scaleFactor)
@@ -35,12 +34,11 @@ class CustomGraphicsView(qtw.QGraphicsView):
 
     def mousePressEvent(self, event: qtg.QMouseEvent):
         # Convert the mouse click position to scene coordinates
-        scenePos = self.mapToScene(event.pos())
+        #scenePos = self.mapToScene(event.pos())     # marked as deprecated
+        position = event.position()
+        scenePos = self.mapToScene(position.x(), position.y())   
         #print(f"Mouse click at scene coordinates: ({scenePos.x()}, {scenePos.y()})")
-        if window.cbxAddCountries.isChecked():                
-            plot_and_log_point(scenePos, window.linCountry.text())
         super().mousePressEvent(event)
-
 
 
 class CountryItem(qtw.QGraphicsItem):
@@ -70,16 +68,33 @@ class CountryItem(qtw.QGraphicsItem):
         #self.window.setStatusMessage(f"{self.name} was clicked!")  # Update the status bar message
 
 
+class Player:
+    def __init__(self, _name, _color):
+        self.name = _name
+        self.color = _color
+
+
+class Territory:
+    def __init__(self, _name, _region, _adjacencies, _coordinates, _owner):
+        self.name = _name
+        self.region = _region
+        self.adjacencies = _adjacencies
+        self.owner = _owner
+        self.coordinates = _coordinates
+        self.armies = 0
+
 
 class GameBoard(qtw.QMainWindow, Ui_MainWindow):
+    # Start with loading game parameters from a config file
+    #   Later can accept game parameters from adminGUI
     def __init__(self):
         super().__init__()
         self.setupUi(self)              
+        self.players = self.load_players()
+        self.territories = self.load_territories()
+        #self.test_adj()        # test all adjacencies are valid territories  TODO: move to load territories
 
-        # This capability is for making a map with SVG background
-        #self.cbxAddCountries.stateChanged.connect(self.cbxAddCountryChanged)
-        if self.cbxAddCountries.isChecked():
-            self.linCountry.setEnabled(True)
+
 
         # Overrides mapview created by Designer
         # TODO: how do this properly
@@ -91,47 +106,13 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         self.mapView.setScene(self.mapScene)
         #self.mapView.setFixedSize(800, 600)        # Set in Designer
 
-        #map_coordinates = load_coordinates()
-        country_coordinates = load_country_coordinates()
-        
-
-        # load SVG background
-        #svgBackground = QGraphicsSvgItem('resources/Risk_board.svg')
-        #svgBackground.setZValue(-100)
-        #self.mapScene.addItem(svgBackground)
-
-
         # Adding countries (or other items) to the map
-        self.addCountriesToMap(self.mapScene, country_coordinates)
-        # Plot the country outlines of known countries (subset of map_coordinates)
-        #self.country_names = list(set(x[0] for x in country_coordinates))
-        #for name in self.country_names:
-        #    points = [x[1] for x in country_coordinates if x[0] == name]
-        #    self.plot_territory(name, points[0]) #TODO: Why is points creating a list ?
+        self.addCountriesToMap()
 
-        #self.plot_coordinates(map_coordinates)
-
-    def plot_territory(self, name, coords):    
-        # Use this function to create a map.  It shows the actual coordinates that are used for borders
-        pen = qtg.QPen(qtc.Qt.red)
-        radius = 2
-        for point in coords:
-            self.mapScene.addEllipse(point.x() - radius, point.y() - radius, radius * 2, radius * 2, pen)
-
-    
-    # This function not needed once have svg capability
-    #def plot_coordinates(self, coordinates):
-    #    Unclear what this function
-    #    pen = qtg.QPen(qtc.Qt.black)
-    #    radius = 1  # Radius of the points
-    #    for point in coordinates:
-    #        self.mapScene.addEllipse(point[0] - radius, point[1] - radius, radius * 2, radius * 2, pen)
-    
-
-    def addCountriesToMap(self, mapScene, countries):
-        for name, points in countries:
-            country = CountryItem(name, points, self)
-            mapScene.addItem(country)
+    def addCountriesToMap(self):
+        for name in self.territories:
+            ter = CountryItem(name, self.territories[name].coordinates, self)
+            self.mapScene.addItem(ter)
 
     def setStatusMessage(self, message):
         #self.statusBar.showMessage(message)
@@ -142,45 +123,51 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         pass
         return super().mousePressEvent(event)
 
-    def cbxAddCountryChanged(self, state):
-        if state:
-            self.linCountry.setEnabled(True)
+    def load_map(self):
+        #Use to load csv contents to list of tuples (country, QPointF objects for coordinates)
+        csvfile = open('resources/countries.csv', newline='')
+        c = csv.reader(csvfile)
+        data = []
+        for row in c:
+            data.append([row[0], (float(row[1]), float(row[2]))])    
+        territories = list(set([x[0] for x in data]))
+        #coords = []
+        map = {}
+        for territory in territories:
+            points = [x[1] for x in data if x[0] == territory]
+            qpoints = []
+            for point in points:
+                qpoints.append(qtc.QPointF(point[0], point[1]))
+            #coords.append((country, qpoints))
+            map[territory] = qpoints
+        return map
 
+    def load_players(self):
+        players = {}
+        for p in game_players:
+            players[p[0]] = Player(p[0], p[1])
+        return players
+            
+    def load_territories(self):
+        # defaulting to classic countries TODO: need process to select a map
+        map = self.load_map()
+        territories = {}
+        # classic_territories is list of lists [Region, Territory, [Adjacent Territories]] in config.py
+        for t in classic_territories:       
+            # Get coordinates from countries.csv file 
+            # TODO: incorporate coordinates into same config file as other game parameters
+            territory = Territory(t[1], t[0], t[2], map[t[1]], 'Vacant')
+            territories[t[1]] = territory
+        return territories
 
-def load_coordinates():
-    #Use to load csv file of coordinates into a list
-    csvfile = open('resources/map_coordinates_clean.csv', newline='')
-    c = csv.reader(csvfile)
-    coords = []
-    for row in c:
-        coords.append((float(row[0]), float(row[1])))
-    return coords
-
-def load_country_coordinates():
-    #Use to load csv contents to list of tuples (country, QPointF objects for coordinates)
-    csvfile = open('resources/countries.csv', newline='')
-    c = csv.reader(csvfile)
-    data = []
-    for row in c:
-        data.append([row[0], (float(row[1]), float(row[2]))])    
-    countries = list(set([x[0] for x in data]))
-    coords = []
-    for country in countries:
-        points = [x[1] for x in data if x[0] == country]
-        qpoints = []
-        for point in points:
-            qpoints.append(qtc.QPointF(point[0], point[1]))
-        coords.append((country, qpoints))
-    return coords
-
-def plot_and_log_point(scenePos, country_name):
-    pen = qtg.QPen(qtc.Qt.blue)
-    radius = 1
-    window.mapScene.addEllipse(scenePos.x() - radius, scenePos.y() - radius, radius * 2, radius * 2, pen)
-    # want to append to existing file
-    with open('resources/countries.csv', 'a', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow([country_name, round(scenePos.x(),1), round(scenePos.y(),1)])
+    def test_adj(self):
+        # Purpose is to confirm all adjacencies are valid territories
+        for t in self.territories:
+            for a in self.territories[t].adjacencies:
+                if a in self.territories:
+                    print(t, a)
+                else:
+                    print("Error - ", a)
 
 
 

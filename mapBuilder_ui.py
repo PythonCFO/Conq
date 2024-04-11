@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'clientGUIeFRceS.ui'
+## Form generated from reading UI file 'mapBuilder.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.3
 ##
@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QGraphicsView, QLabel,
-    QMainWindow, QMenuBar, QSizePolicy, QStatusBar,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QGraphicsView,
+    QLabel, QLineEdit, QMainWindow, QMenuBar,
+    QSizePolicy, QStatusBar, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -84,6 +84,13 @@ class Ui_MainWindow(object):
         self.mapView = QGraphicsView(self.centralwidget)
         self.mapView.setObjectName(u"mapView")
         self.mapView.setGeometry(QRect(0, 10, 961, 761))
+        self.cbxAddCountries = QCheckBox(self.centralwidget)
+        self.cbxAddCountries.setObjectName(u"cbxAddCountries")
+        self.cbxAddCountries.setGeometry(QRect(970, 10, 111, 20))
+        self.linCountry = QLineEdit(self.centralwidget)
+        self.linCountry.setObjectName(u"linCountry")
+        self.linCountry.setEnabled(False)
+        self.linCountry.setGeometry(QRect(1110, 8, 181, 22))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -109,5 +116,6 @@ class Ui_MainWindow(object):
         self.numArmiesCards.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.lblTotalArmies.setText(QCoreApplication.translate("MainWindow", u"Total Reinforcements:", None))
         self.numTotalArmies.setText(QCoreApplication.translate("MainWindow", u"17", None))
+        self.cbxAddCountries.setText(QCoreApplication.translate("MainWindow", u"Add Countries", None))
     # retranslateUi
 
