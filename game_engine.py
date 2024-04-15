@@ -11,7 +11,7 @@ from ui_clientGUI import Ui_MainWindow
 # Test Turns stuff
 import sys
 from collections import Counter
-import random
+from random import choice
 from config import classic_territories, region_bonus, classic_cards, game_players
 
 class CustomGraphicsView(qtw.QGraphicsView):
@@ -42,12 +42,13 @@ class CustomGraphicsView(qtw.QGraphicsView):
 
 
 class CountryItem(qtw.QGraphicsItem):
-    def __init__(self, name, points, window):
+    def __init__(self, name, points, window, color=qtc.Qt.GlobalColor.gray):
         super().__init__()
         self.name = name
         self.points = points    # list of QPointF
         self.window = window  # Reference to the main window to update the status bar
         self.polygon = qtg.QPolygonF(points)
+        self.color = color
 
     def boundingRect(self):
         return self.polygon.boundingRect()
@@ -58,14 +59,19 @@ class CountryItem(qtw.QGraphicsItem):
         return path
     
     def paint(self, painter, option, widget=None):        
-        # Should not need this
+        painter.setBrush(qtg.QBrush(self.color))
         painter.drawPolygon(self.polygon)
         
 
     def mousePressEvent(self, event):
         print('Clicked on ', self.name)
+        #self.changeColor(qtc.Qt.GlobalColor.red)
+        #self.update()
         # TODO: Figure out how to get status bar working
         #self.window.setStatusMessage(f"{self.name} was clicked!")  # Update the status bar message
+
+    def changeColor(self, new_color):
+        self.color = new_color
 
 
 class Player:
@@ -82,6 +88,7 @@ class Territory:
         self.owner = _owner
         self.coordinates = _coordinates
         self.armies = 0
+        self.color = 'Blue'
 
 
 class Card:
@@ -102,9 +109,7 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         self.territories = self.load_territories()
         #self.test_adj()        # test all adjacencies are valid territories  TODO: move to load territories
         self.load_cards()       # TODO: standardize on whether using methods or functions in init
-    
-
-
+        
         # Overrides mapview created by Designer
         # TODO: how do this properly
         self.mapView = CustomGraphicsView(self.centralwidget)
@@ -117,6 +122,12 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
 
         # Adding countries (or other items) to the map
         self.addCountriesToMap()
+        self.flag_victory = False 
+
+        #self.setup_game()
+
+        
+
 
     def addCountriesToMap(self):
         for name in self.territories:
@@ -183,11 +194,38 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         for c in classic_cards:
             self.deck[c[0]] = Card(c[0], c[1])
         
+    def setup_game(self):
+        self.setup_territories()
+
+    
+    def setup_territories(self):
+        player_names = self.players.keys()
+        #territory_names = list(self.territories.keys())
+        #territory_names = list(t.name for t in self.territories.values() if t.owner=='Vacant')
+        flag_assign_territories = True
+        while flag_assign_territories:
+            for p in player_names:
+                #print(choice(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
+                #sys.exit()
+                t = choice(list(t.name for t in self.territories.values() if t.owner=='Vacant'))
+                self.territories[t].owner = p
+                print(self.territories[t].name, self.territories[t].owner, len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
+                if len(list(t.name for t in self.territories.values() if t.owner=='Vacant')) == 0:
+                    flag_assign_territories = False
+                    break
+                else:
+                    print(len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
 
 
+    def play_game(self):
+        print('hello')
+        pass
+
+    
 
 if __name__ == '__main__':
     app = qtw.QApplication(sys.argv)
     window = GameBoard()
     window.show()
+    window.play_game()
     sys.exit(app.exec())
