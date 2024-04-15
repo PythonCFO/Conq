@@ -5,13 +5,11 @@ from PySide6 import QtGui as qtg
 import csv 
 from PySide6.QtSvgWidgets import QGraphicsSvgItem
 
-
 from ui_clientGUI import Ui_MainWindow
 
-# Test Turns stuff
 import sys
 from collections import Counter
-from random import choice
+from random import choice, shuffle
 from config import classic_territories, region_bonus, classic_cards, game_players, classic_army_center
 
 
@@ -22,6 +20,7 @@ class CustomGraphicsView(qtw.QGraphicsView):
         super(CustomGraphicsView, self).__init__(parent)
         self.setRenderHints(qtg.QPainter.Antialiasing | qtg.QPainter.SmoothPixmapTransform)
         self._zoom = 0
+        
 
     def wheelEvent(self, event: qtg.QWheelEvent):
         scaleFactor = 1.25
@@ -69,7 +68,7 @@ class Territory(qtw.QGraphicsItem):
         painter.setBrush(qtg.QBrush(self.color))
         painter.drawPolygon(self.polygon)
         # Draw the number of armies
-        painter.setPen(qtg.QPen(qtc.Qt.GlobalColor.yellow))  # Set text color
+        painter.setPen(qtg.QPen(qtc.Qt.GlobalColor.black))  # Set text color
         painter.setFont(qtg.QFont("Arial", 10))  # Set text font and size
         # Calculate text width and height to properly center it
         text = str(self.armies)
@@ -140,6 +139,7 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         self.load_cards()       # TODO: standardize on whether using methods or functions in init      
         self.flag_victory = False 
         self.setup_game()
+        self.play_game()
 
         
     def setStatusMessage(self, message):
@@ -212,6 +212,7 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
     def setup_game(self):
         self.setup_territories()
         self.setup_initial_armies()
+        self.statusBar().showMessage("Game set up is complete")
     
     def setup_territories(self):
         player_names = self.players.keys()
@@ -235,7 +236,6 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
                 #else:
                 #    print(len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
         
-
     def setup_initial_armies(self):
         # Four player game has each player start with 30 armies
         for p in self.players.keys():
@@ -250,21 +250,57 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
                 self.territories[t].armies += 1
                 armies -= 1
         
+    def calc_reinforcements_from_territories(self, _player):
+        return max(int(sum(1 for k, v in self.territories.items() if v.owner == _player)/3),3)
             
+    def calc_reinforcements_from_regions(self, _player):
+        result =  0
+        # iterate thru list of unique regions
+        for region in list(set({v.region for k, v in self.territories.items()})):
+            # if sum of player territories in region = sum of all territories in region => get bonus
+            total_region = list({v1.name for k1,v1 in self.territories.items() if v1.region == region})
+            player_region = list({v1.name for k1,v1 in self.territories.items() if v1.region == region and v1.owner == _player})
+            if player_region == total_region:
+                result += region_bonus[region]  # region_bonus loaded from config.py 
+        return result
+
+    def exchange_cards(self, _player):
+        result = 0
+        # TODO: Add 2 army benefit if own card NOTE: some rules limit to max 2 armies per turn in
+        player_cards = Counter([v.unit for k, v in self.deck.items() if v.owner == _player]).most_common()
+        number_cards = Counter([v.unit for k, v in self.deck.items() if v.owner == _player]).total()
+        number_wild_cards = Counter([v.unit for k, v in self.deck.items() if v.owner == _player])['All']
+        if number_cards >= 3:
+            # test if 3 or more of one unit
+            if player_cards[0][1] + number_wild_cards >= 3:
+                result = 5 
+            # test if one of each unit
+            elif len(player_cards) >= 3:
+                result = 5 
+        return result
+        
 
 
     def play_game(self):
-        print('hello')
-        pass
 
-def plot_and_log_point(scenePos, territory_name):
-    pen = qtg.QPen(qtc.Qt.blue)
-    radius = 2
-    window.mapScene.addEllipse(scenePos.x() - radius, scenePos.y() - radius, radius * 2, radius * 2, pen)
-    # want to append to existing file
-    with open('resources/countries_center.csv', 'a', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow([territory_name, round(scenePos.x(),1), round(scenePos.y(),1)])
+        turn_order = list(self.players.keys())
+        shuffle(turn_order)
+        while not self.flag_victory:
+            for p in turn_order:
+                self.statusBar().showMessage('It is ' + p + "'s turn")
+                reinforcements_from_territories = self.calc_reinforcements_from_territories(p)
+                self.numArmiesTerritories.setText(str(reinforcements_from_territories))
+                reinforcements_from_regions = self.calc_reinforcements_from_regions(p)
+                self.numArmiesRegions.setText(str(reinforcements_from_regions))
+                reinforcements_from_cards = self.exchange_cards(p)
+                self.numArmiesCards.setText(str(reinforcements_from_cards))
+                reinforcements_total = reinforcements_from_territories + reinforcements_from_regions + reinforcements_from_cards
+                self.numTotalArmies.setText(str(reinforcements_total))
+            self.flag_victory = True
+
+
+        
+
 
 
 
@@ -272,5 +308,4 @@ if __name__ == '__main__':
     app = qtw.QApplication(sys.argv)
     window = GameBoard()
     window.show()
-    #window.play_game()
     sys.exit(app.exec())
