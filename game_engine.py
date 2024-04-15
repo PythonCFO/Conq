@@ -31,7 +31,6 @@ class CustomGraphicsView(qtw.QGraphicsView):
             self.scale(1.0 / scaleFactor, 1.0 / scaleFactor)
             self._zoom -= 1
 
-
     def mousePressEvent(self, event: qtg.QMouseEvent):
         # Convert the mouse click position to scene coordinates
         #scenePos = self.mapToScene(event.pos())     # marked as deprecated
@@ -82,17 +81,6 @@ class Player:
         self.name = _name
         self.color = _color
 
-'''
-class Territory:
-    def __init__(self, _name, _region, _adjacencies, _coordinates, _owner):
-        self.name = _name
-        self.region = _region
-        self.adjacencies = _adjacencies
-        self.owner = _owner
-        self.coordinates = _coordinates
-        self.armies = 0
-        self.color = 'Blue'
-'''
 
 class Card:
     def __init__(self, name, unit):
@@ -121,7 +109,7 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         #self.test_adj()        # test all adjacencies are valid territories  TODO: move to load territories
         self.load_cards()       # TODO: standardize on whether using methods or functions in init      
         self.flag_victory = False 
-        #self.setup_game()
+        self.setup_game()
 
         
     def setStatusMessage(self, message):
@@ -190,7 +178,6 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         
     def setup_game(self):
         self.setup_territories()
-
     
     def setup_territories(self):
         player_names = self.players.keys()
@@ -203,13 +190,17 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
                 #sys.exit()
                 t = choice(list(t.name for t in self.territories.values() if t.owner=='Vacant'))
                 self.territories[t].owner = p
-                print(self.territories[t].name, self.territories[t].owner, len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
+                self.territories[t].changeColor(self.players[p].color)
+                #self.territories[t].owner = self.players[p].color
+                
+                print(self.territories[t].name, self.territories[t].owner, self.players[p].color, 
+                      len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
                 if len(list(t.name for t in self.territories.values() if t.owner=='Vacant')) == 0:
                     flag_assign_territories = False
                     break
                 else:
                     print(len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
-
+        self.update()
 
     def play_game(self):
         print('hello')
