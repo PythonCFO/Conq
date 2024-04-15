@@ -12,7 +12,10 @@ from ui_clientGUI import Ui_MainWindow
 import sys
 from collections import Counter
 from random import choice
-from config import classic_territories, region_bonus, classic_cards, game_players
+from config import classic_territories, region_bonus, classic_cards, game_players, classic_army_center
+
+
+
 
 class CustomGraphicsView(qtw.QGraphicsView):
     def __init__(self, parent=None):
@@ -33,15 +36,15 @@ class CustomGraphicsView(qtw.QGraphicsView):
 
     def mousePressEvent(self, event: qtg.QMouseEvent):
         # Convert the mouse click position to scene coordinates
-        #scenePos = self.mapToScene(event.pos())     # marked as deprecated
         position = event.position()
+        global scenePos
         scenePos = self.mapToScene(position.x(), position.y())   
         #print(f"Mouse click at scene coordinates: ({scenePos.x()}, {scenePos.y()})")
         super().mousePressEvent(event)
 
 
 class Territory(qtw.QGraphicsItem):
-    def __init__(self, _name, _coordinates, _window, _region, _adjacencies, _owner, _armies=0,_color=qtc.Qt.GlobalColor.gray):
+    def __init__(self, _name, _coordinates, _window, _region, _adjacencies, _owner, _armies=0,_color=qtc.Qt.GlobalColor.gray, _center_point=None):
         super().__init__()
         self.name = _name
         self.coordinates = _coordinates    # list of QPointF
@@ -52,6 +55,7 @@ class Territory(qtw.QGraphicsItem):
         self.adjacencies = _adjacencies
         self.owner = _owner
         self.armies = _armies
+        self.armies_center_point  = _center_point if _center_point else self.calculateCenter()
 
     def boundingRect(self):
         return self.polygon.boundingRect()
@@ -64,9 +68,25 @@ class Territory(qtw.QGraphicsItem):
     def paint(self, painter, option, widget=None):        
         painter.setBrush(qtg.QBrush(self.color))
         painter.drawPolygon(self.polygon)
+        # Draw the number of armies
+        painter.setPen(qtg.QPen(qtc.Qt.GlobalColor.yellow))  # Set text color
+        painter.setFont(qtg.QFont("Arial", 10))  # Set text font and size
+        # Calculate text width and height to properly center it
+        text = str(self.armies)
+        metrics = painter.fontMetrics()
+        textWidth = metrics.horizontalAdvance(text)
+        textHeight = metrics.height()
+        # Adjusted text position to center the text
+        textPos = qtc.QPointF(self.armies_center_point.x() - textWidth / 2, self.armies_center_point.y() - textHeight / 2 + metrics.ascent())
+        # Painter number of armies
+        painter.drawText(textPos, str(self.armies))  # Draw text at the calculated center point
         
     def mousePressEvent(self, event):
         print('Clicked on ', self.name)
+        #position = event.position()
+        #scenePos = self.mapToScene(position.x(), position.y())           
+        #print(f"Mouse click at scene coordinates: ({scenePos.x()}, {scenePos.y()})")        
+        #plot_and_log_point(scenePos, self.name)
         #self.changeColor(qtc.Qt.GlobalColor.red)
         #self.update()
         # TODO: Figure out how to get status bar working
@@ -74,6 +94,16 @@ class Territory(qtw.QGraphicsItem):
 
     def changeColor(self, new_color):
         self.color = new_color
+
+    def calculateCenter(self):
+        # Calculate the centroid of the polygon for placing the army count text
+        if not self.coordinates:
+            return qtc.QPointF(0, 0)
+        x = sum(point.x() for point in self.coordinates) / len(self.coordinates)
+        y = sum(point.y() for point in self.coordinates) / len(self.coordinates)
+        #return qtc.QPointF(x, y)
+        return qtc.QPointF(0, 0)
+
 
 
 class Player:
@@ -130,14 +160,12 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         for row in c:
             data.append([row[0], (float(row[1]), float(row[2]))])    
         territories = list(set([x[0] for x in data]))
-        #coords = []
         map = {}
         for territory in territories:
             points = [x[1] for x in data if x[0] == territory]
             qpoints = []
             for point in points:
                 qpoints.append(qtc.QPointF(point[0], point[1]))
-            #coords.append((country, qpoints))
             map[territory] = qpoints
         return map
 
@@ -153,11 +181,16 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         map = self.load_map()
         territories = {}
         # classic_territories is list of lists [Region, Territory, [Adjacent Territories]] in config.py
-        for t in classic_territories:       
+        # Get center coordinate for show number of armies
+        for t in classic_territories:    
+            if t[1] in classic_army_center.keys():
+                center = qtc.QPointF(float(classic_army_center[t[1]][0]), float(classic_army_center[t[1]][1]))   
+            else:
+                center = None
             # Get coordinates from countries.csv file 
             # TODO: incorporate coordinates into same config file as other game parameters
             #(self, _name, _coordinates, _window, _region, _adjacencies, _owner, _armies=0,_color=qtc.Qt.GlobalColor.gray):
-            territory = Territory(t[1], map[t[1]], self, t[0], t[2], 'Vacant')
+            territory = Territory(t[1], map[t[1]], self, t[0], t[2], 'Vacant', _center_point = center)
             territories[t[1]] = territory
             self.mapScene.addItem(territory)
         return territories
@@ -178,6 +211,7 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         
     def setup_game(self):
         self.setup_territories()
+        self.setup_initial_armies()
     
     def setup_territories(self):
         player_names = self.players.keys()
@@ -193,20 +227,46 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
                 self.territories[t].changeColor(self.players[p].color)
                 #self.territories[t].owner = self.players[p].color
                 
-                print(self.territories[t].name, self.territories[t].owner, self.players[p].color, 
-                      len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
+                #print(self.territories[t].name, self.territories[t].owner, self.players[p].color, 
+                #      len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
                 if len(list(t.name for t in self.territories.values() if t.owner=='Vacant')) == 0:
                     flag_assign_territories = False
                     break
-                else:
-                    print(len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
-        self.update()
+                #else:
+                #    print(len(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
+        
+
+    def setup_initial_armies(self):
+        # Four player game has each player start with 30 armies
+        for p in self.players.keys():
+            armies = 30
+            # Place two armies in each territory owned by player
+            for t in [t.name for t in self.territories.values() if t.owner==p]:
+                self.territories[t].armies = 2
+                armies -= 2
+            # Distribute remaining armies randomly across territories owned by player
+            while armies > 0:
+                t = choice(list(t.name for t in self.territories.values() if t.owner==p)) 
+                self.territories[t].armies += 1
+                armies -= 1
+        
+            
+
 
     def play_game(self):
         print('hello')
         pass
 
-    
+def plot_and_log_point(scenePos, territory_name):
+    pen = qtg.QPen(qtc.Qt.blue)
+    radius = 2
+    window.mapScene.addEllipse(scenePos.x() - radius, scenePos.y() - radius, radius * 2, radius * 2, pen)
+    # want to append to existing file
+    with open('resources/countries_center.csv', 'a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([territory_name, round(scenePos.x(),1), round(scenePos.y(),1)])
+
+
 
 if __name__ == '__main__':
     app = qtw.QApplication(sys.argv)
