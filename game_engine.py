@@ -41,14 +41,18 @@ class CustomGraphicsView(qtw.QGraphicsView):
         super().mousePressEvent(event)
 
 
-class CountryItem(qtw.QGraphicsItem):
-    def __init__(self, name, points, window, color=qtc.Qt.GlobalColor.gray):
+class Territory(qtw.QGraphicsItem):
+    def __init__(self, _name, _coordinates, _window, _region, _adjacencies, _owner, _armies=0,_color=qtc.Qt.GlobalColor.gray):
         super().__init__()
-        self.name = name
-        self.points = points    # list of QPointF
-        self.window = window  # Reference to the main window to update the status bar
-        self.polygon = qtg.QPolygonF(points)
-        self.color = color
+        self.name = _name
+        self.coordinates = _coordinates    # list of QPointF
+        self.window = _window  # Reference to the main window to update the status bar
+        self.polygon = qtg.QPolygonF(_coordinates)
+        self.color = _color
+        self.region = _region
+        self.adjacencies = _adjacencies
+        self.owner = _owner
+        self.armies = _armies
 
     def boundingRect(self):
         return self.polygon.boundingRect()
@@ -62,7 +66,6 @@ class CountryItem(qtw.QGraphicsItem):
         painter.setBrush(qtg.QBrush(self.color))
         painter.drawPolygon(self.polygon)
         
-
     def mousePressEvent(self, event):
         print('Clicked on ', self.name)
         #self.changeColor(qtc.Qt.GlobalColor.red)
@@ -79,7 +82,7 @@ class Player:
         self.name = _name
         self.color = _color
 
-
+'''
 class Territory:
     def __init__(self, _name, _region, _adjacencies, _coordinates, _owner):
         self.name = _name
@@ -89,7 +92,7 @@ class Territory:
         self.coordinates = _coordinates
         self.armies = 0
         self.color = 'Blue'
-
+'''
 
 class Card:
     def __init__(self, name, unit):
@@ -105,35 +108,22 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)              
-        self.players = self.load_players()
-        self.territories = self.load_territories()
-        #self.test_adj()        # test all adjacencies are valid territories  TODO: move to load territories
-        self.load_cards()       # TODO: standardize on whether using methods or functions in init
-        
         # Overrides mapview created by Designer
-        # TODO: how do this properly
+        # TODO: Do this properly
         self.mapView = CustomGraphicsView(self.centralwidget)
         self.mapView.setObjectName(u"mapView")
         self.mapView.setGeometry(qtc.QRect(0, 10, 961, 761))
-        
         self.mapScene = qtw.QGraphicsScene()
         self.mapView.setScene(self.mapScene)
-        #self.mapView.setFixedSize(800, 600)        # Set in Designer
-
-        # Adding countries (or other items) to the map
-        self.addCountriesToMap()
+        
+        self.players = self.load_players()
+        self.territories = self.load_territories()
+        #self.test_adj()        # test all adjacencies are valid territories  TODO: move to load territories
+        self.load_cards()       # TODO: standardize on whether using methods or functions in init      
         self.flag_victory = False 
-
         #self.setup_game()
 
         
-
-
-    def addCountriesToMap(self):
-        for name in self.territories:
-            ter = CountryItem(name, self.territories[name].coordinates, self)
-            self.mapScene.addItem(ter)
-
     def setStatusMessage(self, message):
         #self.statusBar.showMessage(message)
         pass
@@ -144,7 +134,8 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         return super().mousePressEvent(event)
 
     def load_map(self):
-        #Use to load csv contents to list of tuples (country, QPointF objects for coordinates)
+        # Use to load csv contents to list of tuples (country, QPointF objects for coordinates)
+        # Returns dict {territory_name: [list of boundary coordinates]}
         csvfile = open('resources/countries.csv', newline='')
         c = csv.reader(csvfile)
         data = []
@@ -169,6 +160,7 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         return players
             
     def load_territories(self):
+        # Returns dictionary of Territory objects
         # defaulting to classic countries TODO: need process to select a map
         map = self.load_map()
         territories = {}
@@ -176,8 +168,10 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         for t in classic_territories:       
             # Get coordinates from countries.csv file 
             # TODO: incorporate coordinates into same config file as other game parameters
-            territory = Territory(t[1], t[0], t[2], map[t[1]], 'Vacant')
+            #(self, _name, _coordinates, _window, _region, _adjacencies, _owner, _armies=0,_color=qtc.Qt.GlobalColor.gray):
+            territory = Territory(t[1], map[t[1]], self, t[0], t[2], 'Vacant')
             territories[t[1]] = territory
+            self.mapScene.addItem(territory)
         return territories
 
     def test_adj(self):
@@ -227,5 +221,5 @@ if __name__ == '__main__':
     app = qtw.QApplication(sys.argv)
     window = GameBoard()
     window.show()
-    window.play_game()
+    #window.play_game()
     sys.exit(app.exec())
