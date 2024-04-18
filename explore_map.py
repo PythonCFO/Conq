@@ -89,7 +89,6 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         self.setupUi(self)              
 
         self.cbxAddCountries.stateChanged.connect(self.cbxAddCountryChanged)
-        #checkbox = self.findChild(qtw.QCheckBox, "yourCheckboxName")
 
         #self.linCountry.setEnabled(False)
         if self.cbxAddCountries.isChecked():

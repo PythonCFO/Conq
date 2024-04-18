@@ -16,8 +16,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGraphicsView, QLabel,
-    QMainWindow, QMenuBar, QSizePolicy, QStatusBar,
-    QWidget)
+    QMainWindow, QMenuBar, QPushButton, QSizePolicy,
+    QSpinBox, QStatusBar, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -76,6 +76,35 @@ class Ui_MainWindow(object):
         self.numTotalArmies.setGeometry(QRect(250, 200, 51, 41))
         self.numTotalArmies.setFont(font)
         self.numTotalArmies.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.lblArmiesPlaced = QLabel(self.armyDisplay)
+        self.lblArmiesPlaced.setObjectName(u"lblArmiesPlaced")
+        self.lblArmiesPlaced.setGeometry(QRect(11, 250, 201, 41))
+        self.lblArmiesPlaced.setFont(font)
+        self.lblCountryToPlaceArmies = QLabel(self.armyDisplay)
+        self.lblCountryToPlaceArmies.setObjectName(u"lblCountryToPlaceArmies")
+        self.lblCountryToPlaceArmies.setGeometry(QRect(10, 330, 131, 41))
+        self.lblCountryToPlaceArmies.setFont(font)
+        self.spnArmiesToPlace = QSpinBox(self.armyDisplay)
+        self.spnArmiesToPlace.setObjectName(u"spnArmiesToPlace")
+        self.spnArmiesToPlace.setEnabled(False)
+        self.spnArmiesToPlace.setGeometry(QRect(160, 340, 61, 22))
+        self.numArmiesPlaced = QLabel(self.armyDisplay)
+        self.numArmiesPlaced.setObjectName(u"numArmiesPlaced")
+        self.numArmiesPlaced.setGeometry(QRect(247, 250, 51, 41))
+        self.numArmiesPlaced.setFont(font)
+        self.numArmiesPlaced.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.numArmiesToPlace = QLabel(self.armyDisplay)
+        self.numArmiesToPlace.setObjectName(u"numArmiesToPlace")
+        self.numArmiesToPlace.setGeometry(QRect(247, 290, 51, 41))
+        self.numArmiesToPlace.setFont(font)
+        self.numArmiesToPlace.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.lblArmiesToPlace = QLabel(self.armyDisplay)
+        self.lblArmiesToPlace.setObjectName(u"lblArmiesToPlace")
+        self.lblArmiesToPlace.setGeometry(QRect(10, 290, 201, 41))
+        self.lblArmiesToPlace.setFont(font)
+        self.butReinforceTerritory = QPushButton(self.armyDisplay)
+        self.butReinforceTerritory.setObjectName(u"butReinforceTerritory")
+        self.butReinforceTerritory.setGeometry(QRect(227, 333, 91, 31))
         self.cardDisplay = QFrame(self.centralwidget)
         self.cardDisplay.setObjectName(u"cardDisplay")
         self.cardDisplay.setGeometry(QRect(970, 460, 321, 311))
@@ -109,5 +138,11 @@ class Ui_MainWindow(object):
         self.numArmiesCards.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.lblTotalArmies.setText(QCoreApplication.translate("MainWindow", u"Total Reinforcements:", None))
         self.numTotalArmies.setText(QCoreApplication.translate("MainWindow", u"17", None))
+        self.lblArmiesPlaced.setText(QCoreApplication.translate("MainWindow", u"Armies already placed:", None))
+        self.lblCountryToPlaceArmies.setText("")
+        self.numArmiesPlaced.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.numArmiesToPlace.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.lblArmiesToPlace.setText(QCoreApplication.translate("MainWindow", u"Armies to place:", None))
+        self.butReinforceTerritory.setText(QCoreApplication.translate("MainWindow", u"Reinforce", None))
     # retranslateUi
 

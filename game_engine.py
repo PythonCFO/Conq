@@ -82,6 +82,8 @@ class Territory(qtw.QGraphicsItem):
         
     def mousePressEvent(self, event):
         print('Clicked on ', self.name)
+        window.lblCountryToPlaceArmies.setEnabled(True)
+        window.lblCountryToPlaceArmies.setText(self.name)
         #position = event.position()
         #scenePos = self.mapToScene(position.x(), position.y())           
         #print(f"Mouse click at scene coordinates: ({scenePos.x()}, {scenePos.y()})")        
@@ -90,6 +92,7 @@ class Territory(qtw.QGraphicsItem):
         #self.update()
         # TODO: Figure out how to get status bar working
         #self.window.setStatusMessage(f"{self.name} was clicked!")  # Update the status bar message
+        super().mousePressEvent(event)
 
     def changeColor(self, new_color):
         self.color = new_color
@@ -125,6 +128,7 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)              
+
         # Overrides mapview created by Designer
         # TODO: Do this properly
         self.mapView = CustomGraphicsView(self.centralwidget)
@@ -133,6 +137,10 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         self.mapScene = qtw.QGraphicsScene()
         self.mapView.setScene(self.mapScene)
         
+        #self.cbxAddCountries.stateChanged.connect(self.cbxAddCountryChanged)
+        #self.spnArmiesToPlace.textChanged.connect(self.spnArmiesToPlaceChanged)
+        self.butReinforceTerritory.clicked.connect(self.butReinforceTerritory_push)
+
         self.players = self.load_players()
         self.territories = self.load_territories()
         #self.test_adj()        # test all adjacencies are valid territories  TODO: move to load territories
@@ -148,8 +156,21 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
 
     def mousePressEvent(self, event: qtg.QMouseEvent) -> None:
         #print(event.pos())
-        pass
+        print(self.current_player, self.territories[self.lblCountryToPlaceArmies.text()].owner)
+        if flag_turn_phase == 'Reinforce Territories':
+            if self.current_player == self.territories[self.lblCountryToPlaceArmies.text()].owner:
+                self.spnArmiesToPlace.setEnabled(True)    
+                self.spnArmiesToPlace.setMaximum(int(window.numArmiesToPlace.text()))
+
         return super().mousePressEvent(event)
+
+    def spnArmiesToPlaceChanged(self, event):
+        print(event)
+
+    def butReinforceTerritory_push(self, event):
+        self.territories[self.lblCountryToPlaceArmies.text()].armies += int(self.spnArmiesToPlace.text())
+        self.numArmiesToPlace.setText(str(int(self.numArmiesToPlace.text())-int(self.spnArmiesToPlace.text())))
+        
 
     def load_map(self):
         # Use to load csv contents to list of tuples (country, QPointF objects for coordinates)
@@ -287,7 +308,10 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
         shuffle(turn_order)
         while not self.flag_victory:
             for p in turn_order:
-                self.statusBar().showMessage('It is ' + p + "'s turn")
+                self.current_player = p
+                global flag_turn_phase 
+                flag_turn_phase = 'Reinforce Territories'
+                self.statusBar().showMessage('It is ' + p + "'s turn.   Place your reinforcements.")
                 reinforcements_from_territories = self.calc_reinforcements_from_territories(p)
                 self.numArmiesTerritories.setText(str(reinforcements_from_territories))
                 reinforcements_from_regions = self.calc_reinforcements_from_regions(p)
@@ -296,6 +320,8 @@ class GameBoard(qtw.QMainWindow, Ui_MainWindow):
                 self.numArmiesCards.setText(str(reinforcements_from_cards))
                 reinforcements_total = reinforcements_from_territories + reinforcements_from_regions + reinforcements_from_cards
                 self.numTotalArmies.setText(str(reinforcements_total))
+                self.numArmiesPlaced.setText(str(0))
+                self.numArmiesToPlace.setText(str(reinforcements_total))
             self.flag_victory = True
 
 
