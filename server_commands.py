@@ -34,14 +34,14 @@ def profile(cmd):  # player wants to update their preferences
     for u in config.users.keys():
         config.send_queues[u].put(Command(cmd.userID, "PLAYERS", config.players))  #Add to the send queue
 
-def game(cmd):
+def gm(cmd):
     if config.VERBOSE: print(f"GAME from {cmd.userID}; pushing GAME to send_queue")
     config.send_queues[cmd.userID].put(Command(cmd.userID, "GAME", config.gameID))  #Add to the send queue
 
-def world(cmd):
+def world(cmd, _game):
     #Presumably this requests ALL details of the gameboard and play?
     if config.VERBOSE: print(f"WORLD from {cmd.userID}; pushing WORLD to send_queue")
-    config.send_queues[cmd.userID].put(Command(cmd.userID, "WORLD", config.world))  #Add to the send queue
+    config.send_queues[cmd.userID].put(Command(cmd.userID, "WORLD", _game.territories))  #Add to the send queue
 
 def territory(cmd):
     if config.VERBOSE: print(f"TERRITORY from {cmd.userID}; pushing TERRITORY to send_queue")
