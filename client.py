@@ -1,130 +1,116 @@
-import pygame as pg
-from network import Network
+import client_config
+from network import Network, network_check
+from game import Command
+from user import User
+from client_threads import send_loop, recv_loop
 import time 
 import threading
-from player import Player
-from gameplay import Command, Gameplay
 import queue
+from client_commands import *
 
-pg.init()
-clock = pg.time.Clock()
-t_end = time.time() + 5
-
-netconn = Network()  #Esablish Client's socket and connect it to the Server
-p = Player(netconn)  #Create this client-side Player object
+version = "0.1"
+DEBUG = False
+HBT = False
 
 send_queue = queue.Queue()
 recv_queue = queue.Queue()
-ack_queue = queue.Queue()
-lock=threading.Lock()
 send_lock=threading.Lock()
 recv_lock=threading.Lock()
 proc_lock=threading.Lock()
 
-def send_loop():
-    global netconn
-    print("Client Send Thread Started")  #All Client processing happens within this loop   
-    RTS = True  #Ready To Send - Prior ACKs received & *Socket healthy*
-    while True:
-        send_lock.acquire()
-        if RTS and send_queue.qsize()>0:
-            print("\nS", end='', flush=True)
-            #print(str(send_queue.qsize()), end='', flush=True)
-            message = send_queue.get()
-            if type(message) == Command:  #Validate msg is well formed
-                netconn.send(message)
-                if message.command == "ACK":  #Ack'd a Server's command
-                    print("A", end='', flush=True)
-                elif message.command == "HBT":  #Ack'd a Server's command
-                    print("H", end='', flush=True)
-                    #Go run Andrew's function....
-                elif message.command == "NAME":  #Ack'd a Server's command
-                    print("N", end='', flush=True)
-                else:
-                    print("C", end='', flush=True)  #Sent a Client command
-            else:  #Else abandon the bad outgoing message
-                print("!", end='', flush=True)
-            print(str(ack_queue.qsize()), end='', flush=True)
-            print(str(recv_queue.qsize()), end='', flush=True)
-            message = ""
-            print("s", end='', flush=True)  #wrap it up
-                #print(str(ack_queue.qsize()), end='', flush=True)
-                #print(str(recv_queue.qsize()), end='', flush=True)
-        send_lock.release()
-
-def recv_loop():
-    global netconn
-    print("Client Receive Thread Started")
-    while True:
-        message = netconn.socket_recv()  #Get any inbound messages
-        print("\nR", end='', flush=True)
-        recv_lock.acquire()
-        if type(message) == Command:  #Confirm whether msg is properly formed
-            if message.command == "ACK": #send_queue will be waiting for  this
-                ack_queue.put(message)
-                print("A", end='', flush=True)
-            else:
-                recv_queue.put(message) #Then push onto the incoming queue
-                print("C", end='', flush=True)
-        else:  #Else abandon the bad incoming message
-            print("!", end='', flush=True)
-        print(str(ack_queue.qsize()), end='', flush=True)
-        print(str(recv_queue.qsize()), end='', flush=True)
-        message = ""
-        recv_lock.release()
-
-        #Now process recv_queue here
-        proc_lock.acquire()
-        if ack_queue.qsize()>0:
-            pop_cmd = ack_queue.get()
-            if type(pop_cmd) == Command:  #Validate msg is well formed
-                #*** Insert code to process ACK messages ***
-                pass
-            else:
-                print("!", end='', flush=True)
-            pop_cmd = ""
-        if recv_queue.qsize()>0:
-            pop_cmd = recv_queue.get()
-            if type(pop_cmd) == Command:  #Validate msg is well formed
-                send_queue.put(Command(p.id, "ACK", "Command " + pop_cmd.command + " received"))
-                #*** Additional processing of CMD messages & Gameplay ***
-                pass
-            else:
-                print("!", end='', flush=True)
-            pop_cmd = ""
-        #wrap it up
-        print("r", end='', flush=True)
-        print(str(ack_queue.qsize()), end='', flush=True)
-        print(str(recv_queue.qsize()), end='', flush=True)
-        proc_lock.release()
+client_config.user = User()  #Generic user locally, ot be replaced by Server
+playing = False  #Server has accepted User to play (Needs implementing)
 
 def main():
+    print(f"Starting GameFrame Client v{version}")
+    run = True
+    time.sleep(0.02)
+
+    #Establish Server Socket connection
+    client_config.user = User()
+    n = Network() # Establish connection to Server
+
     #Start thread to send and receive Socket messages
-    recv_thread = threading.Thread(target=recv_loop, daemon=True).start() #args=(netconn,), 
-    send_thread = threading.Thread(target=send_loop, daemon=True).start() #args=(netconn,), 
+    recv_thread = threading.Thread(target=recv_loop, args=(n, send_queue, recv_queue), daemon=True).start() #args=(netconn,), 
+    send_thread = threading.Thread(target=send_loop, args=(n, send_queue, recv_queue), daemon=True).start() #args=(netconn,), 
+    
+    #Create a thread to handle manual entry user input at command line
+    while not client_config.user.connected: pass
+    cli_thread = threading.Thread(target=cli_loop, args=(), daemon=True).start() #args=(netconn,), 
 
-    print("Starting Client Main() Loop")  #All Client processing happens within this loop
+    HBT_time = time.time() + 5
     while True:
-        clock.tick(60) #Max 60 ticks per second
-        game_events()
-        network_check(netconn, p)
+        time.sleep(.02)
 
-def game_events() -> None:
-    for event in pg.event.get():
-        if event.type == pg.KEYDOWN:
-            if event.key == pg.K_ESCAPE:
-                print("BYE!", end='', flush=True)
-                playing = False
-                pg.quit()
+        #game_events()
+        process_queues()
+        HBT_time = network_check(client_config.user.userID, HBT_time)
+        try:
+            pass
+        except:
+            run = False   #TODO Always 'run' but sometimes 'play' but bever bail out completely.
+            print("Unknown Exception in main()!?")
+            break
 
-def network_check(netconn, p) -> None:
-    global t_end
-    print(".", end='', flush=True)
-    if time.time() >= t_end:
-        hbt_cmd = Command(p.id, "HBT", "Ready to play")
-        send_lock.acquire()
-        send_queue.put(hbt_cmd)  #Or use the Send Queue to send the command...
-        send_lock.release()
-        t_end = time.time() + 5 #Pause 5 seconds until next heartbeat / This delay is blocking (bad)
+        #Execute various gameplay activities here
+        #Refresh the gameplay GUI as needed
+
+def network_check(userID, HBT_time):
+    global send_lock, send_queue
+    if time.time() >= HBT_time:
+        if HBT:
+            hbt_cmd = Command(userID, "HBT", "Ready to play")
+            send_lock.acquire()
+            send_queue.put(hbt_cmd)  #Or use the Send Queue to send the command...
+            send_lock.release()
+        return time.time() + 5
+    else:
+        return HBT_time       
+
+def process_queues():
+        global user, playing
+        proc_lock.acquire()
+        if recv_queue.qsize()>0:
+            pop_cmd = recv_queue.get()
+            print(f"     Pulling {pop_cmd.command} from queue of {recv_queue.qsize()+1} to process")
+            if pop_cmd.command != "ACK": send_queue.put(Command(pop_cmd.userID, "ACK", "Command " + pop_cmd.command + " received"))
+            if pop_cmd.command == "ACK":  ack(pop_cmd)
+            elif pop_cmd.command == "WHOAMI": whoami(pop_cmd)  # When joining, Server sends this!
+            elif pop_cmd.command == "JOIN": join(pop_cmd)
+            elif pop_cmd.command == "GAME": game(pop_cmd)
+            elif pop_cmd.command == "WORLD": world(pop_cmd)
+            elif pop_cmd.command == "TERRITORY": territory(pop_cmd)
+            elif pop_cmd.command == "PLAYERS": players(pop_cmd)
+            elif pop_cmd.command == "ARMIES": armies(pop_cmd)
+            elif pop_cmd.command == "TURN": turn(pop_cmd)
+            else:
+                print("!!", end='', flush=True)
+                print("")
+            pop_cmd = ""
+        proc_lock.release()
+
+def cli_loop():
+    global user, send_queue, network_connected
+
+    print("Client cli_loop Thread started")  #Manually send commands using command line input
+    time.sleep(2)
+    while True:
+        if client_config.user.connected:
+            cli_cmd = input("Enter a test command: ")
+            if cli_cmd  == "JOIN": cli_cmd_data = client_config.user
+            elif cli_cmd == "PROFILE": cli_cmd_data = client_config.user
+            elif cli_cmd  == "GAME": cli_cmd_data = "gameID"
+            elif cli_cmd  == "WORLD": cli_cmd_data = "gameID"
+            elif cli_cmd  == "TERRITORY": cli_cmd_data = "territoryID"
+            elif cli_cmd  == "CARDS": cli_cmd_data = ("cardID_1", "cardID_2", "cardID_3")
+            elif cli_cmd  == "PLACE": cli_cmd_data = "territoryID"
+            elif cli_cmd  == "ATTACK": cli_cmd_data = ("territoryID_1", "territoryID_2")
+            elif cli_cmd  == "MOVE": cli_cmd_data = ("territoryID_1", "territoryID_2")
+            elif cli_cmd  == "NEXT": cli_cmd_data = "gameID"
+            if cli_cmd in ("JOIN", "PROFILE", "GAME", "WORLD", "TERRITORY", "CARDS", "PLACE", "ATTACK", "MOVE", "NEXT"):
+                send_queue.put(Command(client_config.user.userID, cli_cmd, cli_cmd_data))
+            else:
+                print("Invalid entry")
+            time.sleep(.5)  #Allow response to be displayed before new prompt
 
 main()
