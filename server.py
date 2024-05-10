@@ -84,8 +84,8 @@ def process_queues():
             elif pop_cmd.command == "ACK": ack(pop_cmd) #Check-off the original Cmd was ACK'd
             elif pop_cmd.command == "JOIN": join(pop_cmd)
             elif pop_cmd.command == "PROFILE": profile(pop_cmd)
-            elif pop_cmd.command == "GAME": game(pop_cmd)   # These are server initiated cmds
-            elif pop_cmd.command == "WORLD": world(pop_cmd)
+            elif pop_cmd.command == "GAME": gm(pop_cmd)   # These are server initiated cmds
+            elif pop_cmd.command == "WORLD": world(pop_cmd, game)
             elif pop_cmd.command == "TERRITORY": territory(pop_cmd)
             elif pop_cmd.command == "CARDS": cards(pop_cmd)
             elif pop_cmd.command == "PLACE": place(pop_cmd)
@@ -122,6 +122,9 @@ def cli_loop():
             else:
                 print("Invalid entry")
             time.sleep(.5)  #Allow response to be displayed before new prompt
+
+#Instantiate game and load reference data
+game = Game()
 
 #Start threads to handle Socket communications and process messages
 network_provisioned = False

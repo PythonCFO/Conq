@@ -38,12 +38,14 @@ def main():
     while not client_config.user.connected: pass
     cli_thread = threading.Thread(target=cli_loop, args=(), daemon=True).start() #args=(netconn,), 
 
+    game = Game()
+
     HBT_time = time.time() + 5
     while True:
         time.sleep(.02)
 
         #game_events()
-        process_queues()
+        process_queues(game)
         HBT_time = network_check(client_config.user.userID, HBT_time)
         try:
             pass
@@ -67,7 +69,7 @@ def network_check(userID, HBT_time):
     else:
         return HBT_time       
 
-def process_queues():
+def process_queues(game):
         global user, playing
         proc_lock.acquire()
         if recv_queue.qsize()>0:
@@ -76,9 +78,9 @@ def process_queues():
             if pop_cmd.command != "ACK": send_queue.put(Command(pop_cmd.userID, "ACK", "Command " + pop_cmd.command + " received"))
             if pop_cmd.command == "ACK":  ack(pop_cmd)
             elif pop_cmd.command == "WHOAMI": whoami(pop_cmd)  # When joining, Server sends this!
-            elif pop_cmd.command == "JOIN": join(pop_cmd)
-            elif pop_cmd.command == "GAME": game(pop_cmd)
-            elif pop_cmd.command == "WORLD": world(pop_cmd)
+            elif pop_cmd.command == "JOIN": join(pop_cmd, game)
+            elif pop_cmd.command == "GAME": gm(pop_cmd, game)
+            elif pop_cmd.command == "WORLD": world(pop_cmd, game)
             elif pop_cmd.command == "TERRITORY": territory(pop_cmd)
             elif pop_cmd.command == "PLAYERS": players(pop_cmd)
             elif pop_cmd.command == "ARMIES": armies(pop_cmd)
@@ -112,5 +114,11 @@ def cli_loop():
             else:
                 print("Invalid entry")
             time.sleep(.5)  #Allow response to be displayed before new prompt
+
+class Game:
+    def __init__(self):
+        self.gameID = 'uuid'   #An ID for the game to allow multiple games in parallel
+        self.state = 'Ready'
+        self.territories = {}
 
 main()

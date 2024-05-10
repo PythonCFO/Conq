@@ -1,6 +1,5 @@
 gameID = "uuid"
 world = {}
-territory = ""
 regions = {}
 territories = {}
 users = {}
