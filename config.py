@@ -2,7 +2,7 @@ gameID = "uuid"
 world = {}
 regions = {}
 territories = {}
-users = {}
+#users = {}
 players = {}   #This should include sharable data: name, stats, card qty, etc.
 cards = {}
 #stage = {'Join', 'Setup', 'Play', 'Victory', 'Draw'}
@@ -13,7 +13,7 @@ Phase = Enum("Phase", "Setup, Play, Done")
 Turn = Enum("Turn", "uuid1, uuid2,  NP")  #uuid3, uuid4,
 Stage = Enum("Stage", "Place, Attack, Move, NP")
 
-send_queues = {}
+#send_queues = {}
 recv_queue = ""
 
 classic_territories = [
