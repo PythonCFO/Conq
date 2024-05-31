@@ -1,6 +1,5 @@
-import config
 import threading
-import socket, errno
+import socket
 import queue
 from game import Command
 import pickle
@@ -52,8 +51,6 @@ def socket_mgr(users, send_queues, recv_queue):
         print("Active Threads:")
         for t in threading.enumerate():
             print(f"   {t.name}")
-
-#Establish I/O threads for each Client: send_loop, recv_loop
 
 def send_loop(conn: socket.socket, userID, users, send_queue):
     send_lock = threading.Lock()   #Define the lock but do not activate yet

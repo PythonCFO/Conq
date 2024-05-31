@@ -3,7 +3,7 @@ import threading
 import queue
 import time
 from game import Game, Command, Gamestate
-from server_threads import socket_mgr
+from server_comms import socket_mgr
 from gameplay import process_queues
 from server_commands import *
 from gamedb import ref
