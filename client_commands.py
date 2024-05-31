@@ -21,8 +21,7 @@ def whoami(cmd):
     # ISSUE:  May not be saving this User object globally on client??
 
 def world(cmd, _game):
-    print(f"     Processing {cmd.command} with {str(len(cmd.cmd_data))} Territories")
-    
+    print(f"     Processing {cmd.command} with {str(cmd.cmd_data)} world data")
     # NEED OBJECT FOR THE WORLD (Collection of Territories and Cards??)
 
 def gm(cmd, _game):
@@ -34,6 +33,19 @@ def turn(cmd):
     # NEED TURN OBJECT
 
 def territory(cmd):
+    print(f"     Processing {cmd.command} with {cmd.cmd_data}")
+    # NEED OBJECT FOR A TERRITORY (Collection of Territories and Cards??)
+
+def take(cmd):
+    print(f"     Processing {cmd.command} with {cmd.cmd_data}")
+    # NEED OBJECT FOR A TERRITORY (Collection of Territories and Cards??)
+
+def territories(cmd, mygame):
+    print(f"     Processing {cmd.command} with {cmd.cmd_data}")
+    # for t in cmd.cmd_data:
+    #     print(t)
+
+def adjacent(cmd, mygame):
     print(f"     Processing {cmd.command} with {cmd.cmd_data}")
     # NEED OBJECT FOR A TERRITORY (Collection of Territories and Cards??)
 

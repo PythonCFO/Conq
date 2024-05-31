@@ -82,6 +82,8 @@ def process_queues(game):
             elif pop_cmd.command == "GAME": gm(pop_cmd, game)
             elif pop_cmd.command == "WORLD": world(pop_cmd, game)
             elif pop_cmd.command == "TERRITORY": territory(pop_cmd)
+            elif pop_cmd.command == "TERRITORIES": territories(pop_cmd, game)
+            elif pop_cmd.command == "ADJACENT": adjacent(pop_cmd, game)
             elif pop_cmd.command == "PLAYERS": players(pop_cmd)
             elif pop_cmd.command == "ARMIES": armies(pop_cmd)
             elif pop_cmd.command == "TURN": turn(pop_cmd)
@@ -98,21 +100,47 @@ def cli_loop():
     time.sleep(2)
     while True:
         if client_config.user.connected:
-            cli_cmd = input("Enter a test command: ")
-            if cli_cmd  == "JOIN": cli_cmd_data = client_config.user
-            elif cli_cmd == "PROFILE": cli_cmd_data = client_config.user
-            elif cli_cmd  == "GAME": cli_cmd_data = "gameID"
-            elif cli_cmd  == "WORLD": cli_cmd_data = "gameID"
-            elif cli_cmd  == "TERRITORY": cli_cmd_data = "territoryID"
-            elif cli_cmd  == "CARDS": cli_cmd_data = ("cardID_1", "cardID_2", "cardID_3")
-            elif cli_cmd  == "PLACE": cli_cmd_data = "territoryID"
-            elif cli_cmd  == "ATTACK": cli_cmd_data = ("territoryID_1", "territoryID_2")
-            elif cli_cmd  == "MOVE": cli_cmd_data = ("territoryID_1", "territoryID_2")
-            elif cli_cmd  == "NEXT": cli_cmd_data = "gameID"
-            if cli_cmd in ("JOIN", "PROFILE", "GAME", "WORLD", "TERRITORY", "CARDS", "PLACE", "ATTACK", "MOVE", "NEXT"):
-                send_queue.put(Command(client_config.user.userID, cli_cmd, cli_cmd_data))
-            else:
-                print("Invalid entry")
+            cli_line = input("Enter a test command: ")
+            if cli_line:
+                cli_list = cli_line.split()
+                cli_cmd = cli_list[0]
+                if cli_cmd  == "JOIN": cli_cmd_data = client_config.user
+                elif cli_cmd == "PROFILE":
+                    if len(cli_list) > 1: 
+                        cli_cmd_data = cli_list[1]
+                    else:
+                        cli_cmd_data = "TBD"
+                elif cli_cmd  == "GAME": cli_cmd_data = "gameID"
+                elif cli_cmd  == "WORLD": cli_cmd_data = "gameID"
+                elif cli_cmd  == "TERRITORY": 
+                    if len(cli_list) > 1: 
+                        cli_cmd_data = cli_list[1]
+                    else:
+                        cli_cmd_data = "NA"
+                elif cli_cmd  == "TAKE": 
+                    if len(cli_list) > 1: 
+                        cli_cmd_data = cli_list[1]
+                    else:
+                        cli_cmd_data = "NA"
+                elif cli_cmd  == "TERRITORIES": cli_cmd_data = "gameID"
+                elif cli_cmd  == "ADJACENT": 
+                    if len(cli_list) > 1: 
+                        cli_cmd_data = cli_list[1]
+                    else:
+                        cli_cmd_data = "NA"
+                elif cli_cmd  == "CARDS": cli_cmd_data = ("cardID_1", "cardID_2", "cardID_3")
+                elif cli_cmd  == "PLACE": 
+                    if len(cli_list) > 2: 
+                        cli_cmd_data = [cli_list[1], cli_list[2]]
+                    else:
+                        cli_cmd_data = "NA"
+                elif cli_cmd  == "ATTACK": cli_cmd_data = ("territoryID_1", "territoryID_2")
+                elif cli_cmd  == "MOVE": cli_cmd_data = ("territoryID_1", "territoryID_2")
+                elif cli_cmd  == "NEXT": cli_cmd_data = "gameID"
+                if cli_cmd in ("JOIN", "PROFILE", "GAME", "WORLD", "TERRITORY", "TAKE", "TERRITORIES", "ADJACENT", "CARDS", "PLACE", "ATTACK", "MOVE", "NEXT") and cli_cmd_data != "NA":
+                    send_queue.put(Command(client_config.user.userID, cli_cmd, cli_cmd_data))
+                else:
+                    print("Invalid entry")
             time.sleep(.5)  #Allow response to be displayed before new prompt
 
 class Game:

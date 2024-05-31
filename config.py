@@ -5,15 +5,16 @@ territories = {}
 users = {}
 players = {}   #This should include sharable data: name, stats, card qty, etc.
 cards = {}
-stage = {'Setup', 'Play', 'Victory', 'Draw'}
-turn = {}   #Include round, player, phase
+#stage = {'Join', 'Setup', 'Play', 'Victory', 'Draw'}
+#turn = {}   #Include round, player, phase
+
+from enum import Enum
+Phase = Enum("Phase", "Setup, Play, Done")
+Turn = Enum("Turn", "uuid1, uuid2,  NP")  #uuid3, uuid4,
+Stage = Enum("Stage", "Place, Attack, Move, NP")
 
 send_queues = {}
 recv_queue = ""
-
-DEBUG = False
-VERBOSE = True
-
 
 classic_territories = [
     ['North America', 'Alaska', ['Northwest Territory', 'Alberta', 'Kamchatka']],

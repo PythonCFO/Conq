@@ -1,4 +1,6 @@
-from config import classic_territories, region_bonus, classic_cards
+from config import classic_territories, region_bonus, classic_cards, Phase, Turn, Stage
+from enum import Enum
+import random
 
 # Define a universal comms command, for Client-Server interaction and processing
 class Command:
@@ -13,6 +15,9 @@ class Game:
         self.gameID = 'uuid'   #An ID for the game to allow multiple games in parallel
         self.state = 'Ready'
         self.territories = self.load_territories()
+        self.cards = self.load_cards()
+        self.players = {}
+        self.gamestate = Gamestate()
 
     def start_game(self):
         self.players = self.setup_players()
@@ -28,7 +33,11 @@ class Game:
         for t in classic_territories:    
             #Territory(self, _name, _region, _adjacencies, _owner, _armies=0):
             territory = Territory(t[1], t[0], t[2], 'Vacant', 0)
+            #print(f"{t[1]} {territory}")
             territories[t[1]] = territory
+        t=territories.get('Alaska')
+        print(f"Name: {t.name}, Region: {t.region}, Adj: {t.adjacencies}, Owner: {t.owner}, Armies: {t.armies}")
+
         return territories
 
     def test_adj(self):
@@ -41,9 +50,15 @@ class Game:
                     print("Error - ", a)
 
     def load_cards(self):
-        self.deck = {}
+        deck = {}
         for c in classic_cards:
-            self.deck[c[0]] = Card(c[0], c[1])
+            deck[c[0]] = Card(c[0], c[1])
+        return deck
+
+    def add_player(self, uuid):
+        if not uuid in self.players:
+            self.players[uuid] = "Player" + str(len(self.players) + 1)
+        # Need to update everyone on new list of Players
 
     def setup_territories(self):
         player_names = self.players.keys()
@@ -54,7 +69,7 @@ class Game:
             for p in player_names:
                 #print(choice(list(t.name for t in self.territories.values() if t.owner=='Vacant')))
                 #sys.exit()
-                t = choice(list(t.name for t in self.territories.values() if t.owner=='Vacant'))
+                t = random.choice(list(t.name for t in self.territories.values() if t.owner=='Vacant'))
                 self.territories[t].owner = p
                 self.territories[t].changeColor(self.players[p].color)
                 #self.territories[t].owner = self.players[p].color
@@ -77,7 +92,7 @@ class Game:
                 armies -= 2
             # Distribute remaining armies randomly across territories owned by player
             while armies > 0:
-                t = choice(list(t.name for t in self.territories.values() if t.owner==p)) 
+                t = random.choice(list(t.name for t in self.territories.values() if t.owner==p)) 
                 self.territories[t].armies += 1
                 armies -= 1
         
@@ -87,7 +102,6 @@ class Game:
             self.p1Went = True
         else:
             self.p2Went = True
-
 
 class Territory:
     def __init__(self, _name, _region, _adjacencies, _owner, _armies):
@@ -102,4 +116,45 @@ class Card:
         self.name = name
         self.unit = unit
         self.owner = 'Deck'
+
+class Gamestate:
+    def __init__(self):
+        self.phase = "Setup"   
+        self.turn = ""
+        self.stage = ""
+
+    def start_play(self):
+        # where to do all the things to get started?  Here or elsewhere??
+        #Randomize the sequence of play? - use a Dict w/ (uuid and sequence#}
+        self.phase = Phase("Play")
+        self.turn = Turn(0)
+        self.stage = Stage(0)
+
+    def next_stage(self):
+        self.stage = self.stage + 1  # Next stage of turn
+        if self.stage == Stage.NP:
+            self.next_player()
+
+    def next_player(self):
+        self.turn = self.turn + 1  # Next player
+        if self.turn == Turn.NP:  
+            self.turn = Turn(0)  # Start back with the first player again
+        self.stage = Stage(0)  # Beginning stage of this player's turn
+
+    def victory_check(self, territories):
+        #Where to check if the last territory taken won the game for attacker??
+        #Check ownership of all Territories.  If only 1 owner then game over!
+        active_players = {}
+        for t in territories:
+            if not t.owner in active_players:
+                active_players.append(t.owner)
+        if len(active_players) == 1:
+            print(f"Game over!")
+            self.end_play()
+        return active_players
+    
+    def end_play(self):
+        self.phase = Phase.Done
+        self.turn = Turn.NP
+        self.stage = Stage.NP
 

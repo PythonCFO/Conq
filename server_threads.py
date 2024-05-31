@@ -5,6 +5,7 @@ import queue
 from game import Command
 import pickle
 from user import User
+from gamedb import ref
 
 #Establish I/O threads for each Client: send_loop, recv_loop
 
@@ -15,7 +16,7 @@ def send_loop(conn: socket.socket, userID, send_queue, recv_queue):
         #if send_queue.qsize()>0:
         if config.send_queues[userID].qsize()>0:
             message = config.send_queues[userID].get()   #JOIN,Hello
-            print(f"Sending: {message.userID}: {message.command}: {message.cmd_data}")
+            ref.child("logging").push(f"Sending: {message.userID}: {message.command}: {message.cmd_data}")
             try:
                 conn.send(pickle.dumps(message))
             except socket.error as e:
@@ -27,9 +28,8 @@ def send_loop(conn: socket.socket, userID, send_queue, recv_queue):
                 break
             message = ""
         send_lock.release()
-    print(f"Exiting {userID} send_loop thread")
+    ref.child("logging").push(f"Exiting {userID} send_loop thread")
     config.users[userID].connected == False
-
 
 def recv_loop(conn: socket.socket, userID, send_queue, recv_queue):
     recv_lock =  threading.Lock()  #Define the lock but do not activate yet
@@ -58,14 +58,14 @@ def recv_loop(conn: socket.socket, userID, send_queue, recv_queue):
                 if message.command == "HBT": send_queue.put(Command(userID, "ACK", "HBT received"))
                 elif message.command == "ACK": pass  #Should tie-off the original Cmd was ACK'd
                 else: 
-                    print(f"Receiving: {str(message.command)}: {message.cmd_data}; Pushing to recv_queue")
+                    ref.child("logging").push(f"Receiving: {str(message.command)}: {message.cmd_data}; Pushing to recv_queue")
                     recv_queue.put(message) #Then push onto the Server's recv_queue to process
             else: 
-                print(f"Badly formatted command from client {userID}")
+                ref.child("logging").push(f"Badly formatted command from client {userID}")
                 #Let the Connection Mgr do the removal of players.
             recv_lock.release()
         message = ""
-    print(f"Exiting {userID} recv_loop thread")
+    ref.child("logging").push(f"Exiting {userID} recv_loop thread")
     config.users[userID].connected == False
 
 def remove_player(user):
@@ -76,14 +76,13 @@ def remove_player(user):
             #users.remove(u)
             config.users.pop(i)
             config.send_queues.pop(i)
-            if config.VERBOSE: print("User found and removed")
-    print(f"Removing user: {user.userID}")
+            ref.child("logging").push("User found and removed")
+    ref.child("logging").push(f"Removing user: {user.userID}")
     print("Active Players:")
     if len(config.users)>0:
         for u in config.users:
             i = config.users.index(u)
             print(f"   {u.name} - {config.send_queues[i][0]} {config.send_queues[i][3][0]}:{config.send_queues[i][3][1]}")
-            #print(f"   {u.name} - {config.send_queues[i][0]} {config.send_queues[i][3][0]}:{config.send_queues[i][3][1]}  {recv_thread.name} {send_thread.name}")
     else:
             print(f"   none")
     print("Active Threads:")
