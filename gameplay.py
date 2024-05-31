@@ -1,38 +1,43 @@
-import pygame as pg
-from geo import Country  #Will use World eventually
-from player import Player
-from dataclasses import dataclass
+from gamedb import ref
+import threading
+from server_commands import hbt, ack, join, profile, game_all, territory, take, territories, adjacent, cards, place, attack, move, next, whoami
 
-''' Gameplay operations:
-    1 The Server receives client communications via multiple client specific socket threads
-    4 Messages received by a socket are simply appended to the end of the queue
-    5 Server then pops and processes the front of the queue and so on...
-
-    Turn taking - need a data store for this and
-        1. Setup
-            1a. Place
-        2. Turns and Phases
-            2a. Place
-            2b. Attack complete
-            2c. Troop Move
-            2d. Card
-
-        State of Turn Taking is shared globally
-        Client clicks on button to complete a Phase
-        Server uses state to ratchet the Turn to the next Phase
-        And if Player is done it will ratchet to the next player Turn
-
-        Responsibility of Client is limited to execute their Phase and click Done.  
-        Server does the rest
-        
-'''
-
-# Define a universal gameplay command, as a single object of class Command
+# Define a universal comms command, for Client-Server interaction and processing
 class Command:
-    def __init__(self, _id, _command, _cmd_data):
-        self.id = _id  #player = target of cmd
-        self.command = _command  #command = an item from a command dictionary
-        self.cmd_data = _cmd_data  #cmd_data = [] a list of key:values required for the command to execute
+    def __init__(self, userID, command, cmd_data):
+        self.userID = userID  #player = target of cmd
+        self.command = command  #command = an item from a command dictionary
+        self.cmd_data = cmd_data  #cmd_data = [] a list of key:values required for the command to execute
+
+def process_queues(mygame, recv_queue, send_queues):
+    #global users, recv_queue, network_provisioned
+    proc_lock =  threading.Lock()
+    ref.child("logging").push(f"Processing queues running {recv_queue.qsize()}")
+    while True:
+        proc_lock.acquire()
+        #print(f"recv_queue length is now {recv_queue.qsize()}")
+        if recv_queue.qsize()>0:
+            ref.child("logging").push(f"Pulling command 1 of {recv_queue.qsize()} to process")
+            pop_cmd = recv_queue.get()
+            ref.child("commands").push({'userID': str(pop_cmd.userID), 'cmd': str(pop_cmd.command), 'data': str(pop_cmd.cmd_data)})
+            if pop_cmd.command == "HBT":  hbt(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "ACK": ack(pop_cmd, mygame, send_queues) #Check-off the original Cmd was ACK'd
+            elif pop_cmd.command == "JOIN": join(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "PROFILE": profile(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "GAME": game_all(pop_cmd, mygame, send_queues)   # These are server initiated cmds
+            elif pop_cmd.command == "TERRITORY": territory(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "TAKE": take(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "TERRITORIES": territories(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "ADJACENT": adjacent(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "CARDS": cards(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "PLACE": place(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "ATTACK": attack(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "MOVE": move(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "NEXT": next(pop_cmd, mygame, send_queues)
+            elif pop_cmd.command == "WHOAMI": whoami(pop_cmd, mygame, send_queues)
+            ref.child("logging").push(f"Unknown command {pop_cmd.command} received from {pop_cmd.userID}")
+            pop_cmd = ""
+        proc_lock.release()
 
 class Gameplay:
     def __init__(self):
@@ -40,119 +45,3 @@ class Gameplay:
         # Ideally client Sockets receiving a command msg, invokes a METHOD on the Gameplay Object
         # This queue may need to be passed to Socket Threads to store RECV'd Commands
 
-    def append_cmd_queue(self, cmd):
-        self.cmd_queue.append(cmd)  #add inbound Command to end of queue (really a list)
-        print("Command added to queue:")
-        print(cmd)
-        self.validate_cmd(cmd)  #Take some steps to validate the Command
-        self.process_cmd(cmd)  #Take steps to process the Command
-        #Else this method would be bassed receive events from Socket Threads!  
-        #Otherwise Gameplay will need a thread which loops to pick up cmds as they are queued
-
-    def validate_cmd(cmd):
-        #Need checks to assure this is a well formed Client Command
-            # Does Player exist in Players[]?
-            # Is it currently Player's turn?
-            # Is this the right Turn.Step for this Client Command?
-            # Are all the right data fields within the Command?
-            # Does each data field check out?
-        pass
-
-    # Process gameplay commands
-    def process_cmd(self, cmd):   #Send the cmd here **after** received on socket
-        
-        # **** MOVE ALL OF THIS TO THE SOCKET THREAD ****
-        #raw_request = cmd.player.conn.recv(1024)   #Separate cmd 'receipt' code from 'process' code
-        #if not raw_request:
-        #    print("Empty msg received")
-        #    break  # Empty message / What action to take?
-        #cmd = raw_request.decode('utf-8')  # NO NOT REALLY THIS ********
-        #print(f'Rquest from client: {request}')
-
-        # Given a message from a client, figure out what to do with it...
-        #Is is a Gameplay command vs an Administrative command??
-
-
-
-        #Gameplay command processing:
-        match(cmd.command):  #Switch on a flag within the Command object
-            case 'name':
-                print("'name' command received")
-                response = self.name(cmd)
-                #conn.send(bytearray(response, 'utf-8'))  #Rather, Send from Socket thread??
-                #Add a broadcast command to share status
-
-            case 'place':
-                print("'place' command received")
-                response = self.place(cmd)
-                #Validations:  
-                    #Have armies to place, 
-                    #own the territory, 
-                    #Is it time and place for this Cmd
-                #Add an armie 
-                #broadcast updated state to everyone
-
-            case 'fortify':
-                print("'fortify' command received")
-                response = self.fortify(cmd)
-                #client.send(bytearray(response, 'utf-8'))
-                #Add a broadcast command to share status
-
-            case 'attack':
-                print("'attack' command received")
-                response = self.attack(cmd)
-                #Add a broadcast command to share status
-                
-            case 'troop_move':
-                print("'tmove' command received")
-                response = self.tmove(cmd)
-                #Recevie this from Player
-                #Validate
-                #Update state on Server for armies in these 2 countries
-                #Broadcast updated armies for 2 countries affected
-                    #expect ACKs back from everyone to know we are in sync
-                #Update state on Server to be Phase = "Card" (No change to Turn = "Jay")
-                #Broadcat to everyone that phase has updated
-                    #expect ACKs back from everyone to know we are in sync
-                
-                
-            case 'chat':
-                print("'chat' command received")
-                response = self.chat(cmd)
-                #client.send(bytearray(response, 'utf-8'))
-                #Add a broadcast command to advance the turn
-                
-            case _: 
-                print("'unknown' command received")
-                #response = self.unknown(cmd)
-                #client.send(bytearray(response, 'utf-8'))
-
-        #Supported for socket recv within process_cmd() - ** Moving this to Socket thread!!
-        #except Exception as e:
-        #    print(f'Problem processing client request: {e}')
-
-    def name(self, cmd):
-        cmd.player.name = "New name"  #Update SOR with new name
-        #Send the updated Player object out to everyone
-
-    def place(self, cmd):
-        cmd.player.name = "New name"  #Update SOR with new name
-        #Send the updated Player object out to everyone
-
-    def fortify(self, cmd):
-        cmd.player.name = "New name"  #Update SOR with new name
-        #Send the updated Player object out to everyone
-
-    def attack(self, cmd):
-        cmd.player.name = "New name"  #Update SOR with new name
-        #Send the updated Player object out to everyone
-
-    def tmove(self, cmd):
-        cmd.player.name = "New name"  #Update SOR with new name
-        #Send the updated Player object out to everyone
-
-    def chat(self, cmd):
-        cmd.player.name = "New name"  #Update SOR with new name
-        #Send the updated Player object out to everyone
-
-    
